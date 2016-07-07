@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
@@ -29,14 +30,14 @@ namespace Core.Controls.Common
             get { return Driver.FindElement(Container, Locators.LoginBoxMessage); }
         }
 
-        public IWebElement EmailInputBox
+        public InputBox EmailInputBox
         {
-            get { return Driver.FindElement(Container, Locators.EmailInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.EmailInputBox)); }
         }
 
-        public IWebElement PasswordInputBox
+        public InputBox PasswordInputBox
         {
-            get { return Driver.FindElement(Container, Locators.PasswordInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.PasswordInputBox)); }
         }
 
         public IWebElement TogglePasswordHiddenButton

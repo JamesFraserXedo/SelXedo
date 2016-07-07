@@ -1,4 +1,5 @@
-﻿using Core.Model.SupportTools;
+﻿using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -21,14 +22,14 @@ namespace Core.Controls.PartyBuilder
             get { return new SelectElement(Driver.FindElement(Container, Locators.RoleSelect)); }
         }
 
-        public IWebElement FirstNameInputBox
+        public InputBox FirstNameInputBox
         {
-            get { return Driver.FindElement(Container, Locators.FirstNameInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.FirstNameInputBox)); }
         }
 
-        public IWebElement LastNameInputBox
+        public InputBox LastNameInputBox
         {
-            get { return Driver.FindElement(Container, Locators.LastNameInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.LastNameInputBox)); }
         }
 
         public SelectElement OutfitSelect

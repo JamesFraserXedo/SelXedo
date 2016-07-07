@@ -1,11 +1,11 @@
 ﻿using Core.Contexts;
 using Core.Controls.Common;
-using Core.Controls.Common.Footer;
 using Core.Controls.Common.Header;
 using Core.Controls.PartyBuilder;
 using Core.StepsSupport;
 using Core.Utilities;
 using TechTalk.SpecFlow;
+using XedoModel.Controls.Common.Footer;
 using XedoModel.Pages;
 using XedoModel.Pages.PaymentProcess;
 

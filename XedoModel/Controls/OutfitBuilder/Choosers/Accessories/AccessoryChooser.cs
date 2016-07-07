@@ -2,6 +2,7 @@
 using System.Linq;
 using Core.Model.TestObjects.Bases;
 using Core.Controls.OutfitBuilder.Filters;
+using XedoModel.Controls.OutfitBuilder.Choosers.Accessories;
 
 namespace Core.Controls.OutfitBuilder.Choosers.Accessories
 {

@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\Context.cs" />
+    <Compile Include="CustomElements\Button.cs" />
+    <Compile Include="CustomElements\InputBox.cs" />
     <Compile Include="Model\Sites\Page.cs" />
     <Compile Include="Model\Sites\Site.cs" />
     <Compile Include="Model\SupportTools\Utils.cs" />

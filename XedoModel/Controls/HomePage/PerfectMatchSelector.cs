@@ -2,7 +2,7 @@
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.HomePage
+namespace XedoModel.Controls.HomePage
 {
     public class PerfectMatchSelector : ControlBase
     {

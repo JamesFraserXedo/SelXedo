@@ -1,4 +1,5 @@
-﻿using Core.Model.SupportTools;
+﻿using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -38,24 +39,24 @@ namespace Core.Controls.PaymentConfirmation
             get { return Driver.FindElement(_container, Locators.AmexCreditRadioButton); }
         }
 
-        public IWebElement NameInputBox
+        public InputBox NameInputBox
         {
-            get { return Driver.FindElement(_container, Locators.NameInputBox); }
+            get { return new InputBox(Driver.FindElement(_container, Locators.NameInputBox)); }
         }
 
-        public IWebElement CardNumberInputBox
+        public InputBox CardNumberInputBox
         {
-            get { return Driver.FindElement(_container, Locators.CardNumberInputBox); }
+            get { return new InputBox(Driver.FindElement(_container, Locators.CardNumberInputBox)); }
         }
 
-        public IWebElement ExpiryDateInputBox
+        public InputBox ExpiryDateInputBox
         {
-            get { return Driver.FindElement(_container, Locators.ExpiryDateInputBox); }
+            get { return new InputBox(Driver.FindElement(_container, Locators.ExpiryDateInputBox)); }
         }
 
-        public IWebElement SecurityCodeInputBox
+        public InputBox SecurityCodeInputBox
         {
-            get { return Driver.FindElement(_container, Locators.SecurityCodeInputBox); }
+            get { return new InputBox(Driver.FindElement(_container, Locators.SecurityCodeInputBox)); }
         }
 
         public IWebElement DefaultCreditCardDetailsButton

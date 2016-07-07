@@ -1,4 +1,5 @@
 ﻿using System;
+using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
@@ -21,19 +22,19 @@ namespace XedoModel.Pages.PaymentProcess
             get { return Driver.FindElement(Container, Locators.ConfirmListedAddressButton); }
         }
 
-        public IWebElement Address1InputBox
+        public InputBox Address1InputBox
         {
-            get { return Driver.FindElement(Container, Locators.Address1InputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.Address1InputBox)); }
         }
 
-        public IWebElement StateInputBox
+        public InputBox StateInputBox
         {
-            get { return Driver.FindElement(Container, Locators.StateInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.StateInputBox)); }
         }
 
-        public IWebElement ZipInputBox
+        public InputBox ZipInputBox
         {
-            get { return Driver.FindElement(Container, Locators.ZipInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.ZipInputBox)); }
         }
 
         public IWebElement ConfirmEnteredAddressButton
@@ -41,9 +42,9 @@ namespace XedoModel.Pages.PaymentProcess
             get { return Driver.FindElement(Container, Locators.ConfirmEnteredAddressButton); }
         }
 
-        public IWebElement ContactNumberInputBox
+        public InputBox ContactNumberInputBox
         {
-            get { return Driver.FindElement(Container, Locators.ContactNumberInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.ContactNumberInputBox)); }
         }
 
         public IWebElement PaymentOptionsButton

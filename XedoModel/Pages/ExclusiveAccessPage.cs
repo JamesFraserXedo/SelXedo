@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
@@ -17,9 +18,9 @@ namespace XedoModel.Pages
             get { return Driver.FindElement(Locators.Container); }
         }
 
-        public IWebElement PasswordInputBox
+        public InputBox PasswordInputBox
         {
-            get { return Driver.FindElement(Container, Locators.PasswordInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.PasswordInputBox)); }
         }
 
         public IWebElement SubmitPasswordButton

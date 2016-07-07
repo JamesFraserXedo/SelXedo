@@ -1,6 +1,6 @@
 ﻿using Core.Model.TestObjects.Bases;
 
-namespace Core.Controls.Common.Header
+namespace XedoModel.Controls.Common.Header
 {
     public class NavigationBar : ControlBase
     {

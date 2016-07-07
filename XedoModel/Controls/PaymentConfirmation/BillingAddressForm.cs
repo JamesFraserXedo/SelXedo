@@ -1,4 +1,5 @@
-﻿using Core.Model.SupportTools;
+﻿using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -15,14 +16,14 @@ namespace Core.Controls.PaymentConfirmation
             _container = container;
         }
 
-        public IWebElement AddressInputBox
+        public InputBox AddressInputBox
         {
-            get { return Driver.FindElement(_container, Locators.AddressInputBox); }
+            get { return new InputBox(Driver.FindElement(_container, Locators.AddressInputBox)); }
         }
 
-        public IWebElement CityInputBox
+        public InputBox CityInputBox
         {
-            get { return Driver.FindElement(_container, Locators.CityInputBox); }
+            get { return new InputBox(Driver.FindElement(_container, Locators.CityInputBox)); }
         }
 
         public SelectElement StateSelect
@@ -30,14 +31,14 @@ namespace Core.Controls.PaymentConfirmation
             get { return new SelectElement(Driver.FindElement(_container, Locators.StateSelect)); }
         }
 
-        public IWebElement ZipcodeInputBox
+        public InputBox ZipcodeInputBox
         {
-            get { return Driver.FindElement(_container, Locators.ZipcodeInputBox); }
+            get { return new InputBox(Driver.FindElement(_container, Locators.ZipcodeInputBox)); }
         }
 
-        public IWebElement CountryInputBox
+        public InputBox CountryInputBox
         {
-            get { return Driver.FindElement(_container, Locators.CountryInputBox); }
+            get { return new InputBox(Driver.FindElement(_container, Locators.CountryInputBox)); }
         }
 
         public class Locators

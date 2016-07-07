@@ -84,6 +84,13 @@ namespace Core.Controls.Common.Header
         public class Locators
         {
             public static By Container = By.XPath("//div[contains(@class, 'header-container')]");
+
+            public static By Logo = By.CssSelector("[class='img-responsive logo-name-section']");
+            public static By CollectionsLink = By.CssSelector("[class='img-responsive logo-name-section']");
+            public static By HowItWorksLink = By.CssSelector("[class='img-responsive logo-name-section']");
+            public static By GetInspiredLink = By.CssSelector("[class='img-responsive logo-name-section']");
+            public static By BuildATuxLink = By.CssSelector("[class='img-responsive logo-name-section']");
+
             public static By OpenLoginPanelButton = By.XPath("//*[contains(text(), 'Sign In')]");
             public static By LoggedInUserNameLabel = By.XPath("//span[@class='person-id']");
             public static By OrdersButton = By.Id("header-orders-button-with-count");

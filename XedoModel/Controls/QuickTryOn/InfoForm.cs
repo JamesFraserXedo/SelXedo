@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
@@ -34,29 +35,29 @@ namespace Core.Controls.QuickTryOn
             get { return new SelectElement(Driver.FindElement(Container, Locators.CoatSizeSelect)); }
         }
 
-        public IWebElement FirstNameInputBox
+        public InputBox FirstNameInputBox
         {
-            get { return Driver.FindElement(Container, Locators.FirstNameInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.FirstNameInputBox)); }
         }
 
-        public IWebElement LastNameInputBox
+        public InputBox LastNameInputBox
         {
-            get { return Driver.FindElement(Container, Locators.LastNameInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.LastNameInputBox)); }
         }
 
-        public IWebElement AddressOneInputBox
+        public InputBox AddressOneInputBox
         {
-            get { return Driver.FindElement(Container, Locators.AddressOneInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.AddressOneInputBox)); }
         }
 
-        public IWebElement AddressTwoInputBox
+        public InputBox AddressTwoInputBox
         {
-            get { return Driver.FindElement(Container, Locators.AddressTwoInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.AddressTwoInputBox)); }
         }
 
-        public IWebElement CityInputBox
+        public InputBox CityInputBox
         {
-            get { return Driver.FindElement(Container, Locators.CityInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.CityInputBox)); }
         }
 
         public SelectElement StateSelect
@@ -64,9 +65,9 @@ namespace Core.Controls.QuickTryOn
             get { return new SelectElement(Driver.FindElement(Container, Locators.StateSelect)); }
         }
 
-        public IWebElement ZipInputBox
+        public InputBox ZipInputBox
         {
-            get { return Driver.FindElement(Container, Locators.ZipInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.ZipInputBox)); }
         }
 
         public IWebElement ConfirmDeliveryAddressButton
@@ -79,19 +80,19 @@ namespace Core.Controls.QuickTryOn
             get { return Driver.FindElement(Container, Locators.SaveAsDefaultAddressCheckbox); }
         }
 
-        public IWebElement ContactNumberInputBox
+        public InputBox ContactNumberInputBox
         {
-            get { return Driver.FindElement(Container, Locators.ContactNumberInputBox); }
+            get { return new InputBox(Driver.FindElement(Container, Locators.ContactNumberInputBox)); }
         }
 
-        public IWebElement WeddingDateInputBox
+        public IWebElement WeddingDateSelector
         {
-            get { return Driver.FindElement(Container, Locators.WeddingDateInputBox); }
+            get { return Driver.FindElement(Container, Locators.WeddingDateSelector); }
         }
 
-        public IWebElement PreferredTryOnDateInputBox
+        public IWebElement PreferredTryOnDateSelector
         {
-            get { return Driver.FindElement(Container, Locators.PreferredTryOnDateInputBox); }
+            get { return Driver.FindElement(Container, Locators.PreferredTryOnDateSelector); }
         }
 
         public IWebElement CollectionDateLabel
@@ -123,7 +124,7 @@ namespace Core.Controls.QuickTryOn
         {
             get
             {
-                WeddingDateInputBox.Click();
+                WeddingDateSelector.Click();
                 Thread.Sleep(250);
                 return new DatePicker(TestSettings, Driver.FindElement(Locators.WeddingDateDatePickerContainer));
             }
@@ -133,7 +134,7 @@ namespace Core.Controls.QuickTryOn
         {
             get
             {
-                PreferredTryOnDateInputBox.Click();
+                PreferredTryOnDateSelector.Click();
                 Thread.Sleep(250);
                 return new DatePicker(TestSettings, Driver.FindElement(Locators.PreferredDateDatePickerContainer));
             }
@@ -237,8 +238,8 @@ namespace Core.Controls.QuickTryOn
             public static By ConfirmDeliveryAddressButtonSpinner = By.XPath("//*[@id='ConfirmAddressButton' and contains(@class, 'spinner')]");
             public static By SaveAsDefaultAddressCheckbox = By.Id("AddressEditor_NewAddressSaveAsDefault");
             public static By ContactNumberInputBox = By.Id("ContactNumber");
-            public static By WeddingDateInputBox = By.Id("EventDate");
-            public static By PreferredTryOnDateInputBox = By.Id("TryOnDate_Value");
+            public static By WeddingDateSelector = By.Id("EventDate");
+            public static By PreferredTryOnDateSelector = By.Id("TryOnDate_Value");
             public static By CollectionDateLabel = By.Id("CollectionDateLabel");
             public static By WeddingDateDatePickerContainer = By.Id("EventDate_dw_pnl_0");
             public static By PreferredDateDatePickerContainer = By.Id("TryOnDate_Value_dw_pnl_0");

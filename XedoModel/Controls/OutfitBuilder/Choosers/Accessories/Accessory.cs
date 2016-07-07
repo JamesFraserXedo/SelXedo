@@ -1,7 +1,8 @@
-﻿using Core.Model.TestObjects.Bases;
+﻿using Core.Controls.OutfitBuilder.Choosers;
+using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitBuilder.Choosers.Accessories
+namespace XedoModel.Controls.OutfitBuilder.Choosers.Accessories
 {
     public class Accessory : ClothingItem
     {

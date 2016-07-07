@@ -1,7 +1,7 @@
-﻿using Core.Controls.HomePage;
-using Core.Model.SupportTools;
+﻿using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
+using XedoModel.Controls.HomePage;
 
 namespace XedoModel.Pages
 {
@@ -16,7 +16,21 @@ namespace XedoModel.Pages
             get { return Driver.FindElement(Locators.HpHeroImage); }
         }
 
-        //ToDo
+        public IWebElement GroomGoesFreeBanner
+        {
+            get { return Driver.FindElement(Locators.GroomGoesFreeBanner); }
+        }
+
+        public HowItWorksPanel HowItWorksPanel
+        {
+            get { return new HowItWorksPanel(TestSettings); }
+        }
+
+        public ExploreTheCollectionsPanel ExploreTheCollectionsPanel
+        {
+            get { return new ExploreTheCollectionsPanel(TestSettings); }
+        }
+
         public override bool IsLoaded()
         {
             return Driver.ElementDisplayed(Locators.HpHeroImage);
@@ -36,6 +50,7 @@ namespace XedoModel.Pages
         {
             public static By HpHeroImage = By.Id("hp-hero-Image");
             public static By LetsGetStartedButton = By.CssSelector("[data-galabel='Hero-Image-CTA-clicked']");
+            public static By GroomGoesFreeBanner = By.CssSelector("[class='free-try-on-message']");
         }
     }
 }

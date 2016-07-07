@@ -1,4 +1,5 @@
 ﻿using System;
+using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
@@ -11,29 +12,29 @@ namespace XedoModel.Pages
         {
         }
 
-        public IWebElement FirstNameInputBox
+        public InputBox FirstNameInputBox
         {
-            get { return Driver.FindElement(Locators.FirstNameInputBox); }
+            get { return new InputBox(Driver.FindElement(Locators.FirstNameInputBox)); }
         }
 
-        public IWebElement LastNameInputBox
+        public InputBox LastNameInputBox
         {
-            get { return Driver.FindElement(Locators.LastNameInputBox); }
+            get { return new InputBox(Driver.FindElement(Locators.LastNameInputBox)); }
         }
 
-        public IWebElement EmailAddressInputBox
+        public InputBox EmailAddressInputBox
         {
-            get { return Driver.FindElement(Locators.EmailAddressInputBox); }
+            get { return new InputBox(Driver.FindElement(Locators.EmailAddressInputBox)); }
         }
 
-        public IWebElement PasswordInputBox
+        public InputBox PasswordInputBox
         {
-            get { return Driver.FindElement(Locators.PasswordInputBox); }
+            get { return new InputBox(Driver.FindElement(Locators.PasswordInputBox)); }
         }
 
-        public IWebElement ConfirmPasswordInputBox
+        public InputBox ConfirmPasswordInputBox
         {
-            get { return Driver.FindElement(Locators.ConfirmPasswordInputBox); }
+            get { return new InputBox(Driver.FindElement(Locators.ConfirmPasswordInputBox)); }
         }
 
         public IWebElement CompleteRegistrationButton
