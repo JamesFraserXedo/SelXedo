@@ -1,11 +1,13 @@
 ﻿using Core.Contexts;
+using Core.StepsSupport;
 using Core.Utilities;
 using TechTalk.SpecFlow;
+using XedoModel.Bases;
 
-namespace Core.StepsSupport
+namespace XedoTests.Hooks
 {
     [Binding]
-    public class ScenarioHooks : StepBase
+    class ScenarioHooks : XedoStepBase
     {
         public ScenarioHooks(Context context) : base(context)
         {

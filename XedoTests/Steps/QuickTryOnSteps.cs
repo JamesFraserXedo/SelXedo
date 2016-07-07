@@ -1,7 +1,9 @@
-﻿using System.Linq;
+﻿using System;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading;
 using Core.Contexts;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 using XedoModel.Bases;
 
@@ -13,6 +15,28 @@ namespace XedoTests.Steps
         public QuickTryOnSteps(Context context) : base(context)
         {
         }
+
+        [Given(@"I am on the quick try on page")]
+        public void GivenIAmOnTheQuickTryOnPage()
+        {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            Driver.Navigate().GoToUrl("https://uat-xedo-usa.azurewebsites.net/QuickTryOn/aag_black_tux_rec");
+            CurrentContext.LoadTime.PageLoadTime = stopwatch.ElapsedMilliseconds;
+
+            if (ExclusiveAccessPage.OnPage)
+            {
+                ExclusiveAccessPage.InputPassword("atlanta123");
+                ExclusiveAccessPage.Submit();
+                stopwatch.Restart();
+            }
+
+            QuickTryOnPage.WaitUntilLoaded();
+
+            stopwatch.Stop();
+            CurrentContext.LoadTime.PageContentLoadTime = stopwatch.ElapsedMilliseconds;
+        }
+
 
         [When(@"I enter a preferred Try On date")]
         public void WhenIEnterAPreferredTryOnDate()

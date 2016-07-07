@@ -1,7 +1,8 @@
-﻿using System.Diagnostics;
-using Core.Contexts;
+﻿using Core.Contexts;
 using TechTalk.SpecFlow;
 using XedoModel.Bases;
+using NUnit.Framework;
+using NUnit.Framework.Compatibility;
 
 namespace XedoTests.Steps.SharedSteps
 {
@@ -25,11 +26,21 @@ namespace XedoTests.Steps.SharedSteps
             {
                 ExclusiveAccessPage.InputPassword("atlanta123");
                 ExclusiveAccessPage.Submit();
+                stopwatch.Restart();
             }
 
+            HomePage.WaitUntilLoaded();
             stopwatch.Stop();
             CurrentContext.LoadTime.PageContentLoadTime = stopwatch.ElapsedMilliseconds;
 
+        }
+
+        [Then(@"I am on the Xedo AccountRegistration page")]
+        public void ThenIAmOnTheXedoAccountRegistrationPage()
+        {
+
+            Assert.IsTrue(NewMemberRegistrationPage.IsLoaded());
+            Assert.AreEqual("https://uat-xedo-usa.azurewebsites.net/Account/PartyMemberRegistration",Driver.Url);
         }
     }
 }

@@ -35,10 +35,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.0.5797.27534, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.0.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SpecRun.SpecFlowPlugin, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.1.5.1\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun, Version=1.5.1.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.1.5.1\lib\net45\TechTalk.SpecRun.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -63,6 +75,47 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Features\HomePage\LogInFromHomePage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogInFromHomePage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\HomePage\NavigateFromHomePageToAccountRegistration.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NavigateFromHomePageToAccountRegistration.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\HomePage\PerfectMatch1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PerfectMatch.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\LoadTimes\HomePageLoad1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomePageLoad.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\QuickTryOn\PocketSquares1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PocketSquares.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\QuickTryOn\QuickTryOn1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuickTryOn.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\QuickTryOn\ShippingAddress1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShippingAddress.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\UserJourneys\GroomGoesFree1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroomGoesFree.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Hooks\ScenarioHooks.cs" />
     <Compile Include="Steps\BillingAddressSteps.cs" />
     <Compile Include="Steps\BuildPartySteps.cs" />
     <Compile Include="Steps\CollectionsSteps.cs" />
@@ -77,6 +130,7 @@
     <Compile Include="Steps\SharedSteps\HomePageSteps.cs" />
     <Compile Include="Steps\SharedSteps\LogInSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\SharedSteps\SidebarSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
@@ -90,7 +144,49 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Default.srprofile">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Features\HomePage\LogInFromHomePage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LogInFromHomePage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\HomePage\NavigateFromHomePageToAccountRegistration.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NavigateFromHomePageToAccountRegistration.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\HomePage\PerfectMatch.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PerfectMatch1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\LoadTimes\HomePageLoad.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HomePageLoad1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\QuickTryOn\PocketSquares.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PocketSquares1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\QuickTryOn\QuickTryOn.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>QuickTryOn1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\QuickTryOn\ShippingAddress.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ShippingAddress1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\UserJourneys\GroomGoesFree.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GroomGoesFree1.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
+    <None Include="runtests.cmd" />
+    <None Include="SpecRunTestProfile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpecRunTestProfile_2011_09.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

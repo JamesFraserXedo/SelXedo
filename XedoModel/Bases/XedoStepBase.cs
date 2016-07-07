@@ -4,17 +4,20 @@ using Core.Controls.Common.Footer;
 using Core.Controls.Common.Header;
 using Core.Controls.PartyBuilder;
 using Core.StepsSupport;
+using Core.Utilities;
+using TechTalk.SpecFlow;
 using XedoModel.Pages;
 using XedoModel.Pages.PaymentProcess;
 
 namespace XedoModel.Bases
 {
+    [Binding]
     public abstract class XedoStepBase : StepBase
     {
         protected XedoStepBase(Context context) : base(context)
         {
         }
-
+        
         public static HomePage HomePage
         {
             get { return new HomePage(GetTestSettings()); }
@@ -39,6 +42,7 @@ namespace XedoModel.Bases
         {
             get { return new CollectionsPage(GetTestSettings()); }
         }
+
         public static OutfitSummaryPage OutfitSummaryPage
         {
             get { return new OutfitSummaryPage(GetTestSettings()); }
@@ -63,7 +67,7 @@ namespace XedoModel.Bases
         {
             get { return new Footer(GetTestSettings()); }
         }
-        
+
         public static SelectWeddingDatePage SelectWeddingDatePage
         {
             get { return new SelectWeddingDatePage(GetTestSettings()); }

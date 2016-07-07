@@ -1,5 +1,8 @@
 ﻿using System;
 using Core.Contexts;
+using Core.Controls.Common.Header;
+using Core.Model.SupportTools;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 using XedoModel.Bases;
 
@@ -31,5 +34,30 @@ namespace XedoTests.Steps.SharedSteps
             NewMemberRegistrationPage.CompleteRegistrationButton.Click();
             //Should automatically redirect to original page
         }
+
+        [When(@"I attempt to sign into the via the sidebar with username ""(.*)"" and password ""(.*)""")]
+        public void WhenIAttemptToSignIntoTheViaTheSidebarWithUsernameAndPassword(string username, string password)
+        {
+            LoginForm.Expand();
+
+            LoginForm.InputEmail(username);
+            LoginForm.InputPassword(password);
+            LoginForm.Submit();
+        }
+
+        [Then(@"I should be logged in")]
+        public void ThenIShouldBeLoggedIn()
+        {
+            Assert.IsTrue(Header.FavouritesButton.Displayed);
+            Assert.IsTrue(Header.OrdersButton.Displayed);
+        }
+
+        [Then(@"I should be not logged in")]
+        public void ThenIShouldBeNotLoggedIn()
+        {
+            Assert.IsFalse(Driver.ElementDisplayed(Header.Locators.FavouritesButton));
+            Assert.IsFalse(Driver.ElementDisplayed(Header.Locators.OrdersButton));
+        }
+
     }
 }

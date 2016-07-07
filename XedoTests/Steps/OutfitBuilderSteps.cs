@@ -1,6 +1,7 @@
-﻿using Core.Contexts;
+﻿using System.Diagnostics;
+using Core.Contexts;
 using Core.Controls.OutfitBuilder.Filters;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 using XedoModel.Bases;
 
@@ -12,6 +13,42 @@ namespace XedoTests.Steps
         public OutfitBuilderSteps(Context context) : base(context)
         {
         }
+
+        [Given(@"I am on the outfit builder page")]
+        public void GivenIAmOnTheOutfitBuilderPage()
+        {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            Driver.Navigate().GoToUrl("https://uat-xedo-usa.azurewebsites.net/outfitbuilder/build");
+            CurrentContext.LoadTime.PageLoadTime = stopwatch.ElapsedMilliseconds;
+
+            if (ExclusiveAccessPage.OnPage)
+            {
+                ExclusiveAccessPage.InputPassword("atlanta123");
+                ExclusiveAccessPage.Submit();
+                stopwatch.Restart();
+            }
+
+            OutfitBuilderPage.WaitUntilLoaded();
+
+            stopwatch.Stop();
+            CurrentContext.LoadTime.PageContentLoadTime = stopwatch.ElapsedMilliseconds;
+        }
+
+        [When(@"I go to the home page")]
+        public void WhenIGoToTheHomePage()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+
+        [Then(@"I am on the outfit builder page")]
+        public void ThenIAmOnTheOutfitBuilderPage()
+        {
+            Assert.IsTrue(Driver.Url.Contains("/outfitbuilder"));
+        }
+
 
         [Then(@"the neckwear filter is expanded")]
         public void ThenTheNeckwearFilterIsExpanded()
