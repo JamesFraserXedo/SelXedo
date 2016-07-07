@@ -5,7 +5,6 @@ using TechTalk.SpecFlow;
 
 namespace Core.StepsSupport
 {
-    [Binding]
     public class StepBase : Steps
     {
         protected static IWebDriver Driver;

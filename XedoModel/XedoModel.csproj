@@ -1,53 +1,130 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-	<PropertyGroup>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<ProjectGuid>110c27b5-532a-494c-92cf-40e87436e073</ProjectGuid>
-		<OutputType>Library</OutputType>
-		<AppDesignerFolder>Properties</AppDesignerFolder>
-		<RootNamespace>XedoModel</RootNamespace>
-		<AssemblyName>XedoModel</AssemblyName>
-		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-		<FileAlignment>512</FileAlignment>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<DebugSymbols>true</DebugSymbols>
-		<DebugType>full</DebugType>
-		<Optimize>false</Optimize>
-		<OutputPath>bin\Debug\</OutputPath>
-		<DefineConstants>DEBUG;TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<DebugType>pdbonly</DebugType>
- 		<Optimize>true</Optimize>
-		<OutputPath>bin\Release\</OutputPath>
-		<DefineConstants>TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<ItemGroup>
-		<Reference Include="System"/>
-		
-		<Reference Include="System.Core"/>
-		<Reference Include="System.Xml.Linq"/>
-		<Reference Include="System.Data.DataSetExtensions"/>
-		
-		
-		<Reference Include="Microsoft.CSharp"/>
- 		
-		<Reference Include="System.Data"/>
-		<Reference Include="System.Xml"/>
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Include="Class1.cs" />
-
-		<Compile Include="Properties\AssemblyInfo.cs" />
-	</ItemGroup>
-	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83788559-BBEF-4231-BB10-85835CB269BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XedoModel</RootNamespace>
+    <AssemblyName>XedoModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.53.1\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.53.1\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bases\XedoStepBase.cs" />
+    <Compile Include="Controls\Collections\CollectionOutfit.cs" />
+    <Compile Include="Controls\Common\Footer\Footer.cs" />
+    <Compile Include="Controls\Common\Header\Header.cs" />
+    <Compile Include="Controls\Common\Header\NavigationBar.cs" />
+    <Compile Include="Controls\Common\LoginForm.cs" />
+    <Compile Include="Controls\HomePage\PerfectMatchSelector.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Accessories\Accessory.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Accessories\AccessoryChooser.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\ChooserBase.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\ChooserPanel.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\ClothingItem.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Neckwears\Neckwear.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Neckwears\NeckwearChooser.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Shirts\Shirt.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Shirts\ShirtChooser.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Suits\Suit.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Suits\SuitChooser.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Waistcoats\Waistcoat.cs" />
+    <Compile Include="Controls\OutfitBuilder\Choosers\Waistcoats\WaistcoatChooser.cs" />
+    <Compile Include="Controls\OutfitBuilder\Dummy\OutfitViewer.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\AccessoryFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\ClothingType.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\Colour\ColourFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\ExpandableFilterBase.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\FilterBase.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\FilterPanel.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\NeckwearFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\ShirtFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\SuitFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\Filters\WaistcoatFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\OutfitControls.cs" />
+    <Compile Include="Controls\OutfitBuilder\WelcomePopup.cs" />
+    <Compile Include="Controls\OutfitSummary\OutfitSummaryObject.cs" />
+    <Compile Include="Controls\PartyBuilder\GroomGoesFreePopup.cs" />
+    <Compile Include="Controls\PartyBuilder\NewPartyMemberPopup.cs" />
+    <Compile Include="Controls\PaymentConfirmation\BillingAddressForm.cs" />
+    <Compile Include="Controls\PaymentConfirmation\CreditCardDetailsForm.cs" />
+    <Compile Include="Controls\PaymentConfirmation\PaymentForm.cs" />
+    <Compile Include="Controls\PaymentConfirmation\PaymentSummary.cs" />
+    <Compile Include="Controls\Profile\ProfilePagesMultiTab.cs" />
+    <Compile Include="Controls\QuickTryOn\ColourSelect.cs" />
+    <Compile Include="Controls\QuickTryOn\DatePicker.cs" />
+    <Compile Include="Controls\QuickTryOn\InfoForm.cs" />
+    <Compile Include="Controls\QuickTryOn\SelectedColour.cs" />
+    <Compile Include="Controls\QuickTryOn\TryOnPopup.cs" />
+    <Compile Include="Pages\CollectionsPage.cs" />
+    <Compile Include="Pages\ExclusiveAccessPage.cs" />
+    <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Pages\NewMemberRegistrationPage.cs" />
+    <Compile Include="Pages\OrderConfirmationPage.cs" />
+    <Compile Include="Pages\OutfitBuilderPage.cs" />
+    <Compile Include="Pages\OutfitSummaryPage.cs" />
+    <Compile Include="Pages\PaymentConfirmationPage.cs" />
+    <Compile Include="Pages\PaymentProcess\BillingAddressPage.cs" />
+    <Compile Include="Pages\PaymentProcess\BuildPartyPage.cs" />
+    <Compile Include="Pages\PaymentProcess\PaymentOptionsPage.cs" />
+    <Compile Include="Pages\PaymentProcess\SelectWeddingDatePage.cs" />
+    <Compile Include="Pages\QuickTryOnPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{fdd5bc60-d62b-4d2d-a4b6-6ba2f356d510}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -55,5 +132,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>
