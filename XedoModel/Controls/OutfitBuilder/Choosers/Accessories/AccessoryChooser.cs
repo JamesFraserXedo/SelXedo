@@ -1,10 +1,9 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
 using Core.Model.TestObjects.Bases;
-using Core.Controls.OutfitBuilder.Filters;
-using XedoModel.Controls.OutfitBuilder.Choosers.Accessories;
+using XedoModel.Controls.OutfitBuilder.Filters;
 
-namespace Core.Controls.OutfitBuilder.Choosers.Accessories
+namespace XedoModel.Controls.OutfitBuilder.Choosers.Accessories
 {
     public class AccessoryChooser : ChooserBase
     {

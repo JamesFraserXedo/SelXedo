@@ -1,5 +1,4 @@
-﻿using Core.Controls.OutfitBuilder.Choosers;
-using Core.Model.TestObjects.Bases;
+﻿using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
 namespace XedoModel.Controls.OutfitBuilder.Choosers.Accessories

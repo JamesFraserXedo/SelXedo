@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Linq;
-using Core.Controls.OutfitBuilder.Choosers;
-using Core.Controls.OutfitBuilder.Choosers.Accessories;
-using Core.Controls.OutfitBuilder.Choosers.Neckwears;
-using Core.Controls.OutfitBuilder.Choosers.Shirts;
-using Core.Controls.OutfitBuilder.Choosers.Suits;
-using Core.Controls.OutfitBuilder.Choosers.Waistcoats;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
+using XedoModel.Controls.OutfitBuilder.Choosers.Accessories;
+using XedoModel.Controls.OutfitBuilder.Choosers.Neckwears;
+using XedoModel.Controls.OutfitBuilder.Choosers.Shirts;
+using XedoModel.Controls.OutfitBuilder.Choosers.Suits;
+using XedoModel.Controls.OutfitBuilder.Choosers.Waistcoats;
 
 namespace XedoModel.Controls.OutfitBuilder.Choosers
 {

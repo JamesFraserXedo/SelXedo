@@ -1,13 +1,13 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.Threading;
 using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
-using System;
-using System.Threading;
 using OpenQA.Selenium.Support.UI;
 
-namespace Core.Controls.QuickTryOn
+namespace XedoModel.Controls.QuickTryOn
 {
     public class InfoForm : ControlBase
     {

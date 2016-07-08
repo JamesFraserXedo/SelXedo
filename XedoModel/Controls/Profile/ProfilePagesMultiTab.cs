@@ -1,7 +1,7 @@
 ﻿using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.Profile
+namespace XedoModel.Controls.Profile
 {
     public class ProfilePagesMultiTab : ControlBase
     {

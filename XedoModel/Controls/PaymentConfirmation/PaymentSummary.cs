@@ -2,7 +2,7 @@
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.PaymentConfirmation
+namespace XedoModel.Controls.PaymentConfirmation
 {
     class PaymentSummary : ControlBase
     {

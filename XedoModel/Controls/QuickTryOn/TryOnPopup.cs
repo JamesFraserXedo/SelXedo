@@ -2,7 +2,7 @@
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.QuickTryOn
+namespace XedoModel.Controls.QuickTryOn
 {
     public class TryOnPopup : ControlBase
     {

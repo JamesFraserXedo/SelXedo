@@ -2,7 +2,7 @@
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitBuilder
+namespace XedoModel.Controls.OutfitBuilder
 {
     public class WelcomePopup : ControlBase
     {

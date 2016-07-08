@@ -1,37 +1,48 @@
-﻿using Core.Model.TestObjects.Bases;
-using Core.Model.SupportTools;
+﻿using Core.Model.SupportTools;
+using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.Collections
+namespace XedoModel.Controls.Collections
 {
     public class CollectionOutfit : ControlBase
     {
         private IWebElement _container;
 
-        public CollectionOutfit(TestSettings testSettings, IWebElement container) : base(testSettings)
+        public CollectionOutfit(TestSettings testSettings, IWebElement container)
+            : base(testSettings)
         {
             _container = container;
         }
 
-        public string Price
+        public IWebElement NameLabel
         {
-            get { return Driver.FindElement(_container, Locators.PriceLabel).Text.Replace("Tux Price: ", "").Trim(); }
+            get { return Driver.FindElement(_container, Locators.NameLabel); }
+        }
+
+        public IWebElement DetailsLabel
+        {
+            get { return Driver.FindElement(_container, Locators.DetailsLabel); }
         }
 
         public string Name
         {
-            get { return Utils.StripBreaks(Driver.FindElement(_container, Locators.NameLabel).Text); }
+            get { return Utils.StripBreaks(NameLabel.Text); }
+        }
+
+        public string Price
+        {
+            get { return DetailsLabel.Text.Substring(DetailsLabel.Text.LastIndexOf('$')); }
         }
 
         public void Select()
         {
-            _container.Click();
+            NameLabel.Click();
         }
 
         public class Locators
         {
-            public static By PriceLabel = By.XPath(".//span[@class='inspire-item-detail']");
-            public static By NameLabel = By.XPath(".//span[@class='inspire-item-detail']/p");
+            public static By NameLabel = By.CssSelector("p");
+            public static By DetailsLabel = By.CssSelector("[class='inspire-item-detail']");
         }
     }
 }

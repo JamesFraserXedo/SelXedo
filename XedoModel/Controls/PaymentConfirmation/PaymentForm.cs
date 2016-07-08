@@ -1,9 +1,9 @@
 ﻿using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
-using Core.Controls.QuickTryOn;
+using XedoModel.Controls.QuickTryOn;
 
-namespace Core.Controls.PaymentConfirmation
+namespace XedoModel.Controls.PaymentConfirmation
 {
     class PaymentForm : ControlBase
     {

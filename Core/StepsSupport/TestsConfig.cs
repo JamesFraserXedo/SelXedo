@@ -9,6 +9,8 @@ namespace Core.StepsSupport
         //private static readonly Configuration.Configuration Configuration = new Configuration.Configuration();
         public static readonly int NodeQueueingTimeout = Int32.Parse(ConfigurationManager.AppSettings["NodeQueueingTimeout"]);
 
+        public static readonly string BaseUrl = ConfigurationManager.AppSettings["BaseUrl"];
+
         public static readonly string BrowserVariableName = ConfigurationManager.AppSettings["BrowserVariableName"];
         public static readonly string BrowserVersionVariableName = ConfigurationManager.AppSettings["BrowserVersionVariableName"];
 

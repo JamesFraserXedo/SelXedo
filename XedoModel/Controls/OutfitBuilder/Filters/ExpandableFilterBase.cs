@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
-using Core.Controls.OutfitBuilder.Filters.Colour;
+using XedoModel.Controls.OutfitBuilder.Filters.Colour;
 
-namespace Core.Controls.OutfitBuilder.Filters
+namespace XedoModel.Controls.OutfitBuilder.Filters
 {
     public abstract class ExpandableFilterBase : FilterBase
     {

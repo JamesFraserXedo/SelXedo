@@ -3,7 +3,7 @@ using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.Common.Header
+namespace XedoModel.Controls.Common.Header
 {
     public class Header : ControlBase
     {
@@ -14,6 +14,31 @@ namespace Core.Controls.Common.Header
         public IWebElement Container
         {
             get { return Driver.FindElement(Locators.Container); }
+        }
+
+        public IWebElement Logo
+        {
+            get { return Driver.FindElement(Container, Locators.Logo); }
+        }
+
+        public IWebElement CollectionsLink
+        {
+            get { return Driver.FindElement(Container, Locators.CollectionsLink); }
+        }
+
+        public IWebElement HowItWorksLink
+        {
+            get { return Driver.FindElement(Container, Locators.HowItWorksLink); }
+        }
+
+        public IWebElement GetInspiredLink
+        {
+            get { return Driver.FindElement(Container, Locators.GetInspiredLink); }
+        }
+
+        public IWebElement BuildATuxLink
+        {
+            get { return Driver.FindElement(Container, Locators.BuildATuxLink); }
         }
         
         public IWebElement OpenLoginPanelButton
@@ -71,6 +96,11 @@ namespace Core.Controls.Common.Header
             get { return Convert.ToInt32(FavouritesCountLabel.Text); }
         }
 
+        public IWebElement GroomGoesFreeBanner
+        {
+            get { return Driver.FindElement(Locators.GroomGoesFreeBanner); }
+        }
+
         public void Logout()
         {
             LogoutButton.Click();
@@ -86,10 +116,10 @@ namespace Core.Controls.Common.Header
             public static By Container = By.XPath("//div[contains(@class, 'header-container')]");
 
             public static By Logo = By.CssSelector("[class='img-responsive logo-name-section']");
-            public static By CollectionsLink = By.CssSelector("[class='img-responsive logo-name-section']");
-            public static By HowItWorksLink = By.CssSelector("[class='img-responsive logo-name-section']");
-            public static By GetInspiredLink = By.CssSelector("[class='img-responsive logo-name-section']");
-            public static By BuildATuxLink = By.CssSelector("[class='img-responsive logo-name-section']");
+            public static By CollectionsLink = By.CssSelector("[href='/collections']");
+            public static By HowItWorksLink = By.CssSelector("[data-at='lnk-menu-how-it-works']");
+            public static By GetInspiredLink = By.CssSelector("[data-at='lnk-menu-inspired']");
+            public static By BuildATuxLink = By.CssSelector("[data-at='lnk-menu-outfit-builder']");
 
             public static By OpenLoginPanelButton = By.XPath("//*[contains(text(), 'Sign In')]");
             public static By LoggedInUserNameLabel = By.XPath("//span[@class='person-id']");
@@ -98,6 +128,7 @@ namespace Core.Controls.Common.Header
             public static By FavouritesButton = By.Id("header-favourites-button-with-count");
             public static By FavouritesCountLabel = By.XPath("//*[@id='header-favourites-button-with-count']/span");
             public static By LogoutButton = By.Id("signout-link");
+            public static By GroomGoesFreeBanner = By.CssSelector("[class='free-try-on-message']");
         }
     }
 }

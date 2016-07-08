@@ -1,9 +1,9 @@
-﻿using Core.Model.SupportTools;
+﻿using System.Threading;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
-using System.Threading;
 
-namespace Core.Controls.QuickTryOn
+namespace XedoModel.Controls.QuickTryOn
 {
     public class DatePicker : ControlBase
     {

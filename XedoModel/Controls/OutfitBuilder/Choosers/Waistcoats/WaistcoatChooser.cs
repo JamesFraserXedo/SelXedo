@@ -1,11 +1,9 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
-using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
-using OpenQA.Selenium;
-using Core.Controls.OutfitBuilder.Filters;
+using XedoModel.Controls.OutfitBuilder.Filters;
 
-namespace Core.Controls.OutfitBuilder.Choosers.Waistcoats
+namespace XedoModel.Controls.OutfitBuilder.Choosers.Waistcoats
 {
     public class WaistcoatChooser : ChooserBase
     {

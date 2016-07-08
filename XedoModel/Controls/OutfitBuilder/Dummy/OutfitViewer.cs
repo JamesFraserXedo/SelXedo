@@ -3,7 +3,7 @@ using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitBuilder.Dummy
+namespace XedoModel.Controls.OutfitBuilder.Dummy
 {
     public class OutfitViewer : ControlBase
     {

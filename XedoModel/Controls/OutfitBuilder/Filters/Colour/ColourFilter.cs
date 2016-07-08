@@ -6,7 +6,7 @@ using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitBuilder.Filters.Colour
+namespace XedoModel.Controls.OutfitBuilder.Filters.Colour
 {
     public class ColourFilter : ControlBase
     {

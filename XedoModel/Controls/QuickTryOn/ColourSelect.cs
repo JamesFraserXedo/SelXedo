@@ -1,11 +1,10 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-using System.Collections.Generic;
-
-namespace Core.Controls.QuickTryOn
+namespace XedoModel.Controls.QuickTryOn
 {
     public class ColourSelect : ControlBase
     {

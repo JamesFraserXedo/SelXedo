@@ -1,7 +1,7 @@
 ﻿using System;
-using Core.Controls.PaymentConfirmation;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
+using XedoModel.Controls.PaymentConfirmation;
 
 namespace XedoModel.Pages
 {

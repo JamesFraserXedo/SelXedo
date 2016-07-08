@@ -1,8 +1,8 @@
 ﻿using System;
-using Core.Controls.PartyBuilder;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
+using XedoModel.Controls.PartyBuilder;
 
 namespace XedoModel.Pages.PaymentProcess
 {

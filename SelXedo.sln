@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F87114
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMLewinModel", "TMLewinModel\TMLewinModel.csproj", "{59106070-6945-416E-8664-A9FD5DBB21FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMLewinTests", "TMLewinTests\TMLewinTests.csproj", "{BB4D91D6-6B4A-429F-9D7C-93919E4537A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,14 @@ Global
 		{4C19806F-7CFF-4114-8DAE-7B2318A5174C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C19806F-7CFF-4114-8DAE-7B2318A5174C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C19806F-7CFF-4114-8DAE-7B2318A5174C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59106070-6945-416E-8664-A9FD5DBB21FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59106070-6945-416E-8664-A9FD5DBB21FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59106070-6945-416E-8664-A9FD5DBB21FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59106070-6945-416E-8664-A9FD5DBB21FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4D91D6-6B4A-429F-9D7C-93919E4537A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4D91D6-6B4A-429F-9D7C-93919E4537A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4D91D6-6B4A-429F-9D7C-93919E4537A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4D91D6-6B4A-429F-9D7C-93919E4537A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

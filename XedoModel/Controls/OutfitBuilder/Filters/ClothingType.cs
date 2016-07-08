@@ -1,4 +1,4 @@
-﻿namespace Core.Controls.OutfitBuilder.Filters
+﻿namespace XedoModel.Controls.OutfitBuilder.Filters
 {
     public enum ClothingType
     {

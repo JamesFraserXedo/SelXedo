@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics;
 using Core.Contexts;
-using Core.Controls.OutfitBuilder.Filters;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 using XedoModel.Bases;
+using XedoModel.Controls.OutfitBuilder.Filters;
 
 namespace XedoTests.Steps
 {

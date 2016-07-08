@@ -15,12 +15,7 @@ namespace XedoModel.Pages
         {
             get { return Driver.FindElement(Locators.HpHeroImage); }
         }
-
-        public IWebElement GroomGoesFreeBanner
-        {
-            get { return Driver.FindElement(Locators.GroomGoesFreeBanner); }
-        }
-
+        
         public HowItWorksPanel HowItWorksPanel
         {
             get { return new HowItWorksPanel(TestSettings); }
@@ -50,7 +45,6 @@ namespace XedoModel.Pages
         {
             public static By HpHeroImage = By.Id("hp-hero-Image");
             public static By LetsGetStartedButton = By.CssSelector("[data-galabel='Hero-Image-CTA-clicked']");
-            public static By GroomGoesFreeBanner = By.CssSelector("[class='free-try-on-message']");
         }
     }
 }

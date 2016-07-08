@@ -1,8 +1,8 @@
 ﻿using System;
-using Core.Controls.OutfitSummary;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
+using XedoModel.Controls.OutfitSummary;
 
 namespace XedoModel.Pages
 {

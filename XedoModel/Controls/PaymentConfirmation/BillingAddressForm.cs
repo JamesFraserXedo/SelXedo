@@ -4,7 +4,7 @@ using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace Core.Controls.PaymentConfirmation
+namespace XedoModel.Controls.PaymentConfirmation
 {
     class BillingAddressForm : ControlBase
     {

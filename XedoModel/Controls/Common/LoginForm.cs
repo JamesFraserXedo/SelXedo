@@ -5,7 +5,7 @@ using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.Common
+namespace XedoModel.Controls.Common
 {
     public class LoginForm : ControlBase
     {

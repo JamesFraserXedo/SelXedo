@@ -1,7 +1,7 @@
 ﻿using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitBuilder.Choosers.Neckwears
+namespace XedoModel.Controls.OutfitBuilder.Choosers.Neckwears
 {
     public class Neckwear : ClothingItem
     {

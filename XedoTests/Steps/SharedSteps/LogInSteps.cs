@@ -1,10 +1,10 @@
 ﻿using System;
 using Core.Contexts;
-using Core.Controls.Common.Header;
 using Core.Model.SupportTools;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 using XedoModel.Bases;
+using XedoModel.Controls.Common.Header;
 
 namespace XedoTests.Steps.SharedSteps
 {

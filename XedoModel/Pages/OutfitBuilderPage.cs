@@ -1,16 +1,10 @@
-﻿using Core.Controls.OutfitBuilder;
-using Core.Controls.OutfitBuilder.Choosers;
-using Core.Controls.OutfitBuilder.Choosers.Accessories;
-using Core.Controls.OutfitBuilder.Choosers.Neckwears;
-using Core.Controls.OutfitBuilder.Choosers.Shirts;
-using Core.Controls.OutfitBuilder.Choosers.Suits;
-using Core.Controls.OutfitBuilder.Choosers.Waistcoats;
-using Core.Controls.OutfitBuilder.Dummy;
-using Core.Controls.OutfitBuilder.Filters;
-using Core.Model.SupportTools;
+﻿using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
+using XedoModel.Controls.OutfitBuilder;
 using XedoModel.Controls.OutfitBuilder.Choosers;
+using XedoModel.Controls.OutfitBuilder.Dummy;
+using XedoModel.Controls.OutfitBuilder.Filters;
 
 namespace XedoModel.Pages
 {

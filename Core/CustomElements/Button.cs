@@ -11,6 +11,11 @@ namespace Core.CustomElements
             _element = element;
         }
 
+        public string Text
+        {
+            get { return _element.Text; }
+        }
+
         public void Click()
         {
             _element.Click();

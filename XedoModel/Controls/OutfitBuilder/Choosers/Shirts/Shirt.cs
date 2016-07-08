@@ -1,7 +1,7 @@
 ﻿using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitBuilder.Choosers.Shirts
+namespace XedoModel.Controls.OutfitBuilder.Choosers.Shirts
 {
     internal class Shirt : ClothingItem
     {

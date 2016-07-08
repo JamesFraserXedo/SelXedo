@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Core.Controls.Collections;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
+using XedoModel.Controls.Collections;
 
 namespace XedoModel.Pages
 {
@@ -36,7 +36,9 @@ namespace XedoModel.Pages
 
         public class Locators
         {
-            public static By OutfitContainer = By.XPath("//div[@class='inspire-item collection-single']");
+            public static By Title = By.CssSelector("[class='page-intro-header']");
+
+            public static By OutfitContainer = By.CssSelector("[class='inspire-item collection-single']");
         }
     }
 }

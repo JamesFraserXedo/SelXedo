@@ -2,7 +2,7 @@
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitSummary
+namespace XedoModel.Controls.OutfitSummary
 {
     public class OutfitSummaryObject : ControlBase
     {

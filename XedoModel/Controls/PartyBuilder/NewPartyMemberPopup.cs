@@ -4,7 +4,7 @@ using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace Core.Controls.PartyBuilder
+namespace XedoModel.Controls.PartyBuilder
 {
     public class NewPartyMemberPopup : ControlBase
     {

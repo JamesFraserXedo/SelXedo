@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using Core.Contexts;
-using Core.Controls.PartyBuilder;
 using Core.Model.SupportTools;
 using TechTalk.SpecFlow;
 using XedoModel.Bases;
+using XedoModel.Controls.PartyBuilder;
 
 namespace XedoTests.Steps
 {

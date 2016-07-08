@@ -2,7 +2,7 @@
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitBuilder.Filters
+namespace XedoModel.Controls.OutfitBuilder.Filters
 {
     public abstract class FilterBase : ControlBase
     {

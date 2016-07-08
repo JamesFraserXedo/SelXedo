@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
-using Core.Controls.QuickTryOn;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
+using XedoModel.Controls.QuickTryOn;
 
 
 namespace XedoModel.Pages

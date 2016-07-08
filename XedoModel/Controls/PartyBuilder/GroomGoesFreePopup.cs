@@ -2,7 +2,7 @@
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.PartyBuilder
+namespace XedoModel.Controls.PartyBuilder
 {
     public class GroomGoesFreePopup : ControlBase
     {

@@ -3,7 +3,7 @@ using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.PaymentConfirmation
+namespace XedoModel.Controls.PaymentConfirmation
 {
     internal class CreditCardDetailsForm : ControlBase
     {

@@ -56,9 +56,7 @@
     <Compile Include="Controls\Collections\CollectionOutfit.cs" />
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
-    <Compile Include="Controls\Common\Header\NavigationBar.cs" />
     <Compile Include="Controls\Common\LoginForm.cs" />
-    <Compile Include="Controls\HomePage\CollectionOutfit.cs" />
     <Compile Include="Controls\HomePage\ExploreTheCollectionsPanel.cs" />
     <Compile Include="Controls\HomePage\HowItWorksPanel.cs" />
     <Compile Include="Controls\HomePage\PerfectMatchSelector.cs" />
