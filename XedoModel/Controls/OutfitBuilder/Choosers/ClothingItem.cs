@@ -3,7 +3,7 @@ using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace Core.Controls.OutfitBuilder.Choosers
+namespace XedoModel.Controls.OutfitBuilder.Choosers
 {
     public abstract class ClothingItem : ControlBase
     {

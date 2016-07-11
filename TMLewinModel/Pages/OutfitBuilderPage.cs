@@ -26,40 +26,31 @@ namespace TMLewinModel.Pages
             get { return new OutfitModel(TestSettings); }
         }
 
-        public CataloguePanel ChooserPanel
+        public CataloguePanel CataloguePanel
         {
-            get { return new ChooserPanel(TestSettings); }
+            get { return new CataloguePanel(TestSettings); }
         }
        
         public override bool IsLoaded()
         {
-            return (!PageLoading && !ChoicePanelLoading && Driver.ElementDisplayed(ChooserPanel.Locators.Container));
+            return (!PageLoading && Driver.ElementDisplayed(CataloguePanel.Locators.Container));
         }
 
         public bool PageLoading
         {
             get { return Driver.ElementDisplayed(Locators.PageLoading); }
         }
-
-        public bool ChoicePanelLoading
-        {
-            get { return ChooserPanel.CurrentChooser.NumberOfItems == 0; }
-        }
-
+        
         public override void SetupState()
         {
             Driver.Navigate().GoToUrl(BaseUrl);
         }
 
-        public ClothingType ActiveClothing
-        {
-            get { return ChooserPanel.CurrentChooser.ClothingType; }
-        }
-
         public class Locators
         {
             public static By PageLoading = By.XPath("[class='outfit-builder ob-loading']");
-            
+            public static By MessageAlert = By.ClassName("message-alerts message-alert");
+
         }
     }
 }
