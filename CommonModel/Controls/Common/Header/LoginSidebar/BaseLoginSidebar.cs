@@ -5,7 +5,7 @@ using OpenQA.Selenium;
 
 namespace CommonModel.Controls.Common.Header.LoginSidebar
 {
-    public class BaseLoginSidebar : ControlBase
+    public abstract class BaseLoginSidebar : ControlBase
     {
         public BaseLoginSidebar(TestSettings testSettings) : base(testSettings)
         {
@@ -51,6 +51,11 @@ namespace CommonModel.Controls.Common.Header.LoginSidebar
             get { return new Button(Driver.FindElement(Container, Locators.DismissSidebarButton)); }
         }
 
+        public IWebElement IncorrectDetailsMessage
+        {
+            get { return Driver.FindElement(Container, Locators.IncorrectDetailsMessage); }
+        }
+
         public class Locators
         {
             public static By Container = By.ClassName("signin-wrapper panel-equalize");
@@ -61,6 +66,7 @@ namespace CommonModel.Controls.Common.Header.LoginSidebar
             public static By LoginButton = By.CssSelector("[data-at='btn-signin']");
             public static By RegisterLink = By.CssSelector("[data-at='lnk-signin-register']");
             public static By DismissSidebarButton = By.CssSelector("[data-at='lnk-signin-close']");
+            public static By IncorrectDetailsMessage = By.ClassName("signin-error-holder message-alerts message-alert");
         }
     }
 }

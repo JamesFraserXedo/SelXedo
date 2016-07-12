@@ -34,10 +34,5 @@ namespace TMLewinModel.Bases
         {
             get { return new Footer(GetTestSettings()); }
         }
-
-        public static NavSidebar NavSidebar
-        {
-            get { return new NavSidebar(GetTestSettings()); }
-        }
     }
 }

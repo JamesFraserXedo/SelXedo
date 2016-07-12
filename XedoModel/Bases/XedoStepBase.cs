@@ -47,11 +47,6 @@ namespace XedoModel.Bases
             get { return new OutfitSummaryPage(GetTestSettings()); }
         }
 
-        public static LoginForm LoginForm
-        {
-            get { return new LoginForm(GetTestSettings()); }
-        }
-
         public static NewMemberRegistrationPage NewMemberRegistrationPage
         {
             get { return new NewMemberRegistrationPage(GetTestSettings()); }

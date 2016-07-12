@@ -56,6 +56,6 @@ namespace Core.Model.TestObjects.Bases
 
         public abstract bool IsLoaded();
 
-        public abstract void SetupState();
+        //public abstract void SetupState();
     }
 }

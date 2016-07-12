@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 
 namespace CommonModel.Controls.Common.Header
 {
-    public class BurgerBarHeader : BaseHeader
+    public abstract class BurgerBarHeader : BaseHeader
     {
         public BurgerBarHeader(TestSettings testSettings) : base(testSettings)
         {

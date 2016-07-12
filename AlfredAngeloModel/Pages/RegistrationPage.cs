@@ -1,7 +1,7 @@
 ﻿using CommonModel.Pages;
 using Core.Model.TestObjects.Bases;
 
-namespace TMLewinModel.Pages
+namespace AlfredAngeloModel.Pages
 {
     public class RegistrationPage : BaseRegistrationPage
     {

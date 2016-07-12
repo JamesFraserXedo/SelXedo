@@ -5,7 +5,7 @@ using OpenQA.Selenium;
 
 namespace CommonModel.Controls.Common.Header.NavigationSidebar
 {
-    public class BaseNavigationSidebar : ControlBase
+    public abstract class BaseNavigationSidebar : ControlBase
     {
         public BaseNavigationSidebar(TestSettings testSettings) : base(testSettings)
         {

@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 
 namespace CommonModel.Controls.Common.Header
 {
-    public class BaseHeader : ControlBase
+    public abstract class BaseHeader : ControlBase
     {
         public BaseHeader(TestSettings testSettings) : base(testSettings)
         {

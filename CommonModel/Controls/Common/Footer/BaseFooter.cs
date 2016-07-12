@@ -5,7 +5,7 @@ using OpenQA.Selenium;
 
 namespace CommonModel.Controls.Common.Footer
 {
-    public class BaseFooter : ControlBase
+    public abstract class BaseFooter : ControlBase
     {
         public BaseFooter(TestSettings testSettings) : base(testSettings)
         {
