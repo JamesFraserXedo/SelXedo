@@ -65,6 +65,11 @@ namespace TMLewinModel.Controls.Common.Header
             get { return new Button(Driver.FindElement(Container, Locators.OrdersLink)); }
         }
 
+        public Link ContactUsLink
+        {
+            get { return new Link(Driver.FindElement(Container, Locators.ContactUsLink)); }
+        }
+
         public IWebElement OrdersCountLabel
         {
             get { return Driver.FindElement(Container, Locators.OrdersCountLabel); }

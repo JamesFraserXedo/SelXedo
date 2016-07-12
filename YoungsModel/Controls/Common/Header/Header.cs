@@ -1,20 +1,19 @@
-﻿using System;
-using CommonModel.Controls.Common.Header;
+﻿using CommonModel.Controls.Common.Header;
 using Core.CustomElements;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace XedoModel.Controls.Common.Header
+namespace YoungsModel.Controls.Common.Header
 {
     public class Header : MenuHeader
     {
-        public Header(TestSettings testSettings) : base(testSettings) 
+        public Header(TestSettings testSettings) : base(testSettings)
         {
         }
 
-        public Link CollectionsLink
+        public Link GroomGoesFreeLink
         {
-            get { return new Link(Driver.FindElement(Locators.CollectionsLink)); }
+            get { return new Link(Driver.FindElement(Locators.GroomGoesFreeLink)); }
         }
 
         public Link PromotionBanner
@@ -24,7 +23,7 @@ namespace XedoModel.Controls.Common.Header
 
         public new class Locators : MenuHeader.Locators
         {
-            public static By CollectionsLink = By.CssSelector("[data-at='lnk-menu-collections']");
+            public static By GroomGoesFreeLink = By.CssSelector("[data-at='lnk-groom-goes-free']");
             public static By PromotionBanner = By.ClassName("free-try-on-message");
         }
     }

@@ -4,17 +4,12 @@ using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace TMLewinModel.Controls.Common.Footer
+namespace YoungsModel.Controls.Common.Footer
 {
     public class Footer : SignupFooter
     {
         public Footer(TestSettings testSettings) : base(testSettings)
         {
-        }
-
-        public IWebElement Logo
-        {
-            get { return Driver.FindElement(Container, Locators.Logo); }
         }
         
         public Link PriceListLink
@@ -25,12 +20,18 @@ namespace TMLewinModel.Controls.Common.Footer
         {
             get { return new Link(Driver.FindElement(Container, Locators.FreeDeliveryAndReturnsLink)); }
         }
+
+        public Link ContactUsLink
+        {
+            get { return new Link(Driver.FindElement(Container, Locators.ContactUsLink)); }
+        }
         
         public new class Locators : SignupFooter.Locators
         {
             public static By Logo = By.CssSelector("[data-at='lnk-footer-logo']");
             public static By PriceListLink = By.CssSelector("[data-at='lnk-footer-pricelist']");
             public static By FreeDeliveryAndReturnsLink = By.CssSelector("[data-at='lnk-footer-menu-freedelivery']");
+            public static By ContactUsLink = By.CssSelector("[data-at='lnk-footer-contact-us']");
         }
     }
 }

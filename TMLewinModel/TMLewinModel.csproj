@@ -79,9 +79,14 @@
     <Compile Include="Controls\OutfitBuilder\Filters\WaistcoatsFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitControls.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitModel.cs" />
+    <Compile Include="Controls\PriceListPage\PriceListItem.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
+    <Compile Include="Pages\FreeDeliveryPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Pages\HowItWorksPage.cs" />
     <Compile Include="Pages\OutfitBuilderPage.cs" />
+    <Compile Include="Pages\OutfitSummaryPage.cs" />
+    <Compile Include="Pages\PriceListPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -90,6 +95,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonModel\CommonModel.csproj">
+      <Project>{a212d5f3-7e08-44b4-b0c1-4a0dcb6f5f37}</Project>
+      <Name>CommonModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{fdd5bc60-d62b-4d2d-a4b6-6ba2f356d510}</Project>
       <Name>Core</Name>

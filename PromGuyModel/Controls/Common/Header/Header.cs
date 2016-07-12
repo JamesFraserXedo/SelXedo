@@ -1,14 +1,13 @@
-﻿using System;
-using CommonModel.Controls.Common.Header;
+﻿using CommonModel.Controls.Common.Header;
 using Core.CustomElements;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace XedoModel.Controls.Common.Header
+namespace PromGuyModel.Controls.Common.Header
 {
     public class Header : MenuHeader
     {
-        public Header(TestSettings testSettings) : base(testSettings) 
+        public Header(TestSettings testSettings) : base(testSettings)
         {
         }
 

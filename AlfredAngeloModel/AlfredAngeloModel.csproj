@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5BDAED54-91F8-4C2E-BEFC-56761A12D005}</ProjectGuid>
+    <ProjectGuid>{DA79977E-8D39-438B-89B8-D79569A5AA85}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PromGuyModel</RootNamespace>
-    <AssemblyName>PromGuyModel</AssemblyName>
+    <RootNamespace>AlfredAngeloModel</RootNamespace>
+    <AssemblyName>AlfredAngeloModel</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -52,14 +52,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bases\PromGuyStepBase.cs" />
+    <Compile Include="Bases\AlfredAngeloStepBase.cs" />
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonModel\CommonModel.csproj">
-      <Project>{A212D5F3-7E08-44B4-B0C1-4A0DCB6F5F37}</Project>
+      <Project>{a212d5f3-7e08-44b4-b0c1-4a0dcb6f5f37}</Project>
       <Name>CommonModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
