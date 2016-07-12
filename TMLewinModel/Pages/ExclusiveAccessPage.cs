@@ -18,11 +18,6 @@ namespace TMLewinModel.Pages
             return Driver.ElementDisplayed(Locators.PasswordInputBox);
         }
 
-        public override void SetupState()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public IWebElement Container
         {
             get { return Driver.FindElement(Locators.Container); }

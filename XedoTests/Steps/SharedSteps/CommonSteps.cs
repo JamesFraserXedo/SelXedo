@@ -39,7 +39,7 @@ namespace XedoTests.Steps.SharedSteps
         public void ThenIAmOnTheXedoAccountRegistrationPage()
         {
 
-            Assert.IsTrue(NewMemberRegistrationPage.IsLoaded());
+            Assert.IsTrue(RegistrationPage.IsLoaded());
             Assert.AreEqual("https://uat-xedo-usa.azurewebsites.net/Account/PartyMemberRegistration",Driver.Url);
         }
     }

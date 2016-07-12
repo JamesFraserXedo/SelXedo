@@ -53,12 +53,7 @@ namespace XedoModel.Pages
         {
             return InfoForm.Container.Displayed || TryOnPopup.Container.Displayed;
         }
-
-        public override void SetupState()
-        {
-            
-        }
-
+        
         public void AgreeToTermsAndConditions()
         {
             if (!TermsAndConditionsCheckbox.Selected)

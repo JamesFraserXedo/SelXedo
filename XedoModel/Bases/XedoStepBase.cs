@@ -47,9 +47,9 @@ namespace XedoModel.Bases
             get { return new OutfitSummaryPage(GetTestSettings()); }
         }
 
-        public static NewMemberRegistrationPage NewMemberRegistrationPage
+        public static RegistrationPage RegistrationPage
         {
-            get { return new NewMemberRegistrationPage(GetTestSettings()); }
+            get { return new RegistrationPage(GetTestSettings()); }
         }
 
         public static Header Header
@@ -62,6 +62,11 @@ namespace XedoModel.Bases
             get { return new Footer(GetTestSettings()); }
         }
 
+        public static LoginSidebar LoginSidebar
+        {
+            get { return new LoginSidebar(GetTestSettings()); }
+        }
+        
         public static SelectWeddingDatePage SelectWeddingDatePage
         {
             get { return new SelectWeddingDatePage(GetTestSettings()); }

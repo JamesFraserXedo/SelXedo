@@ -6,7 +6,7 @@ namespace CommonModel.Controls.Common.Header
 {
     public abstract class BurgerBarHeader : BaseHeader
     {
-        public BurgerBarHeader(TestSettings testSettings) : base(testSettings)
+        protected BurgerBarHeader(TestSettings testSettings) : base(testSettings)
         {
         }
 

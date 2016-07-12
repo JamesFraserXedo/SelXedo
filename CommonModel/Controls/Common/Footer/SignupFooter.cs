@@ -7,7 +7,7 @@ namespace CommonModel.Controls.Common.Footer
 {
     public abstract class SignupFooter : BaseFooter
     {
-        public SignupFooter(TestSettings testSettings) : base(testSettings)
+        protected SignupFooter(TestSettings testSettings) : base(testSettings)
         {
         }
 

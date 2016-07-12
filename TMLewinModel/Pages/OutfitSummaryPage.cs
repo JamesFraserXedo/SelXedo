@@ -15,11 +15,6 @@ namespace TMLewinModel.Pages
             throw new NotImplementedException();
         }
 
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
         public class Locators
         {
             public static By EditThisOutfitButton = By.ClassName("button secondary-cta product-type-edit");

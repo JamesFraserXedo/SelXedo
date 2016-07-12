@@ -1,4 +1,5 @@
 ﻿using System;
+using CommonModel.Controls.Common.Header;
 using Core.Contexts;
 using Core.Model.SupportTools;
 using NUnit.Framework;
@@ -24,39 +25,39 @@ namespace XedoTests.Steps.SharedSteps
             CurrentContext.Common.CreatedMemberEmail = email;
             CurrentContext.Common.CreatedMemberPassword = password;
 
-            LoginForm.Expand();
-            LoginForm.RegisterLink.Click();
-            NewMemberRegistrationPage.FirstNameInputBox.SendKeys("Selenium");
-            NewMemberRegistrationPage.LastNameInputBox.SendKeys("Tester");
-            NewMemberRegistrationPage.EmailAddressInputBox.SendKeys(email);
-            NewMemberRegistrationPage.PasswordInputBox.SendKeys("Password");
-            NewMemberRegistrationPage.ConfirmPasswordInputBox.SendKeys("Password");
-            NewMemberRegistrationPage.CompleteRegistrationButton.Click();
+            Header.SignInButton.Click();
+            LoginSidebar.RegisterLink.Click();
+            RegistrationPage.FirstNameInputbox.Input("Selenium");
+            RegistrationPage.LastNameInputbox.Input("Tester");
+            RegistrationPage.EmailInputbox.Input(email);
+            RegistrationPage.PasswordInputbox.Input("Password");
+            RegistrationPage.PasswordConfirmationInputbox.Input("Password");
+            RegistrationPage.CompleteRegistrationButton.Click();
             //Should automatically redirect to original page
         }
 
         [When(@"I attempt to sign into the via the sidebar with username ""(.*)"" and password ""(.*)""")]
         public void WhenIAttemptToSignIntoTheViaTheSidebarWithUsernameAndPassword(string username, string password)
         {
-            LoginForm.Expand();
+            Header.SignInButton.Click();
 
-            LoginForm.InputEmail(username);
-            LoginForm.InputPassword(password);
-            LoginForm.Submit();
+            LoginSidebar.EmailInputbox.Input(username);
+            LoginSidebar.PasswordInputbox.Input(password);
+            LoginSidebar.LoginButton.Click();
         }
 
         [Then(@"I should be logged in")]
         public void ThenIShouldBeLoggedIn()
         {
-            Assert.IsTrue(Header.FavouritesButton.Displayed);
-            Assert.IsTrue(Header.OrdersButton.Displayed);
+            Assert.IsTrue(Header.FavouritesLink.Displayed);
+            Assert.IsTrue(Header.OrdersLink.Displayed);
         }
 
         [Then(@"I should be not logged in")]
         public void ThenIShouldBeNotLoggedIn()
         {
-            Assert.IsFalse(Driver.ElementDisplayed(Header.Locators.FavouritesButton));
-            Assert.IsFalse(Driver.ElementDisplayed(Header.Locators.OrdersButton));
+            Assert.IsFalse(Driver.ElementDisplayed(Header.Locators.FavouritesLink));
+            Assert.IsFalse(Driver.ElementDisplayed(Header.Locators.OrdersLink));
         }
 
     }

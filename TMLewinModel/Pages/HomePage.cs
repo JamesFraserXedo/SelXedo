@@ -19,12 +19,7 @@ namespace TMLewinModel.Pages
         {
             return Driver.ElementDisplayed(Locators.Features);
         }
-
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public Button GetStartedButton
         {
             get { return new Button(Driver.FindElement(Locators.GetStartedButton)); }

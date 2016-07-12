@@ -36,12 +36,7 @@ namespace XedoModel.Pages.PaymentProcess
         {
             return Driver.ElementDisplayed(Locators.Container);
         }
-
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public void ContinueToBillingAddress()
         {
             ContinueToBillingAddressButton.Click();;

@@ -31,11 +31,6 @@ namespace XedoModel.Pages
             return Driver.ElementDisplayed(Locators.HpHeroImage);
         }
 
-        public override void SetupState()
-        {
-            Driver.Navigate().GoToUrl(BaseUrl);
-        }
-
         public PerfectMatchSelector PerfectMatchSelector
         {
             get { return new PerfectMatchSelector(TestSettings); }

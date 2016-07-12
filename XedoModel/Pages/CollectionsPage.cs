@@ -28,12 +28,7 @@ namespace XedoModel.Pages
         {
             return Driver.ElementDisplayed(Locators.OutfitContainer);
         }
-
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public class Locators
         {
             public static By Title = By.CssSelector("[class='page-intro-header']");

@@ -20,10 +20,5 @@ namespace XedoModel.Pages
         {
             return Driver.ElementDisplayed(PaymentForm.Locators.Container);
         }
-
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

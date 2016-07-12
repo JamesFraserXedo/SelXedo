@@ -14,8 +14,8 @@ namespace XedoTests.Steps.SharedSteps
         [When(@"I click the register now link in the sidebar")]
         public void WhenIClickTheRegisterNowLinkInTheSidebar()
         {
-            Header.OpenLoginPanelButton.Click();
-            LoginForm.RegisterLink.Click();
+            Header.SignInButton.Click();
+            LoginSidebar.RegisterLink.Click();
         }
     }
 }

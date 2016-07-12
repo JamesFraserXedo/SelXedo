@@ -20,12 +20,7 @@ namespace XedoModel.Pages.PaymentProcess
         {
             return Driver.ElementDisplayed(Locators.Content);
         }
-
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public class Locators
         {
             public static By Content = By.XPath("//*[contains(@class, 'content-section-holder')]");

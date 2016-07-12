@@ -6,7 +6,7 @@ namespace CommonModel.Controls.Common.Header
 {
     public abstract class BaseHeader : ControlBase
     {
-        public BaseHeader(TestSettings testSettings) : base(testSettings)
+        protected BaseHeader(TestSettings testSettings) : base(testSettings)
         {
         }
 

@@ -15,13 +15,13 @@ namespace XedoTests.Steps.SharedSteps
         [When(@"I click the login button in the header")]
         public void WhenIClickTheLoginButtonInTheHeader()
         {
-            Header.OpenLoginPanelButton.Click();
+            Header.SignInButton.Click();
         }
 
         [Then(@"the login panel should be open")]
         public void ThenTheLoginPanelShouldBeOpen()
         {
-            Assert.IsTrue(LoginForm.Expanded);
+            Assert.IsTrue(LoginSidebar.Expanded);
         }
     }
 }

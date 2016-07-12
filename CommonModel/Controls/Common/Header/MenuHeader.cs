@@ -6,7 +6,7 @@ namespace CommonModel.Controls.Common.Header
 {
     public abstract class MenuHeader : BaseHeader
     {
-        public MenuHeader(TestSettings testSettings) : base(testSettings)
+        protected MenuHeader(TestSettings testSettings) : base(testSettings)
         {
         }
 

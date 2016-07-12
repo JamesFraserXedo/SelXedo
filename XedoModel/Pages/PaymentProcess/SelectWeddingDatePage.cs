@@ -26,11 +26,6 @@ namespace XedoModel.Pages.PaymentProcess
             return Driver.ElementDisplayed(Locators.MainContent);
         }
 
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
         public void ConfirmWeddingDate()
         {
             ConfirmWeddingDateButton.Click();

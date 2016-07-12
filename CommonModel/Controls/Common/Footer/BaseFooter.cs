@@ -7,7 +7,7 @@ namespace CommonModel.Controls.Common.Footer
 {
     public abstract class BaseFooter : ControlBase
     {
-        public BaseFooter(TestSettings testSettings) : base(testSettings)
+        protected BaseFooter(TestSettings testSettings) : base(testSettings)
         {
         }
 

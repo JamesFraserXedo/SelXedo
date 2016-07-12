@@ -133,6 +133,10 @@
     <Compile Include="Steps\SharedSteps\SidebarSteps.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonModel\CommonModel.csproj">
+      <Project>{A212D5F3-7E08-44B4-B0C1-4A0DCB6F5F37}</Project>
+      <Name>CommonModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{FDD5BC60-D62B-4D2D-A4B6-6BA2F356D510}</Project>
       <Name>Core</Name>

@@ -22,11 +22,6 @@ namespace TMLewinModel.Pages
             throw new NotImplementedException();
         }
 
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
         public Button GetStartedButton
         {
             get { return new Button(Driver.FindElement(Locators.GetStartedButton)); }

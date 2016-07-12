@@ -66,12 +66,7 @@ namespace XedoModel.Pages
         {
             return !Driver.ElementDisplayed(Locators.IsLoadingSpinner);
         }
-
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public class Locators
         {
             public static By CustomiseTuxButton = By.XPath("//div[contains(@class, 'customize-look-holder')]/a");

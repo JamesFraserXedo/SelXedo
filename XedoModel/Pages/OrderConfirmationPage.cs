@@ -41,11 +41,6 @@ namespace XedoModel.Pages
             return Driver.ElementDisplayed(Locators.SageContainer);
         }
 
-        public override void SetupState()
-        {
-            throw new NotImplementedException();
-        }
-
         public class Locators
         {
             public static By SageContainer = By.XPath("//*[@class='sage-confirmation-holder']");

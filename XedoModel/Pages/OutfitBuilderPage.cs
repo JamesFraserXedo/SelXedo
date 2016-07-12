@@ -58,12 +58,7 @@ namespace XedoModel.Pages
                 return Driver.ElementDisplayed(Locators.ChoicePanelLoading);
             }
         }
-
-        public override void SetupState()
-        {
-            Driver.Navigate().GoToUrl(BaseUrl);
-        }
-
+        
         public ClothingType ActiveClothing
         {
             get { return ChooserPanel.CurrentChooser.ClothingType; }

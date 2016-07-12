@@ -21,6 +21,11 @@ namespace Core.CustomElements
             get { return _element.GetAttribute("href"); }
         }
 
+        public bool Displayed
+        {
+            get { return _element.Displayed; }
+        }
+
         public void Click()
         {
             _element.Click();

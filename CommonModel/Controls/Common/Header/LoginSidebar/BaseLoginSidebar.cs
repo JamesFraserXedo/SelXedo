@@ -7,7 +7,7 @@ namespace CommonModel.Controls.Common.Header.LoginSidebar
 {
     public abstract class BaseLoginSidebar : ControlBase
     {
-        public BaseLoginSidebar(TestSettings testSettings) : base(testSettings)
+        protected BaseLoginSidebar(TestSettings testSettings) : base(testSettings)
         {
         }
 
@@ -54,6 +54,11 @@ namespace CommonModel.Controls.Common.Header.LoginSidebar
         public IWebElement IncorrectDetailsMessage
         {
             get { return Driver.FindElement(Container, Locators.IncorrectDetailsMessage); }
+        }
+
+        public bool Expanded
+        {
+            get { return Driver.ElementDisplayed(Locators.Container); }
         }
 
         public class Locators

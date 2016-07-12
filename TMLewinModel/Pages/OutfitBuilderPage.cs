@@ -41,11 +41,6 @@ namespace TMLewinModel.Pages
             get { return Driver.ElementDisplayed(Locators.PageLoading); }
         }
         
-        public override void SetupState()
-        {
-            Driver.Navigate().GoToUrl(BaseUrl);
-        }
-
         public class Locators
         {
             public static By PageLoading = By.XPath("[class='outfit-builder ob-loading']");

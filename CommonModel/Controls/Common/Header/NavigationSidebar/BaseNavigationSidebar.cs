@@ -7,7 +7,7 @@ namespace CommonModel.Controls.Common.Header.NavigationSidebar
 {
     public abstract class BaseNavigationSidebar : ControlBase
     {
-        public BaseNavigationSidebar(TestSettings testSettings) : base(testSettings)
+        protected BaseNavigationSidebar(TestSettings testSettings) : base(testSettings)
         {
         }
 
