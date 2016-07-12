@@ -1,7 +1,7 @@
 ﻿using CommonModel.Controls.Common.Header.LoginSidebar;
 using Core.Model.TestObjects.Bases;
 
-namespace TMLewinModel.Controls.Common.Header
+namespace AlfredAngeloModel.Controls.Common.Header
 {
     public class LoginSidebar : BaseLoginSidebar
     {

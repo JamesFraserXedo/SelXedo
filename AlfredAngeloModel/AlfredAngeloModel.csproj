@@ -55,6 +55,7 @@
     <Compile Include="Bases\AlfredAngeloStepBase.cs" />
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
+    <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
