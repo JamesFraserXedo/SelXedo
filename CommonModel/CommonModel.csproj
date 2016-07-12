@@ -54,6 +54,7 @@
     <Compile Include="Controls\Common\Header\BurgerBarHeader.cs" />
     <Compile Include="Controls\Common\Header\LoginSidebar\BaseLoginSidebar.cs" />
     <Compile Include="Controls\Common\Header\MenuHeader.cs" />
+    <Compile Include="Controls\Common\Header\NavigationSidebar\BaseNavigationSidebar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

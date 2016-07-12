@@ -56,7 +56,7 @@
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
     <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
-    <Compile Include="Controls\Common\Header\NavSidebar.cs" />
+    <Compile Include="Controls\Common\Header\NavigationSidebar.cs" />
     <Compile Include="Controls\HomePage\HomePageFeature.cs" />
     <Compile Include="Controls\HomePage\RecommendedStyle.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel.cs" />

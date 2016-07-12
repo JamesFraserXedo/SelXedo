@@ -15,45 +15,45 @@ namespace CommonModel.Controls.Common.Header
             get { return new Button(Driver.FindElement(Locators.SignInButton)); }
         }
 
-        public Link Name
+        public Link NameLabel
         {
-            get { return new Link(Driver.FindElement(Locators.Name)); }
+            get { return new Link(Driver.FindElement(Locators.NameLabel)); }
         }
 
-        public Link Orders
+        public Link OrdersLink
         {
-            get { return new Link(Driver.FindElement(Locators.Orders)); }
+            get { return new Link(Driver.FindElement(Locators.OrdersLink)); }
         }
 
-        public Link OrdersCount
+        public Link OrdersCountLabel
         {
-            get { return new Link(Driver.FindElement(Locators.OrdersCount)); }
+            get { return new Link(Driver.FindElement(Locators.OrdersCountLabel)); }
         }
 
-        public Link Favourites
+        public Link FavouritesLink
         {
-            get { return new Link(Driver.FindElement(Locators.Favourites)); }
+            get { return new Link(Driver.FindElement(Locators.FavouritesLink)); }
         }
 
-        public Link FavouritesCount
+        public Link FavouritesCountLabel
         {
-            get { return new Link(Driver.FindElement(Locators.FavouritesCount)); }
+            get { return new Link(Driver.FindElement(Locators.FavouritesCountLabel)); }
         }
 
-        public Link Logout
+        public Link LogoutLink
         {
-            get { return new Link(Driver.FindElement(Locators.Logout)); }
+            get { return new Link(Driver.FindElement(Locators.LogoutLink)); }
         }
 
         public class Locators
         {
             public static By SignInButton = By.CssSelector("[data-at='lnk-header-signin']");
-            public static By Name = By.CssSelector("[class='person-id']");
-            public static By Orders = By.CssSelector("[data-at='lnk-header-orders']");
-            public static By OrdersCount = By.CssSelector("[data-at='lnk-header-orders']>span");
-            public static By Favourites = By.CssSelector("[data-at='lnk-header-favourites']");
-            public static By FavouritesCount = By.CssSelector("[data-at='lnk-header-favourites']>span");
-            public static By Logout = By.CssSelector("[data-at='lnk-header-logout']");
+            public static By NameLabel = By.CssSelector("[class='person-id']");
+            public static By OrdersLink = By.CssSelector("[data-at='lnk-header-orders']");
+            public static By OrdersCountLabel = By.CssSelector("[data-at='lnk-header-orders']>span");
+            public static By FavouritesLink = By.CssSelector("[data-at='lnk-header-favourites']");
+            public static By FavouritesCountLabel = By.CssSelector("[data-at='lnk-header-favourites']>span");
+            public static By LogoutLink = By.CssSelector("[data-at='lnk-header-logout']");
         }
     }
 }
