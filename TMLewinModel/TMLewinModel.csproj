@@ -60,7 +60,9 @@
     <Compile Include="Controls\HomePage\HomePageFeature.cs" />
     <Compile Include="Controls\HomePage\RecommendedStyle.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\FilterPanel.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\NeckwearFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\SuitFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\WaistcoatFilter.cs" />
     <Compile Include="Controls\PriceListPage\PriceListItem.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\FreeDeliveryPage.cs" />

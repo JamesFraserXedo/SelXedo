@@ -61,7 +61,9 @@
     <Compile Include="Controls\HomePage\HowItWorksPanel.cs" />
     <Compile Include="Controls\HomePage\PerfectMatchSelector.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\FilterPanel.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\NeckwearFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\SuitFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\WaistcoatFilter.cs" />
     <Compile Include="Controls\OutfitSummary\OutfitSummaryObject.cs" />
     <Compile Include="Controls\PartyBuilder\GroomGoesFreePopup.cs" />
     <Compile Include="Controls\PartyBuilder\NewPartyMemberPopup.cs" />

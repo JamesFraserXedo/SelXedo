@@ -64,6 +64,9 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Suits\BaseSuitsFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Suits\UkSuitFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Suits\UsSuitFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Waistcoat\BaseWaistcoatFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Waistcoat\UkWaistcoatFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Waistcoat\UsWaistcoatFilter.cs" />
     <Compile Include="Pages\BaseOutfitBuilderPage.cs" />
     <Compile Include="Pages\BaseRegistrationPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
