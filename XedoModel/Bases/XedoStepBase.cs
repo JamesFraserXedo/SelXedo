@@ -31,12 +31,7 @@ namespace XedoModel.Bases
         {
             get { return new QuickTryOnPage(GetTestSettings()); }
         }
-
-        public static OutfitBuilderPage OutfitBuilderPage
-        {
-            get { return new OutfitBuilderPage(GetTestSettings()); }
-        }
-
+        
         public static CollectionsPage CollectionsPage
         {
             get { return new CollectionsPage(GetTestSettings()); }

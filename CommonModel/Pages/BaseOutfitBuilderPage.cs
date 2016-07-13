@@ -15,7 +15,7 @@ namespace CommonModel.Pages
         }
 
         public abstract BaseFilterPanel BaseFilterPanel { get; protected set; }
-        public abstract BaseCataloguePanel BaseCataloguePanel { get; protected set; }
+        //public abstract BaseCataloguePanel BaseCataloguePanel { get; protected set; }
         
     }
 }

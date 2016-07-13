@@ -83,7 +83,6 @@
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\OrderConfirmationPage.cs" />
-    <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />
     <Compile Include="Pages\PaymentConfirmationPage.cs" />
     <Compile Include="Pages\PaymentProcess\BillingAddressPage.cs" />

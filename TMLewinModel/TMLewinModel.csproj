@@ -70,7 +70,6 @@
     <Compile Include="Pages\FreeDeliveryPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\HowItWorksPage.cs" />
-    <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />
     <Compile Include="Pages\PriceListPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />

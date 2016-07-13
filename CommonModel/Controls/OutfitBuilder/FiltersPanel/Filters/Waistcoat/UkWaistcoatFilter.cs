@@ -13,7 +13,7 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Waistcoat
 
         public override IWebElement Container
         {
-            get { Driver.FindElement(Locators.Container); }
+            get { return Driver.FindElement(Locators.Container); }
         }
 
         public ColourSelector ColourGrey

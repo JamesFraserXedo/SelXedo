@@ -3,7 +3,6 @@ using Core.Contexts;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 using XedoModel.Bases;
-using XedoModel.Controls.OutfitBuilder.Filters;
 
 namespace XedoTests.Steps
 {
@@ -13,6 +12,8 @@ namespace XedoTests.Steps
         public OutfitBuilderSteps(Context context) : base(context)
         {
         }
+        /*
+        
 
         [Given(@"I am on the outfit builder page")]
         public void GivenIAmOnTheOutfitBuilderPage()
@@ -30,7 +31,7 @@ namespace XedoTests.Steps
                 stopwatch.Restart();
             }
 
-            OutfitBuilderPage.WaitUntilLoaded();
+            //OutfitBuilderPage.WaitUntilLoaded();
 
             stopwatch.Stop();
             CurrentContext.LoadTime.PageContentLoadTime = stopwatch.ElapsedMilliseconds;
@@ -89,5 +90,7 @@ namespace XedoTests.Steps
             OutfitSummaryPage.AddToOrderButton.Click();
         }
 
+    
+         */
     }
 }
