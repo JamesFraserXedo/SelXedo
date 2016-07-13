@@ -21,7 +21,7 @@ namespace CommonModel.Controls.Common.Footer
             get { return new Button(Driver.FindElement(Container, Locators.SignUpSubmitButton)); }
         }
 
-        public class Locators
+        public new class Locators : BaseFooter.Locators
         {
             public static By SignUpEmailInputBox = By.CssSelector("[data-at='txt-footer-mailing']");
             public static By SignUpSubmitButton = By.CssSelector("[data-at='btn-footer-mailing']");
