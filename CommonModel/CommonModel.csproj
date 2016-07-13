@@ -58,6 +58,9 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\BaseFilterPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\BaseExpandableFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\BaseFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Neckwear\BaseNeckwearFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Neckwear\UkNeckwearFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Neckwear\UsNeckwearFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Suits\BaseSuitsFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Suits\UkSuitFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Suits\UsSuitFilter.cs" />

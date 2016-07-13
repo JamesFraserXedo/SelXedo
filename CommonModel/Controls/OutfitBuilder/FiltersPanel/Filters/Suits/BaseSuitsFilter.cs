@@ -18,7 +18,5 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits
         {
             public static By Container = By.Id("filters-suits");
         }
-
-
     }
 }

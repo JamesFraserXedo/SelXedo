@@ -1,9 +1,9 @@
 ﻿using CommonModel.Controls.OutfitBuilder.FiltersPanel;
 using CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits;
 using Core.Model.TestObjects.Bases;
-using PromGuyModel.Controls.OutfitBuilder.FiltersPanel.Filters;
+using TMLewinModel.Controls.OutfitBuilder.FiltersPanel.Filters;
 
-namespace PromGuyModel.Controls.OutfitBuilder.FiltersPanel
+namespace TMLewinModel.Controls.OutfitBuilder.FiltersPanel
 {
     public class FilterPanel : BaseFilterPanel
     {
