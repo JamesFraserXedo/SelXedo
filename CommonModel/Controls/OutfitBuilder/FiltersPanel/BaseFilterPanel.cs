@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters;
+﻿using CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Accessories;
+using CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Neckwear;
+using CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Shirts;
 using CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits;
+using CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Waistcoat;
 using Core.Model.TestObjects.Bases;
 
 namespace CommonModel.Controls.OutfitBuilder.FiltersPanel
@@ -19,9 +17,9 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel
 
         public abstract BaseNeckwearFilter NeckwearFilter { get; }
 
-        public abstract BaseWaistcoatsFilter WaistcoatsFilter { get; }
+        public abstract BaseWaistcoatFilter WaistcoatsFilter { get; }
 
-        public abstract BaseShirtsFilter ShirtsFilter { get; }
+        public abstract BaseShirtFilter ShirtsFilter { get; }
 
         public abstract BaseAccessoriesFilter AccessoriesFilter { get; }
     }
