@@ -2,9 +2,7 @@
 using Core.Contexts;
 using Core.StepsSupport;
 using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Configuration;
 using TMLewinModel.Bases;
-using TMLewinModel.Pages;
 
 namespace TMLewinTests.Steps
 {
