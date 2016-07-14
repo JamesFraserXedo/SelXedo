@@ -9,33 +9,33 @@ using PromGuyModel.Controls.OutfitBuilder.FiltersPanel.Filters;
 
 namespace PromGuyModel.Controls.OutfitBuilder.FiltersPanel
 {
-    public class FilterPanel : BaseFilterPanel
+    public class FilterPanel : ControlBase
     {
         public FilterPanel(TestSettings testSettings) : base(testSettings)
         {
         }
 
-        public override BaseSuitsFilter SuitsFilter
+        public SuitFilter SuitsFilter
         {
             get { return new SuitFilter(TestSettings); }
         }
 
-        public override BaseNeckwearFilter NeckwearFilter
+        public NeckwearFilter NeckwearFilter
         {
             get { return new NeckwearFilter(TestSettings); }
         }
 
-        public override BaseWaistcoatFilter WaistcoatsFilter
+        public WaistcoatFilter WaistcoatsFilter
         {
             get { return new WaistcoatFilter(TestSettings); }
         }
 
-        public override BaseShirtFilter ShirtsFilter
+        public ShirtsFilter ShirtsFilter
         {
             get { return new ShirtsFilter(TestSettings); }
         }
 
-        public override BaseAccessoriesFilter AccessoriesFilter
+        public AccessoriesFilter AccessoriesFilter
         {
             get { return new AccessoriesFilter(TestSettings); }
         }

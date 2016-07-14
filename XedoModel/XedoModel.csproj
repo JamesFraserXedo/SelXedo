@@ -60,6 +60,12 @@
     <Compile Include="Controls\HomePage\ExploreTheCollectionsPanel.cs" />
     <Compile Include="Controls\HomePage\HowItWorksPanel.cs" />
     <Compile Include="Controls\HomePage\PerfectMatchSelector.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\CataloguePanel.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\ShirtsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\SuitsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\WaistcoatsCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\FilterPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\AccessoriesFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\NeckwearFilter.cs" />

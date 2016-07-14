@@ -59,6 +59,12 @@
     <Compile Include="Controls\Common\Header\NavigationSidebar.cs" />
     <Compile Include="Controls\HomePage\HomePageFeature.cs" />
     <Compile Include="Controls\HomePage\RecommendedStyle.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\CataloguePanel.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\ShirtsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\SuitsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\WaistcoatsCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\FilterPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\AccessoriesFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\NeckwearFilter.cs" />
