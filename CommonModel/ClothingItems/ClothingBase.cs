@@ -55,9 +55,9 @@ namespace CommonModel.ClothingItems
 
         protected class Locators
         {
-            public static By NameLabel = By.ClassName("item-text-link");
-            public static By Selected = By.CssSelector("span");
-            public static By Details = By.CssSelector("a");
+            public static readonly By NameLabel = By.ClassName("item-text-link");
+            public static readonly By Selected = By.CssSelector("span");
+            public static readonly By Details = By.CssSelector("a");
         }
     }
 }

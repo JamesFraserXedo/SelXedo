@@ -122,16 +122,16 @@ namespace XedoModel.Controls.QuickTryOn
 
         public class Locators
         {
-            public static By Container = By.XPath("//div[contains(@class, 'try-on-step-wrap colour-selection-wrap')]");
-            public static By ColourFamilyChooser = By.XPath("//ul[@class='colour-family-selection']");
-            public static By ColourChooser = By.XPath("//*[@class='colour-selection-row']");
-            public static By FirstChoiceContainer = By.XPath("//div[contains(@class, 'colour-selected-panel first-selection')]");
-            public static By SecondChoiceContainer = By.XPath("//div[contains(@class, 'colour-selected-panel second-selection')]");
-            public static By SelectedColourFamilyBox = By.XPath("//li[@class='colour-family-item selected']/a");
-            public static By SelectedColourBox = By.XPath("//a[@class='colour-item-link darkColour selected']");
-            public static By ColourFamilyChoices = By.XPath("//a[@class='colour-family-link darkColour']");
-            public static By ColourChoices = By.XPath("//a[@class='colour-item-link darkColour']");
-            public static By ColourLimitReachedMessage = By.Id("maxColorSelectedMessage");
+            public static readonly By Container = By.XPath("//div[contains(@class, 'try-on-step-wrap colour-selection-wrap')]");
+            public static readonly By ColourFamilyChooser = By.XPath("//ul[@class='colour-family-selection']");
+            public static readonly By ColourChooser = By.XPath("//*[@class='colour-selection-row']");
+            public static readonly By FirstChoiceContainer = By.XPath("//div[contains(@class, 'colour-selected-panel first-selection')]");
+            public static readonly By SecondChoiceContainer = By.XPath("//div[contains(@class, 'colour-selected-panel second-selection')]");
+            public static readonly By SelectedColourFamilyBox = By.XPath("//li[@class='colour-family-item selected']/a");
+            public static readonly By SelectedColourBox = By.XPath("//a[@class='colour-item-link darkColour selected']");
+            public static readonly By ColourFamilyChoices = By.XPath("//a[@class='colour-family-link darkColour']");
+            public static readonly By ColourChoices = By.XPath("//a[@class='colour-item-link darkColour']");
+            public static readonly By ColourLimitReachedMessage = By.Id("maxColorSelectedMessage");
         }
     }
 }

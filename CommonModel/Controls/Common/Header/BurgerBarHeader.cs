@@ -22,8 +22,8 @@ namespace CommonModel.Controls.Common.Header
 
         public new class Locators : BaseHeader.Locators
         {
-            public static By HeaderImage = By.CssSelector("[data-at='lnk-header-image']");
-            public static By BurgerMenu = By.CssSelector("[data-at='lnk-main-menu']");
+            public static readonly By HeaderImage = By.CssSelector("[data-at='lnk-header-image']");
+            public static readonly By BurgerMenu = By.CssSelector("[data-at='lnk-main-menu']");
         }
     }
 }

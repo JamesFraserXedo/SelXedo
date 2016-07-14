@@ -24,8 +24,8 @@ namespace XedoModel.Controls.Common.Header
 
         public new class Locators : MenuHeader.Locators
         {
-            public static By CollectionsLink = By.CssSelector("[data-at='lnk-menu-collections']");
-            public static By PromotionBanner = By.ClassName("free-try-on-message");
+            public static readonly By CollectionsLink = By.CssSelector("[data-at='lnk-menu-collections']");
+            public static readonly By PromotionBanner = By.ClassName("free-try-on-message");
         }
     }
 }

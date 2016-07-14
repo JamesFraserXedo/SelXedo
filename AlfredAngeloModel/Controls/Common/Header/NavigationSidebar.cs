@@ -24,8 +24,8 @@ namespace AlfredAngeloModel.Controls.Common.Header
 
         public new class Locators : BaseNavigationSidebar.Locators
         {
-            public static By LogoButton = By.CssSelector("[data-at='lnk-menu-logo']");
-            public static By InspireMeButton = By.CssSelector("[data-at='lnk-menu-inspired']");
+            public static readonly By LogoButton = By.CssSelector("[data-at='lnk-menu-logo']");
+            public static readonly By InspireMeButton = By.CssSelector("[data-at='lnk-menu-inspired']");
         }
     }
 }

@@ -33,10 +33,10 @@ namespace XedoModel.Controls.PaymentConfirmation
 
         public class Locators
         {
-            public static By Container = By.XPath(".//*[@id='nab-form']//div[@class='container']");
-            public static By CreditCardDetailsForm = By.XPath("//div[@class='form-default-holder'][1]");
-            public static By BillingAddressForm = By.XPath("//div[@class='form-default-holder'][2]");
-            public static By PaymentSummary = By.XPath("//div[@class='form-default-holder'][3]");
+            public static readonly By Container = By.XPath(".//*[@id='nab-form']//div[@class='container']");
+            public static readonly By CreditCardDetailsForm = By.XPath("//div[@class='form-default-holder'][1]");
+            public static readonly By BillingAddressForm = By.XPath("//div[@class='form-default-holder'][2]");
+            public static readonly By PaymentSummary = By.XPath("//div[@class='form-default-holder'][3]");
         }
     }
 }

@@ -58,15 +58,15 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Waistcoat
 
         public new class Locators : BaseWaistcoatFilter.Locators
         {
-            public static By Container = By.Id("filters-waistcoat-cummerbund");
-            public static By ColourTan = By.CssSelector("[data-colour-desc='Tan']");
-            public static By ColourRed = By.CssSelector("[data-colour-desc='Red']");
-            public static By ColourYellow = By.CssSelector("[data-colour-desc='Yellow']");
-            public static By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
-            public static By ColourPurple = By.CssSelector("[data-colour-desc='Purple']");
-            public static By ColourPink = By.CssSelector("[data-colour-desc='Pink']");
-            public static By ColourWhite = By.CssSelector("[data-colour-desc='White']");
-            public static By ColourGray = By.CssSelector("[data-colour-desc='Gray']");
+            public static readonly By Container = By.Id("filters-waistcoat-cummerbund");
+            public static readonly By ColourTan = By.CssSelector("[data-colour-desc='Tan']");
+            public static readonly By ColourRed = By.CssSelector("[data-colour-desc='Red']");
+            public static readonly By ColourYellow = By.CssSelector("[data-colour-desc='Yellow']");
+            public static readonly By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
+            public static readonly By ColourPurple = By.CssSelector("[data-colour-desc='Purple']");
+            public static readonly By ColourPink = By.CssSelector("[data-colour-desc='Pink']");
+            public static readonly By ColourWhite = By.CssSelector("[data-colour-desc='White']");
+            public static readonly By ColourGray = By.CssSelector("[data-colour-desc='Gray']");
         }
     }
 }

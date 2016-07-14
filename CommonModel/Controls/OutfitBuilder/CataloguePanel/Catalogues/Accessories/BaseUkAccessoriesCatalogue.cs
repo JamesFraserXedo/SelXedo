@@ -23,7 +23,7 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues.Accessori
 
         public new class Locators : BaseUkCatalogue.Locators
         {
-            public static By Accessories = By.ClassName("item accessory");
+            public static readonly By Accessories = By.ClassName("item accessory");
         }
     }
 }

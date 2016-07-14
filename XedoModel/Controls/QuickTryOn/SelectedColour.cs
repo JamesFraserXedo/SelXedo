@@ -48,9 +48,9 @@ namespace XedoModel.Controls.QuickTryOn
 
         public class Locators
         {
-            public static By ColourSample = By.XPath(".//span[@class='colour-sample']");
-            public static By RemoveColourButton = By.XPath(".//a[@class='remove-colour-sample']");
-            public static By NameLabel = By.XPath(".//span[@class='colour-sample-name']");
+            public static readonly By ColourSample = By.XPath(".//span[@class='colour-sample']");
+            public static readonly By RemoveColourButton = By.XPath(".//a[@class='remove-colour-sample']");
+            public static readonly By NameLabel = By.XPath(".//span[@class='colour-sample-name']");
 
         }
 

@@ -40,11 +40,11 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Neckwear
 
         public new class Locators : BaseNeckwearFilter.Locators
         {
-            public static By ColourTan = By.CssSelector("[data-colour-desc='Tan']");
-            public static By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
-            public static By ColourWhite = By.CssSelector("[data-colour-desc='White']");
-            public static By ColourGray = By.CssSelector("[data-colour-desc='Gray']");
-            public static By BowTieSelect = By.CssSelector("[data-neckwear-typeid='3']");
+            public static readonly By ColourTan = By.CssSelector("[data-colour-desc='Tan']");
+            public static readonly By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
+            public static readonly By ColourWhite = By.CssSelector("[data-colour-desc='White']");
+            public static readonly By ColourGray = By.CssSelector("[data-colour-desc='Gray']");
+            public static readonly By BowTieSelect = By.CssSelector("[data-neckwear-typeid='3']");
         }
     }
 }

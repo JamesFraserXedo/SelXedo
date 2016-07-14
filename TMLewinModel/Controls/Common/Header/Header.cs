@@ -23,8 +23,8 @@ namespace TMLewinModel.Controls.Common.Header
 
         public new class Locators : BurgerBarHeader.Locators
         {
-            public static By PromotionBanner = By.ClassName("free-try-on-message");
-            public static By ReturnToMainSiteLink = By.CssSelector("[data-at='lnk-back-to-main-site']");
+            public static readonly By PromotionBanner = By.ClassName("free-try-on-message");
+            public static readonly By ReturnToMainSiteLink = By.CssSelector("[data-at='lnk-back-to-main-site']");
         }
     }
 }

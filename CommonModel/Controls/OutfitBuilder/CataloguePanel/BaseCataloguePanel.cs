@@ -38,10 +38,10 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel
 
         public class Locators
         {
-            public static By Container = By.ClassName("catalogue-outfit-holder");
-            public static By PreviousCatalogueButton = By.ClassName("ob-arrow left");
-            public static By NextCatalogueButton = By.ClassName("ob-arrow right");
-            public static By ViewOutfitSummaryButton = By.CssSelector("[data-at='lnk-outfit-summary']");
+            public static readonly By Container = By.ClassName("catalogue-outfit-holder");
+            public static readonly By PreviousCatalogueButton = By.ClassName("ob-arrow left");
+            public static readonly By NextCatalogueButton = By.ClassName("ob-arrow right");
+            public static readonly By ViewOutfitSummaryButton = By.CssSelector("[data-at='lnk-outfit-summary']");
         }
     }
 }

@@ -71,6 +71,8 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\SuitFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\WaistcoatFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitViewer.cs" />
+    <Compile Include="Controls\OutfitSummary\SummaryOutfitViewer.cs" />
+    <Compile Include="Controls\OutfitSummary\TotalPanel.cs" />
     <Compile Include="Controls\Registration\RegistrationForm.cs" />
     <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />

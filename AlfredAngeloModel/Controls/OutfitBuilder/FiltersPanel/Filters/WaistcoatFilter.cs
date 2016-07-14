@@ -54,14 +54,14 @@ namespace AlfredAngeloModel.Controls.OutfitBuilder.FiltersPanel.Filters
 
         public new class Locators : UkWaistcoatFilter.Locators
         {
-            public static By ColourBrown = By.CssSelector("[data-colour-desc='Brown']");
-            public static By ColourRed = By.CssSelector("[data-colour-desc='Red']");
-            public static By ColourOrange = By.CssSelector("[data-colour-desc='Orange']");
-            public static By ColourYellow = By.CssSelector("[data-colour-desc='Yellow']");
-            public static By ColourGreen = By.CssSelector("[data-colour-desc='Green']");
-            public static By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
-            public static By ColourPurple = By.CssSelector("[data-colour-desc='Purple']");
-            public static By ColourPink = By.CssSelector("[data-colour-desc='Pink']");
+            public static readonly By ColourBrown = By.CssSelector("[data-colour-desc='Brown']");
+            public static readonly By ColourRed = By.CssSelector("[data-colour-desc='Red']");
+            public static readonly By ColourOrange = By.CssSelector("[data-colour-desc='Orange']");
+            public static readonly By ColourYellow = By.CssSelector("[data-colour-desc='Yellow']");
+            public static readonly By ColourGreen = By.CssSelector("[data-colour-desc='Green']");
+            public static readonly By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
+            public static readonly By ColourPurple = By.CssSelector("[data-colour-desc='Purple']");
+            public static readonly By ColourPink = By.CssSelector("[data-colour-desc='Pink']");
         }
     }
 }

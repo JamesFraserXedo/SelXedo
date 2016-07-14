@@ -23,8 +23,8 @@ namespace CommonModel.Controls.Common.Footer
 
         public new class Locators : BaseFooter.Locators
         {
-            public static By SignUpEmailInputBox = By.CssSelector("[data-at='txt-footer-mailing']");
-            public static By SignUpSubmitButton = By.CssSelector("[data-at='btn-footer-mailing']");
+            public static readonly By SignUpEmailInputBox = By.CssSelector("[data-at='txt-footer-mailing']");
+            public static readonly By SignUpSubmitButton = By.CssSelector("[data-at='btn-footer-mailing']");
         }
     }
 }

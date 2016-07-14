@@ -38,8 +38,8 @@ namespace XedoModel.Pages
         
         public class Locators
         {
-            public static By HpHeroImage = By.Id("hp-hero-Image");
-            public static By LetsGetStartedButton = By.CssSelector("[data-galabel='Hero-Image-CTA-clicked']");
+            public static readonly By HpHeroImage = By.Id("hp-hero-Image");
+            public static readonly By LetsGetStartedButton = By.CssSelector("[data-galabel='Hero-Image-CTA-clicked']");
         }
     }
 }

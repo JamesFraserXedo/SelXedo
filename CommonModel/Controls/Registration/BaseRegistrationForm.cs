@@ -72,19 +72,19 @@ namespace CommonModel.Controls.Registration
 
         public class Locators
         {
-            public static By FirstNameInputbox = By.CssSelector("[data-at='txt-reg-first-name']");
-            public static By LastNameInputbox = By.CssSelector("[data-at='txt-reg-surname']");
-            public static By EmailInputbox = By.CssSelector("[data-at='txt-reg-email']");
-            public static By PasswordInputbox = By.CssSelector("[data-at='txt-reg-password']");
-            public static By PasswordConfirmationInputbox = By.CssSelector("[data-at='txt-reg-password-confirm']");
-            public static By CompleteRegistrationButton = By.CssSelector("[data-at='btn-complete-registration']");
+            public static readonly By FirstNameInputbox = By.CssSelector("[data-at='txt-reg-first-name']");
+            public static readonly By LastNameInputbox = By.CssSelector("[data-at='txt-reg-surname']");
+            public static readonly By EmailInputbox = By.CssSelector("[data-at='txt-reg-email']");
+            public static readonly By PasswordInputbox = By.CssSelector("[data-at='txt-reg-password']");
+            public static readonly By PasswordConfirmationInputbox = By.CssSelector("[data-at='txt-reg-password-confirm']");
+            public static readonly By CompleteRegistrationButton = By.CssSelector("[data-at='btn-complete-registration']");
 
-            public static By InvalidFirstNameLabel = By.CssSelector("[class='invalid'][for='MemberDetails_FirstName']");
-            public static By InvalidLastNameLabel = By.CssSelector("[class='invalid'][for='MemberDetails_Surname']");
-            public static By InvalidEmailLabel = By.CssSelector("[class='invalid'][for='MemberDetails_Email']");
-            public static By InvalidEmailPrintedLabel = By.CssSelector("[data-valmsg-for='MemberDetails.Email']");
-            public static By InvalidPasswordPrintedLabel = By.CssSelector("[data-valmsg-for='Password.Password']");
-            public static By InvalidPasswordConfirmationPrintedLabel = By.CssSelector("[data-valmsg-for='Password.ConfirmPassword']");
+            public static readonly By InvalidFirstNameLabel = By.CssSelector("[class='invalid'][for='MemberDetails_FirstName']");
+            public static readonly By InvalidLastNameLabel = By.CssSelector("[class='invalid'][for='MemberDetails_Surname']");
+            public static readonly By InvalidEmailLabel = By.CssSelector("[class='invalid'][for='MemberDetails_Email']");
+            public static readonly By InvalidEmailPrintedLabel = By.CssSelector("[data-valmsg-for='MemberDetails.Email']");
+            public static readonly By InvalidPasswordPrintedLabel = By.CssSelector("[data-valmsg-for='Password.Password']");
+            public static readonly By InvalidPasswordConfirmationPrintedLabel = By.CssSelector("[data-valmsg-for='Password.ConfirmPassword']");
         }
     }
 }

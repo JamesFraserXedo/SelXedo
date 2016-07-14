@@ -39,11 +39,11 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits
 
         public new class Locators : BaseSuitsFilter.Locators
         {
-            public static By ColourBlack = By.CssSelector("[data-colour-desc='Black']");
-            public static By ColourBlue = By.CssSelector("[data-colour-desc='Blue']");
-            public static By ColourGray = By.CssSelector("[data-colour-desc='Grey']");
-            public static By TailcoatSelect = By.CssSelector("[value='Tailcoat']");
-            public static By ShortJacketSelect = By.CssSelector("[value='Short Jacket']");
+            public static readonly By ColourBlack = By.CssSelector("[data-colour-desc='Black']");
+            public static readonly By ColourBlue = By.CssSelector("[data-colour-desc='Blue']");
+            public static readonly By ColourGray = By.CssSelector("[data-colour-desc='Grey']");
+            public static readonly By TailcoatSelect = By.CssSelector("[value='Tailcoat']");
+            public static readonly By ShortJacketSelect = By.CssSelector("[value='Short Jacket']");
         }
     }
 }

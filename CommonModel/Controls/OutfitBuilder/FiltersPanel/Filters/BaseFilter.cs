@@ -24,7 +24,7 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters
 
         public class Locators
         {
-            public static By Header = By.ClassName("filters-title");
+            public static readonly By Header = By.ClassName("filters-title");
 
         }
     }

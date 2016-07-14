@@ -22,8 +22,8 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues
 
         public class Locators
         {
-            public static By Container = By.Id("catalogue-view");
-            public static By Header = By.CssSelector("h2");
+            public static readonly By Container = By.Id("catalogue-view");
+            public static readonly By Header = By.CssSelector("h2");
         }
     }
 }

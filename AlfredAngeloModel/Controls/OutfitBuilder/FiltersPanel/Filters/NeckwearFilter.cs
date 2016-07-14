@@ -24,8 +24,8 @@ namespace AlfredAngeloModel.Controls.OutfitBuilder.FiltersPanel.Filters
 
         public new class Locators : UkNeckwearFilter.Locators
         {
-            public static By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
-            public static By ColourWhite = By.CssSelector("[data-colour-desc='White']");
+            public static readonly By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
+            public static readonly By ColourWhite = By.CssSelector("[data-colour-desc='White']");
         }
     }
 }

@@ -72,18 +72,18 @@ namespace XedoModel.Controls.HomePage
 
         public class Locators
         {
-            public static By Container = By.Id("perfect-match");
-            public static By Black = By.CssSelector("[data-at='lnk-colour-match-black']");
-            public static By Teal = By.CssSelector("[data-at='lnk-colour-match-teal']");
-            public static By Blue = By.CssSelector("[data-at='lnk-colour-match-blue']");
-            public static By Green = By.CssSelector("[data-at='lnk-colour-match-green']");
-            public static By Purple = By.CssSelector("[data-at='lnk-colour-match-purple']");
-            public static By Grey = By.CssSelector("[data-at='lnk-colour-match-gray']");
-            public static By Red = By.CssSelector("[data-at='lnk-colour-match-red']");
-            public static By Tan = By.CssSelector("[data-at='lnk-colour-match-tan']");
-            public static By Pink = By.CssSelector("[data-at='lnk-colour-match-pink']");
-            public static By Yellow = By.CssSelector("[data-at='lnk-colour-match-yellow']");
-            public static By Ivory = By.CssSelector("[data-at='lnk-colour-match-ivory']");
+            public static readonly By Container = By.Id("perfect-match");
+            public static readonly By Black = By.CssSelector("[data-at='lnk-colour-match-black']");
+            public static readonly By Teal = By.CssSelector("[data-at='lnk-colour-match-teal']");
+            public static readonly By Blue = By.CssSelector("[data-at='lnk-colour-match-blue']");
+            public static readonly By Green = By.CssSelector("[data-at='lnk-colour-match-green']");
+            public static readonly By Purple = By.CssSelector("[data-at='lnk-colour-match-purple']");
+            public static readonly By Grey = By.CssSelector("[data-at='lnk-colour-match-gray']");
+            public static readonly By Red = By.CssSelector("[data-at='lnk-colour-match-red']");
+            public static readonly By Tan = By.CssSelector("[data-at='lnk-colour-match-tan']");
+            public static readonly By Pink = By.CssSelector("[data-at='lnk-colour-match-pink']");
+            public static readonly By Yellow = By.CssSelector("[data-at='lnk-colour-match-yellow']");
+            public static readonly By Ivory = By.CssSelector("[data-at='lnk-colour-match-ivory']");
 
         }
     }

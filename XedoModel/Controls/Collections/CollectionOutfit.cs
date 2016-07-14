@@ -41,8 +41,8 @@ namespace XedoModel.Controls.Collections
 
         public class Locators
         {
-            public static By NameLabel = By.CssSelector("p");
-            public static By DetailsLabel = By.CssSelector("[class='inspire-item-detail']");
+            public static readonly By NameLabel = By.CssSelector("p");
+            public static readonly By DetailsLabel = By.CssSelector("[class='inspire-item-detail']");
         }
     }
 }

@@ -51,13 +51,13 @@ namespace XedoModel.Controls.Common.Footer
 
         public new class Locators : SignupFooter.Locators
         {
-            public static By Logo = By.CssSelector("[data-at='lnk-footer-logo']");
-            public static By OurStoryLink = By.CssSelector("[data-at='lnk-footer-our-story']");
-            public static By PressLink = By.CssSelector("[data-at='lnk-footer-press']");
-            public static By PartnerSignUpLink = By.CssSelector("[data-at='lnk-footer-retailer-sign-up']");
-            public static By WeddingPlannerSignUpLink = By.CssSelector("[data-at='lnk-footer-weddingplanner-sign-up']");
-            public static By BlogLink = By.CssSelector("[data-at='lnk-footer-blog']");
-            public static By ContactUsLink = By.CssSelector("[data-at='lnk-footer-contact-us']");
+            public static readonly By Logo = By.CssSelector("[data-at='lnk-footer-logo']");
+            public static readonly By OurStoryLink = By.CssSelector("[data-at='lnk-footer-our-story']");
+            public static readonly By PressLink = By.CssSelector("[data-at='lnk-footer-press']");
+            public static readonly By PartnerSignUpLink = By.CssSelector("[data-at='lnk-footer-retailer-sign-up']");
+            public static readonly By WeddingPlannerSignUpLink = By.CssSelector("[data-at='lnk-footer-weddingplanner-sign-up']");
+            public static readonly By BlogLink = By.CssSelector("[data-at='lnk-footer-blog']");
+            public static readonly By ContactUsLink = By.CssSelector("[data-at='lnk-footer-contact-us']");
         }
     }
 }

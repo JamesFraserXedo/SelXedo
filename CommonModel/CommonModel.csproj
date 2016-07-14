@@ -90,6 +90,11 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Waistcoat\UsWaistcoatFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitControls\BaseOutfitControls.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitControls\ZoomableOutfitControls.cs" />
+    <Compile Include="Controls\OutfitSummary\TotalPane\BaseTotalPanel.cs" />
+    <Compile Include="Controls\OutfitSummary\OutfitOptions\BaseOutfitOption.cs" />
+    <Compile Include="Controls\OutfitSummary\BaseSummaryOutfitViewer.cs" />
+    <Compile Include="Controls\OutfitSummary\TotalPane\BaseUkTotalPanel.cs" />
+    <Compile Include="Controls\OutfitSummary\TotalPane\BaseUsTotalPanel.cs" />
     <Compile Include="Controls\Registration\BaseRegistrationForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

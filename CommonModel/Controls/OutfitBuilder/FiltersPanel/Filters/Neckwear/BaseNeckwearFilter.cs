@@ -74,19 +74,19 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Neckwear
 
         public new class Locators : BaseExpandableFilter.Locators
         {
-            public static By Container = By.Id("filters-neckwear");
-            public static By ColourBlack = By.CssSelector("[data-colour-desc='Black']");
-            public static By ColourBrown = By.CssSelector("[data-colour-desc='Brown']");
-            public static By ColourRed = By.CssSelector("[data-colour-desc='Red']");
-            public static By ColourOrange = By.CssSelector("[data-colour-desc='Orange']");
-            public static By ColourCream = By.CssSelector("[data-colour-desc='Cream']");
-            public static By ColourYellow = By.CssSelector("[data-colour-desc='Yellow']");
-            public static By ColourGreen = By.CssSelector("[data-colour-desc='Green']");
-            public static By ColourBlue = By.CssSelector("[data-colour-desc='Blue']");
-            public static By ColourPurple = By.CssSelector("[data-colour-desc='Purple']");
-            public static By ColourPink = By.CssSelector("[data-colour-desc='Pink']");
+            public static readonly By Container = By.Id("filters-neckwear");
+            public static readonly By ColourBlack = By.CssSelector("[data-colour-desc='Black']");
+            public static readonly By ColourBrown = By.CssSelector("[data-colour-desc='Brown']");
+            public static readonly By ColourRed = By.CssSelector("[data-colour-desc='Red']");
+            public static readonly By ColourOrange = By.CssSelector("[data-colour-desc='Orange']");
+            public static readonly By ColourCream = By.CssSelector("[data-colour-desc='Cream']");
+            public static readonly By ColourYellow = By.CssSelector("[data-colour-desc='Yellow']");
+            public static readonly By ColourGreen = By.CssSelector("[data-colour-desc='Green']");
+            public static readonly By ColourBlue = By.CssSelector("[data-colour-desc='Blue']");
+            public static readonly By ColourPurple = By.CssSelector("[data-colour-desc='Purple']");
+            public static readonly By ColourPink = By.CssSelector("[data-colour-desc='Pink']");
 
-            public static By TieSelect = By.CssSelector("[data-neckwear-typeid='2']");
+            public static readonly By TieSelect = By.CssSelector("[data-neckwear-typeid='2']");
         }
     }
 }

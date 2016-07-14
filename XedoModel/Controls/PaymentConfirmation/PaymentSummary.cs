@@ -36,9 +36,9 @@ namespace XedoModel.Controls.PaymentConfirmation
 
         public class Locators
         {
-            public static By CancelButton = By.Id("pay-back");
-            public static By ConfirmButton = By.Id("btn-pay-submit");
-            public static By PaymentTotalLabel = By.XPath(".//div[@class='form-inner-totaltext']");
+            public static readonly By CancelButton = By.Id("pay-back");
+            public static readonly By ConfirmButton = By.Id("btn-pay-submit");
+            public static readonly By PaymentTotalLabel = By.XPath(".//div[@class='form-inner-totaltext']");
         }
     }
 }

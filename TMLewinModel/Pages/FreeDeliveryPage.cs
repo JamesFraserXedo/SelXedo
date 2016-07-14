@@ -38,8 +38,8 @@ namespace TMLewinModel.Pages
         
         public class Locators
         {
-            public static By Features = By.XPath("//*[contains(@class, 'homepage-feature-col')]");
-            public static By GetStartedButton = By.CssSelector("[class='text-center']>a");
+            public static readonly By Features = By.XPath("//*[contains(@class, 'homepage-feature-col')]");
+            public static readonly By GetStartedButton = By.CssSelector("[class='text-center']>a");
         }
     }
 }

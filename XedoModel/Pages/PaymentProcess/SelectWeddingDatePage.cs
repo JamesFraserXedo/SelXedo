@@ -38,9 +38,9 @@ namespace XedoModel.Pages.PaymentProcess
 
         public class Locators
         {
-            public static By ConfirmWeddingDateButton = By.Id("confirm-wedding-date");
-            public static By ContinueButton = By.Id("btn-wedding-date-next");
-            public static By MainContent = By.XPath("//*[@class='content-section-holder']");
+            public static readonly By ConfirmWeddingDateButton = By.Id("confirm-wedding-date");
+            public static readonly By ContinueButton = By.Id("btn-wedding-date-next");
+            public static readonly By MainContent = By.XPath("//*[@class='content-section-holder']");
         }
     }
 }

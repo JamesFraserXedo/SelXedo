@@ -44,9 +44,9 @@ namespace XedoModel.Pages.PaymentProcess
 
         public class Locators
         {
-            public static By Container = By.XPath("//*[@class='content-section-holder']");
-            public static By AddPartyMemberButton = By.Id("add-new-wearer-button");
-            public static By ContinueToBillingAddressButton = By.Id("saveAndContinueButton");
+            public static readonly By Container = By.XPath("//*[@class='content-section-holder']");
+            public static readonly By AddPartyMemberButton = By.Id("add-new-wearer-button");
+            public static readonly By ContinueToBillingAddressButton = By.Id("saveAndContinueButton");
         }
     }
 }

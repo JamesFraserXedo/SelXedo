@@ -30,8 +30,8 @@ namespace XedoModel.Controls.QuickTryOn
 
         public class Locators
         {
-            public static By Container = By.XPath("//*[@class='pop-up-container']");
-            public static By DismissButton = By.Id("close-legacy-try-on-popup");
+            public static readonly By Container = By.XPath("//*[@class='pop-up-container']");
+            public static readonly By DismissButton = By.Id("close-legacy-try-on-popup");
         }
     }
 }

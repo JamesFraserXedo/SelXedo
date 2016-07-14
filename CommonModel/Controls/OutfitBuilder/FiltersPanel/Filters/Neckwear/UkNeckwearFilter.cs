@@ -25,8 +25,8 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Neckwear
 
         public new class Locators : BaseNeckwearFilter.Locators
         {
-            public static By ColourGrey = By.CssSelector("[data-colour-desc='Grey']");
-            public static By RucheSelect = By.CssSelector("[data-neckwear-typeid='1']");
+            public static readonly By ColourGrey = By.CssSelector("[data-colour-desc='Grey']");
+            public static readonly By RucheSelect = By.CssSelector("[data-neckwear-typeid='1']");
         }
     }
 }

@@ -48,15 +48,15 @@ namespace CommonModel.Controls.Common.Footer
 
         public class Locators
         {
-            public static By Container = By.CssSelector("[class='container-fluid footer-container']");
+            public static readonly By Container = By.CssSelector("[class='container-fluid footer-container']");
 
-            public static By TermsAndConditionsLink = By.CssSelector("[data-at='lnk-footer-terms']");
-            public static By HowItWorksLink = By.CssSelector("[data-at='lnk-footer-how-it-works']");
-            public static By CookiesAndPrivacyLink = By.CssSelector("[data-at='lnk-footer-privacy']");
-            public static By HelpAndFaqsLink = By.CssSelector("[data-at='lnk-footer-faqs']");
+            public static readonly By TermsAndConditionsLink = By.CssSelector("[data-at='lnk-footer-terms']");
+            public static readonly By HowItWorksLink = By.CssSelector("[data-at='lnk-footer-how-it-works']");
+            public static readonly By CookiesAndPrivacyLink = By.CssSelector("[data-at='lnk-footer-privacy']");
+            public static readonly By HelpAndFaqsLink = By.CssSelector("[data-at='lnk-footer-faqs']");
             
-            public static By PhoneNumberLabel = By.CssSelector("[data-at='lnk-footer-telephone']");
-            public static By EmailLabel = By.CssSelector("[data-at='lnk-footer-email']");
+            public static readonly By PhoneNumberLabel = By.CssSelector("[data-at='lnk-footer-telephone']");
+            public static readonly By EmailLabel = By.CssSelector("[data-at='lnk-footer-email']");
         }
     }
 }

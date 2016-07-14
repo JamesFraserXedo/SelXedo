@@ -23,8 +23,8 @@ namespace YoungsModel.Controls.Common.Header
 
         public new class Locators : MenuHeader.Locators
         {
-            public static By GroomGoesFreeLink = By.CssSelector("[data-at='lnk-groom-goes-free']");
-            public static By PromotionBanner = By.ClassName("free-try-on-message");
+            public static readonly By GroomGoesFreeLink = By.CssSelector("[data-at='lnk-groom-goes-free']");
+            public static readonly By PromotionBanner = By.ClassName("free-try-on-message");
         }
     }
 }

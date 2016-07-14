@@ -84,11 +84,11 @@ namespace XedoModel.Controls.QuickTryOn
         }
 
         public class Locators {
-            public static By Body = By.XPath("//div[@class='dw-cal-body']");
-            public static By MonthPicker = By.XPath("//span[@class='dw-cal-month']");
-            public static By YearPicker = By.XPath("//span[@class='dw-cal-year']");
-            public static By SelectedDate = By.XPath("//*[@aria-selected='true']");
-            public static By ValidDates = By.XPath("//*[contains(@class, 'dw-cal-day-v')]");
+            public static readonly By Body = By.XPath("//div[@class='dw-cal-body']");
+            public static readonly By MonthPicker = By.XPath("//span[@class='dw-cal-month']");
+            public static readonly By YearPicker = By.XPath("//span[@class='dw-cal-year']");
+            public static readonly By SelectedDate = By.XPath("//*[@aria-selected='true']");
+            public static readonly By ValidDates = By.XPath("//*[contains(@class, 'dw-cal-day-v')]");
 
             public static By FindDate(int day, int month, int year)
             {

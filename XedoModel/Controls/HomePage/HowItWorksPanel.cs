@@ -33,9 +33,9 @@ namespace XedoModel.Controls.HomePage
 
     public class Locators
         {
-            public static By Container = By.Id("hp-how-It-Works");
-            public static By Title = By.CssSelector("h2");
-        public static By GetStartedButton = By.CssSelector("[data-galabel='How-It-Works-CTA-clicked']");
+            public static readonly By Container = By.Id("hp-how-It-Works");
+            public static readonly By Title = By.CssSelector("h2");
+        public static readonly By GetStartedButton = By.CssSelector("[data-galabel='How-It-Works-CTA-clicked']");
         }
     }
 }

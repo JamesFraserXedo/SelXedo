@@ -69,9 +69,9 @@ namespace XedoModel.Pages
 
         public class Locators
         {
-            public static By ReviewAndConfirmTryOnButton = By.XPath("//*[@data-galabel='quick-try-on-confirm']");
-            public static By TermsAndConditionsCheckbox = By.Id("AgreeTermsAndConditions");
-            public static By TryOnErrorMessages = By.XPath("//*[@class='tryon-error']");
+            public static readonly By ReviewAndConfirmTryOnButton = By.XPath("//*[@data-galabel='quick-try-on-confirm']");
+            public static readonly By TermsAndConditionsCheckbox = By.Id("AgreeTermsAndConditions");
+            public static readonly By TryOnErrorMessages = By.XPath("//*[@class='tryon-error']");
         }
     }
 }

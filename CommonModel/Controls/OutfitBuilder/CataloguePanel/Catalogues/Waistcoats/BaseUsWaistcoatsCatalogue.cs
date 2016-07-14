@@ -41,8 +41,8 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues.Waistcoat
 
         public new class Locators : BaseCatalogue.Locators
         {
-            public static By Vests = By.ClassName("item waistcoat");
-            public static By Cummerbunds = By.ClassName("item cummerbund");
+            public static readonly By Vests = By.ClassName("item waistcoat");
+            public static readonly By Cummerbunds = By.ClassName("item cummerbund");
 
         }
     }

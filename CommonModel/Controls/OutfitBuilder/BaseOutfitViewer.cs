@@ -77,13 +77,13 @@ namespace CommonModel.Controls.OutfitBuilder
 
         public class Locators
         {
-            public static By Container = By.Id("outfit-view");
-            public static By InitialImage = By.Id("initial-image");
-            public static By HankieImage = By.Id("hankie-image");
-            public static By JacketImage = By.ClassName("img-responsive ob-image jacket");
-            public static By TrousersImage = By.ClassName("img-responsive ob-image trousers");
-            public static By WaistcoatImage = By.ClassName("img-responsive ob-image waistcoat");
-            public static By NeckwearImage = By.ClassName("img-responsive ob-image neckwear");
+            public static readonly By Container = By.Id("outfit-view");
+            public static readonly By InitialImage = By.Id("initial-image");
+            public static readonly By HankieImage = By.Id("hankie-image");
+            public static readonly By JacketImage = By.ClassName("img-responsive ob-image jacket");
+            public static readonly By TrousersImage = By.ClassName("img-responsive ob-image trousers");
+            public static readonly By WaistcoatImage = By.ClassName("img-responsive ob-image waistcoat");
+            public static readonly By NeckwearImage = By.ClassName("img-responsive ob-image neckwear");
         }
     }
 }

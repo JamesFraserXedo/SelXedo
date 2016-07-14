@@ -18,7 +18,7 @@ namespace CommonModel.Controls.OutfitBuilder.OutfitControls
 
         public new class Locators : BaseOutfitControls.Locators
         {
-            public static By ZoomOutfitButton = By.Id("zoom-outfit-button");
+            public static readonly By ZoomOutfitButton = By.Id("zoom-outfit-button");
         }
     }
 

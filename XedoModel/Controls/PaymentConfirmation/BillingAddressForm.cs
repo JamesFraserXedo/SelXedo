@@ -43,11 +43,11 @@ namespace XedoModel.Controls.PaymentConfirmation
 
         public class Locators
         {
-            public static By AddressInputBox = By.Id("Address");
-            public static By CityInputBox = By.Id("City");
-            public static By StateSelect = By.Id("State");
-            public static By ZipcodeInputBox = By.Id("ZipCode");
-            public static By CountryInputBox = By.Id("Country");
+            public static readonly By AddressInputBox = By.Id("Address");
+            public static readonly By CityInputBox = By.Id("City");
+            public static readonly By StateSelect = By.Id("State");
+            public static readonly By ZipcodeInputBox = By.Id("ZipCode");
+            public static readonly By CountryInputBox = By.Id("Country");
         }
     }
 }

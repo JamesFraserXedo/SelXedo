@@ -23,8 +23,8 @@ namespace XedoModel.Pages.PaymentProcess
         
         public class Locators
         {
-            public static By Content = By.XPath("//*[contains(@class, 'content-section-holder')]");
-            public static By GroomTotalDue = By.XPath("//*[@class='total-amount'][1]");
+            public static readonly By Content = By.XPath("//*[contains(@class, 'content-section-holder')]");
+            public static readonly By GroomTotalDue = By.XPath("//*[@class='total-amount'][1]");
         }
     }
 }

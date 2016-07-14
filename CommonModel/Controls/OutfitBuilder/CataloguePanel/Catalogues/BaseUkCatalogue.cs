@@ -18,7 +18,7 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues
 
         public new class Locators : BaseCatalogue.Locators
         {
-            public static By ToggleChildSizesCheckbox = By.Id("adultchild-toggle");
+            public static readonly By ToggleChildSizesCheckbox = By.Id("adultchild-toggle");
         }
     }
 }

@@ -47,13 +47,13 @@ namespace CommonModel.Controls.Common.Header
 
         public class Locators
         {
-            public static By SignInButton = By.CssSelector("[data-at='lnk-header-signin']");
-            public static By NameLabel = By.CssSelector("[class='person-id']");
-            public static By OrdersLink = By.CssSelector("[data-at='lnk-header-orders']");
-            public static By OrdersCountLabel = By.CssSelector("[data-at='lnk-header-orders']>span");
-            public static By FavouritesLink = By.CssSelector("[data-at='lnk-header-favourites']");
-            public static By FavouritesCountLabel = By.CssSelector("[data-at='lnk-header-favourites']>span");
-            public static By LogoutLink = By.CssSelector("[data-at='lnk-header-logout']");
+            public static readonly By SignInButton = By.CssSelector("[data-at='lnk-header-signin']");
+            public static readonly By NameLabel = By.CssSelector("[class='person-id']");
+            public static readonly By OrdersLink = By.CssSelector("[data-at='lnk-header-orders']");
+            public static readonly By OrdersCountLabel = By.CssSelector("[data-at='lnk-header-orders']>span");
+            public static readonly By FavouritesLink = By.CssSelector("[data-at='lnk-header-favourites']");
+            public static readonly By FavouritesCountLabel = By.CssSelector("[data-at='lnk-header-favourites']>span");
+            public static readonly By LogoutLink = By.CssSelector("[data-at='lnk-header-logout']");
         }
     }
 }

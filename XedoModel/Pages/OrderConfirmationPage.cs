@@ -43,10 +43,10 @@ namespace XedoModel.Pages
 
         public class Locators
         {
-            public static By SageContainer = By.XPath("//*[@class='sage-confirmation-holder']");
-            public static By OrderSuccessIcon = By.XPath("//div[@class='sage-status-holder confirmed']");
-            public static By OrderFailureIcon = By.XPath("//div[@class='sage-status-holder denied']");
-            public static By OrderNumberLabel = By.XPath("//*[@class='sage-order-number-text']");
+            public static readonly By SageContainer = By.XPath("//*[@class='sage-confirmation-holder']");
+            public static readonly By OrderSuccessIcon = By.XPath("//div[@class='sage-status-holder confirmed']");
+            public static readonly By OrderFailureIcon = By.XPath("//div[@class='sage-status-holder denied']");
+            public static readonly By OrderNumberLabel = By.XPath("//*[@class='sage-order-number-text']");
         }
     }
 }

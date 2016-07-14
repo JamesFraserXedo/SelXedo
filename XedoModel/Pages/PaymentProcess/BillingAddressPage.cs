@@ -59,16 +59,16 @@ namespace XedoModel.Pages.PaymentProcess
         
         public class Locators
         {
-            public static By Container = By.XPath("//*[@class='content-section-holder']");
-            public static By ConfirmListedAddressButton = By.Id("confirm-address");
+            public static readonly By Container = By.XPath("//*[@class='content-section-holder']");
+            public static readonly By ConfirmListedAddressButton = By.Id("confirm-address");
 
-            public static By Address1InputBox = By.Id("address1");
-            public static By StateInputBox = By.Id("address4");
-            public static By ZipInputBox = By.Id("postcode");
-            public static By ConfirmEnteredAddressButton = By.Id("confirm-manual-address");
+            public static readonly By Address1InputBox = By.Id("address1");
+            public static readonly By StateInputBox = By.Id("address4");
+            public static readonly By ZipInputBox = By.Id("postcode");
+            public static readonly By ConfirmEnteredAddressButton = By.Id("confirm-manual-address");
 
-            public static By ContactNumberInputBox = By.Id("ContactNumber");
-            public static By PaymentOptionsButton = By.Id("btn-outfit-delivery-next");
+            public static readonly By ContactNumberInputBox = By.Id("ContactNumber");
+            public static readonly By PaymentOptionsButton = By.Id("btn-outfit-delivery-next");
         }
     }
 }

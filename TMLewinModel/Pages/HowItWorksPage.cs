@@ -23,7 +23,7 @@ namespace TMLewinModel.Pages
 
         public class Locators
         {
-            public static By GetStartedButton = By.CssSelector("[data-at='lnk-get-started']");
+            public static readonly By GetStartedButton = By.CssSelector("[data-at='lnk-get-started']");
         }
     }
 }

@@ -23,8 +23,8 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Waistcoat
 
         public new class Locators : BaseWaistcoatFilter.Locators
         {
-            public static By Container = By.Id("filters-waistcoat");
-            public static By ColourGrey = By.CssSelector("[data-colour-desc='Grey']");
+            public static readonly By Container = By.Id("filters-waistcoat");
+            public static readonly By ColourGrey = By.CssSelector("[data-colour-desc='Grey']");
         }
     }
 }

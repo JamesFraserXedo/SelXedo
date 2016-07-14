@@ -50,12 +50,12 @@ namespace XedoModel.Controls.PartyBuilder
 
         public class Locators
         {
-            public static By Container = By.XPath("//*[@class='constrained-overlay-container container add-wearer-popup']");
-            public static By RoleSelect = By.Id("EventRoleId");
-            public static By FirstNameInputBox = By.Id("Wearer_FirstName");
-            public static By LastNameInputBox = By.Id("Wearer_LastName");
-            public static By OutfitSelect = By.XPath("//*[@class='add-wearer-input party-member-outfit']");
-            public static By SubmitButton = By.XPath("//*[@data-at='btn-submit-party-member']");
+            public static readonly By Container = By.XPath("//*[@class='constrained-overlay-container container add-wearer-popup']");
+            public static readonly By RoleSelect = By.Id("EventRoleId");
+            public static readonly By FirstNameInputBox = By.Id("Wearer_FirstName");
+            public static readonly By LastNameInputBox = By.Id("Wearer_LastName");
+            public static readonly By OutfitSelect = By.XPath("//*[@class='add-wearer-input party-member-outfit']");
+            public static readonly By SubmitButton = By.XPath("//*[@data-at='btn-submit-party-member']");
         }
     }
 }

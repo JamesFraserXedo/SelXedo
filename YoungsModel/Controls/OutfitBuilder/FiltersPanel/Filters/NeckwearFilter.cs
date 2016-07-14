@@ -19,7 +19,7 @@ namespace YoungsModel.Controls.OutfitBuilder.FiltersPanel.Filters
 
         public new class Locators : UkNeckwearFilter.Locators
         {
-            public static By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
+            public static readonly By ColourTeal = By.CssSelector("[data-colour-desc='Teal']");
         }
     }
 }

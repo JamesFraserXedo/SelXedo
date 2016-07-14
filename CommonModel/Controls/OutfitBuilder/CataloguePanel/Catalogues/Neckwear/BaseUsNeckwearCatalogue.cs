@@ -22,7 +22,7 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues.Neckwear
 
         public new class Locators : BaseUkCatalogue.Locators
         {
-            public static By Neckwear = By.CssSelector("[data-at='lnk-neckwear']");
+            public static readonly By Neckwear = By.CssSelector("[data-at='lnk-neckwear']");
         }
     }
 }

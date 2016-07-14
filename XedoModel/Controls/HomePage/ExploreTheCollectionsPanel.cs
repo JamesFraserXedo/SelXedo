@@ -33,9 +33,9 @@ namespace XedoModel.Controls.HomePage
 
         public class Locators
         {
-            public static By Container = By.Id("hp-Collections");
-            public static By Title = By.CssSelector("h2");
-            public static By Outfits = By.CssSelector("[class='inspire-item-inner collection-item-inner']");
+            public static readonly By Container = By.Id("hp-Collections");
+            public static readonly By Title = By.CssSelector("h2");
+            public static readonly By Outfits = By.CssSelector("[class='inspire-item-inner collection-item-inner']");
         }
     }
 }

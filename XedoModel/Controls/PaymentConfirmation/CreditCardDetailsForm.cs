@@ -66,18 +66,18 @@ namespace XedoModel.Controls.PaymentConfirmation
 
         public class Locators
         {
-            public static By VisaCreditRadioButton = By.Id("visa");
-            public static By VisaDebitRadioButton = By.Id("visa-debit");
-            public static By MastercardCreditRadioButton = By.Id("mastercard");
-            public static By MastercardDebitRadioButton = By.Id("mastercard-debit");
-            public static By AmexCreditRadioButton = By.Id("amex-debit");
+            public static readonly By VisaCreditRadioButton = By.Id("visa");
+            public static readonly By VisaDebitRadioButton = By.Id("visa-debit");
+            public static readonly By MastercardCreditRadioButton = By.Id("mastercard");
+            public static readonly By MastercardDebitRadioButton = By.Id("mastercard-debit");
+            public static readonly By AmexCreditRadioButton = By.Id("amex-debit");
 
-            public static By NameInputBox = By.Id("CardHolderName");
-            public static By CardNumberInputBox = By.Id("CardNumber");
-            public static By ExpiryDateInputBox = By.Id("ExpiryDate");
-            public static By SecurityCodeInputBox = By.Id("SecurityCode");
+            public static readonly By NameInputBox = By.Id("CardHolderName");
+            public static readonly By CardNumberInputBox = By.Id("CardNumber");
+            public static readonly By ExpiryDateInputBox = By.Id("ExpiryDate");
+            public static readonly By SecurityCodeInputBox = By.Id("SecurityCode");
 
-            public static By DefaultCreditCardDetailsButton = By.Id("enter-test-details");
+            public static readonly By DefaultCreditCardDetailsButton = By.Id("enter-test-details");
         }
     }
 }

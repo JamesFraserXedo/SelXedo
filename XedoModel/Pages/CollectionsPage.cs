@@ -31,9 +31,9 @@ namespace XedoModel.Pages
         
         public class Locators
         {
-            public static By Title = By.CssSelector("[class='page-intro-header']");
+            public static readonly By Title = By.CssSelector("[class='page-intro-header']");
 
-            public static By OutfitContainer = By.CssSelector("[class='inspire-item collection-single']");
+            public static readonly By OutfitContainer = By.CssSelector("[class='inspire-item collection-single']");
         }
     }
 }

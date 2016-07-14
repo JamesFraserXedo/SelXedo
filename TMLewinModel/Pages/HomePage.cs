@@ -64,12 +64,12 @@ namespace TMLewinModel.Pages
 
         public class Locators
         {
-            public static By GetStartedButton = By.CssSelector("[data-at='lnk-hero-get-started']");
-            public static By Features = By.CssSelector("[class='block-link']");
-            public static By SubFeatureButton = By.CssSelector("[data-at='lnk-sub-feature']");
-            public static By RecommendedSuits = By.CssSelector("[class='recommended-suit block-link ga-event-click']");
-            public static By PromoOfferButton = By.CssSelector("[data-at='lnk-promo-offer']");
-            public static By CompleteYourLookFeatures = By.CssSelector("[class='row generic-row homepage-recsuits-row inner-row']>div");
+            public static readonly By GetStartedButton = By.CssSelector("[data-at='lnk-hero-get-started']");
+            public static readonly By Features = By.CssSelector("[class='block-link']");
+            public static readonly By SubFeatureButton = By.CssSelector("[data-at='lnk-sub-feature']");
+            public static readonly By RecommendedSuits = By.CssSelector("[class='recommended-suit block-link ga-event-click']");
+            public static readonly By PromoOfferButton = By.CssSelector("[data-at='lnk-promo-offer']");
+            public static readonly By CompleteYourLookFeatures = By.CssSelector("[class='row generic-row homepage-recsuits-row inner-row']>div");
         }
     }
 }

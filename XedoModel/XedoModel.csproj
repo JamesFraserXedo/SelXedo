@@ -74,7 +74,8 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\WaistcoatFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitControls.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitViewer.cs" />
-    <Compile Include="Controls\OutfitSummary\OutfitSummaryObject.cs" />
+    <Compile Include="Controls\OutfitSummary\SummaryOutfitViewer.cs" />
+    <Compile Include="Controls\OutfitSummary\TotalPanel.cs" />
     <Compile Include="Controls\PartyBuilder\GroomGoesFreePopup.cs" />
     <Compile Include="Controls\PartyBuilder\NewPartyMemberPopup.cs" />
     <Compile Include="Controls\PaymentConfirmation\BillingAddressForm.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\OrderConfirmationPage.cs" />
+    <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />
     <Compile Include="Pages\PaymentConfirmationPage.cs" />
     <Compile Include="Pages\PaymentProcess\BillingAddressPage.cs" />

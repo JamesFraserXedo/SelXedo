@@ -38,11 +38,11 @@ namespace CommonModel.Controls.OutfitBuilder.OutfitControls
 
         public class Locators
         {
-            public static By Container = By.CssSelector("[class='outfit-controls']");
-            public static By SaveOutfitButton = By.Id("save-outfit-only-button");
-            public static By ToggleJacketButton = By.Id("remove-jacket-button");
-            public static By ClearOutfitButton = By.Id("clear-outfit-button");
-            public static By ExpandButton = By.Id("expand-help-section-button");
+            public static readonly By Container = By.CssSelector("[class='outfit-controls']");
+            public static readonly By SaveOutfitButton = By.Id("save-outfit-only-button");
+            public static readonly By ToggleJacketButton = By.Id("remove-jacket-button");
+            public static readonly By ClearOutfitButton = By.Id("clear-outfit-button");
+            public static readonly By ExpandButton = By.Id("expand-help-section-button");
         }
     }
 }

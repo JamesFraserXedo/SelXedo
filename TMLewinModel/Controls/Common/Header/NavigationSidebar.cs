@@ -19,7 +19,7 @@ namespace TMLewinModel.Controls.Common.Header
 
         public new class Locators : BaseNavigationSidebar.Locators
         {
-            public static By FreeDeliveryAndReturnsButton = By.CssSelector("[data-at='lnk-menu-freedelivery']");
+            public static readonly By FreeDeliveryAndReturnsButton = By.CssSelector("[data-at='lnk-menu-freedelivery']");
         }
     }
 }

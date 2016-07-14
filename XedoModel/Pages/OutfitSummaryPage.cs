@@ -32,31 +32,6 @@ namespace XedoModel.Pages
             get { return Driver.FindElement(Locators.TotalLabel); }
         }
 
-        public OutfitSummaryObject TuxSummaryObject
-        {
-            get { return new OutfitSummaryObject(TestSettings, Driver.FindElement(Locators.TuxSummaryObject));}
-        }
-
-        public OutfitSummaryObject WaistcoatSummaryObject
-        {
-            get { return new OutfitSummaryObject(TestSettings, Driver.FindElement(Locators.WaistcoatSummaryObject)); }
-        }
-
-        public OutfitSummaryObject NeckwearSummaryObject
-        {
-            get { return new OutfitSummaryObject(TestSettings, Driver.FindElement(Locators.NeckwearSummaryObject)); }
-        }
-
-        public OutfitSummaryObject ShirtSummaryObject
-        {
-            get { return new OutfitSummaryObject(TestSettings, Driver.FindElement(Locators.ShirtSummaryObject)); }
-        }
-
-        public OutfitSummaryObject AccessoriesSummaryObject
-        {
-            get { return new OutfitSummaryObject(TestSettings, Driver.FindElement(Locators.AccessoriesSummaryObject)); }
-        }
-
         public string TotalDue
         {
             get { return TotalLabel.Text; }
@@ -69,21 +44,21 @@ namespace XedoModel.Pages
         
         public class Locators
         {
-            public static By CustomiseTuxButton = By.XPath("//div[contains(@class, 'customize-look-holder')]/a");
-            public static By TuxSummaryObject = By.XPath("//div[@data-at='click-jacket']");
-            public static By WaistcoatSummaryObject = By.XPath("//div[@data-at='click-waistcoat-cummerbund']");
-            public static By NeckwearSummaryObject = By.XPath("//div[@data-at='click-neckwear']");
-            public static By ShirtSummaryObject = By.XPath("//div[@data-at='click-shirt']");
-            public static By AccessoriesSummaryObject = By.XPath("//div[@data-at='click-accessories']");
-            public static By SummaryDetailsPanel = By.XPath("//div[@class='outfit-selection-content']");
-            public static By AddToOrderButton = By.Id("placeorder");
-            public static By OrderFreeTryOnButton = By.Id("book-try-on");
+            public static readonly By CustomiseTuxButton = By.XPath("//div[contains(@class, 'customize-look-holder')]/a");
+            public static readonly By TuxSummaryObject = By.XPath("//div[@data-at='click-jacket']");
+            public static readonly By WaistcoatSummaryObject = By.XPath("//div[@data-at='click-waistcoat-cummerbund']");
+            public static readonly By NeckwearSummaryObject = By.XPath("//div[@data-at='click-neckwear']");
+            public static readonly By ShirtSummaryObject = By.XPath("//div[@data-at='click-shirt']");
+            public static readonly By AccessoriesSummaryObject = By.XPath("//div[@data-at='click-accessories']");
+            public static readonly By SummaryDetailsPanel = By.XPath("//div[@class='outfit-selection-content']");
+            public static readonly By AddToOrderButton = By.Id("placeorder");
+            public static readonly By OrderFreeTryOnButton = By.Id("book-try-on");
 
-            public static By SubtotalPriceLabel = By.XPath("//span[@class='sub-total-amount']");
-            public static By SubtotalDiscountByLabel = By.XPath("//span[@class='sub-total-discount']");
-            public static By TotalLabel = By.XPath("//span[@class='total-amount']");
+            public static readonly By SubtotalPriceLabel = By.XPath("//span[@class='sub-total-amount']");
+            public static readonly By SubtotalDiscountByLabel = By.XPath("//span[@class='sub-total-discount']");
+            public static readonly By TotalLabel = By.XPath("//span[@class='total-amount']");
 
-            public static By IsLoadingSpinner = By.XPath("//*[@class='outfit-builder ob-loading']");
+            public static readonly By IsLoadingSpinner = By.XPath("//*[@class='outfit-builder ob-loading']");
         }
     }
 }

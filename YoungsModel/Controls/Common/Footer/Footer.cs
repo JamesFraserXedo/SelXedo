@@ -28,10 +28,10 @@ namespace YoungsModel.Controls.Common.Footer
         
         public new class Locators : SignupFooter.Locators
         {
-            public static By Logo = By.CssSelector("[data-at='lnk-footer-logo']");
-            public static By PriceListLink = By.CssSelector("[data-at='lnk-footer-pricelist']");
-            public static By FreeDeliveryAndReturnsLink = By.CssSelector("[data-at='lnk-footer-menu-freedelivery']");
-            public static By ContactUsLink = By.CssSelector("[data-at='lnk-footer-contact-us']");
+            public static readonly By Logo = By.CssSelector("[data-at='lnk-footer-logo']");
+            public static readonly By PriceListLink = By.CssSelector("[data-at='lnk-footer-pricelist']");
+            public static readonly By FreeDeliveryAndReturnsLink = By.CssSelector("[data-at='lnk-footer-menu-freedelivery']");
+            public static readonly By ContactUsLink = By.CssSelector("[data-at='lnk-footer-contact-us']");
         }
     }
 }

@@ -73,18 +73,18 @@ namespace CommonModel.Controls.Common.Header.NavigationSidebar
 
         public class Locators
         {
-            public static By Container = By.ClassName("menu-wrapper");
-            public static By DismissSidebarButton = By.Id("nav-close-button");
-            public static By HomeButton = By.CssSelector("[data-at='lnk-menu-home']");
-            public static By OutfitBuilderButton = By.CssSelector("[data-at='lnk-menu-outfit-builder']");
-            public static By ProfileButton = By.CssSelector("[data-at='lnk-menu-profile']");
-            public static By OrdersButton = By.CssSelector("[data-at='lnk-menu-orders']");
-            public static By OrdersCountLabel = By.CssSelector("[data-at='lnk-menu-orders']>span");
-            public static By FavouritesButton = By.CssSelector("[data-at='lnk-menu-favourites']");
-            public static By FavouritesCountLabel = By.CssSelector("[data-at='lnk-menu-favourites']>span");
-            public static By HowItWorksButton = By.CssSelector("[data-at='lnk-menu-how-it-works']");
-            public static By PriceListButton = By.CssSelector("[data-at='lnk-menu-pricelist']");
-            public static By ContactUsButton = By.CssSelector("[data-at='lnk-menu-contact-us']");
+            public static readonly By Container = By.ClassName("menu-wrapper");
+            public static readonly By DismissSidebarButton = By.Id("nav-close-button");
+            public static readonly By HomeButton = By.CssSelector("[data-at='lnk-menu-home']");
+            public static readonly By OutfitBuilderButton = By.CssSelector("[data-at='lnk-menu-outfit-builder']");
+            public static readonly By ProfileButton = By.CssSelector("[data-at='lnk-menu-profile']");
+            public static readonly By OrdersButton = By.CssSelector("[data-at='lnk-menu-orders']");
+            public static readonly By OrdersCountLabel = By.CssSelector("[data-at='lnk-menu-orders']>span");
+            public static readonly By FavouritesButton = By.CssSelector("[data-at='lnk-menu-favourites']");
+            public static readonly By FavouritesCountLabel = By.CssSelector("[data-at='lnk-menu-favourites']>span");
+            public static readonly By HowItWorksButton = By.CssSelector("[data-at='lnk-menu-how-it-works']");
+            public static readonly By PriceListButton = By.CssSelector("[data-at='lnk-menu-pricelist']");
+            public static readonly By ContactUsButton = By.CssSelector("[data-at='lnk-menu-contact-us']");
 
         }
     }

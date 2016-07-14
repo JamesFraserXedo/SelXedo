@@ -22,8 +22,8 @@ namespace XedoModel.Controls.PartyBuilder
 
         public class Locators
         {
-            public static By Container = By.Id("GGFDiscountPromptPopup");
-            public static By NoThanksButton = By.Id("buildPartyGGFPopUpNoThanksBtn");
+            public static readonly By Container = By.Id("GGFDiscountPromptPopup");
+            public static readonly By NoThanksButton = By.Id("buildPartyGGFPopUpNoThanksBtn");
         }
     }
 

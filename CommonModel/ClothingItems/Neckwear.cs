@@ -58,7 +58,7 @@ namespace CommonModel.ClothingItems
 
         protected new class Locators : ClothingBase.Locators
         {
-            public static By Name = By.ClassName("item-text-link"); // Needs data-at hook
+            public static readonly By Name = By.ClassName("item-text-link"); // Needs data-at hook
         }
     }
 }

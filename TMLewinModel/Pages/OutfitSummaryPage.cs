@@ -17,13 +17,13 @@ namespace TMLewinModel.Pages
 
         public class Locators
         {
-            public static By EditThisOutfitButton = By.ClassName("button secondary-cta product-type-edit");
-            public static By RemoveJacketButton = By.CssSelector("[data-at='lnk-remove-jacket']");
-            public static By SaveToFavouritesButton = By.CssSelector("[data-at='lnk-save-outfit']");
-            public static By TotalLabel = By.Id("outfit-price-total");
-            public static By TotalOrderValueLabel = By.Id("outfit-price-value");
-            public static By AddToOrderButton = By.CssSelector("[data-at='lnk-add-to-order']");
-            public static By OrderGroomsFreeTryOnButton = By.CssSelector("[data-at='lnk-try-on']");
+            public static readonly By EditThisOutfitButton = By.ClassName("button secondary-cta product-type-edit");
+            public static readonly By RemoveJacketButton = By.CssSelector("[data-at='lnk-remove-jacket']");
+            public static readonly By SaveToFavouritesButton = By.CssSelector("[data-at='lnk-save-outfit']");
+            public static readonly By TotalLabel = By.Id("outfit-price-total");
+            public static readonly By TotalOrderValueLabel = By.Id("outfit-price-value");
+            public static readonly By AddToOrderButton = By.CssSelector("[data-at='lnk-add-to-order']");
+            public static readonly By OrderGroomsFreeTryOnButton = By.CssSelector("[data-at='lnk-try-on']");
         }
     }
 }

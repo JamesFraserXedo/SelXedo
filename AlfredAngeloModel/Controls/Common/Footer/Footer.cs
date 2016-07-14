@@ -18,7 +18,7 @@ namespace AlfredAngeloModel.Controls.Common.Footer
         
         public new class Locators : BaseFooter.Locators
         {
-            public static By Logo = By.CssSelector("[data-at='lnk-footer-logo']");
+            public static readonly By Logo = By.CssSelector("[data-at='lnk-footer-logo']");
         }
     }
 }

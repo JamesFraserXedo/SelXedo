@@ -31,10 +31,10 @@ namespace XedoModel.Controls.Profile
 
         public class Locators
         {
-            public static By ManageProfileTabButton = By.Id("ManageProfile");
-            public static By OrdersTabButton = By.Id("Orders");
-            public static By AddressBookTabButton = By.Id("AddressBook");
-            public static By FavouritesTabButton = By.Id("Favourites");
+            public static readonly By ManageProfileTabButton = By.Id("ManageProfile");
+            public static readonly By OrdersTabButton = By.Id("Orders");
+            public static readonly By AddressBookTabButton = By.Id("AddressBook");
+            public static readonly By FavouritesTabButton = By.Id("Favourites");
         }
     }
 }

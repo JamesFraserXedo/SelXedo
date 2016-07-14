@@ -28,9 +28,9 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Waistcoat
 
         public new class Locators : BaseExpandableFilter.Locators
         {
-            public static By ColourBlack = By.CssSelector("[data-colour-desc='Black']");
-            public static By ColourCream = By.CssSelector("[data-colour-desc='Cream']");
-            public static By ColourBlue = By.CssSelector("[data-colour-desc='Blue']");
+            public static readonly By ColourBlack = By.CssSelector("[data-colour-desc='Black']");
+            public static readonly By ColourCream = By.CssSelector("[data-colour-desc='Cream']");
+            public static readonly By ColourBlue = By.CssSelector("[data-colour-desc='Blue']");
         }
     }
 }

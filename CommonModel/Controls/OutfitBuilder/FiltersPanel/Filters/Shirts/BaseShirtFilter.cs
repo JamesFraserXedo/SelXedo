@@ -16,7 +16,7 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Shirts
 
         public new class Locators : BaseFilter.Locators
         {
-            public static By Container = By.Id("filters-shirt");
+            public static readonly By Container = By.Id("filters-shirt");
         }
     }
 }

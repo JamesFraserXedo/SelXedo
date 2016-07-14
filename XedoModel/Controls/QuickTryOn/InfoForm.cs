@@ -223,35 +223,35 @@ namespace XedoModel.Controls.QuickTryOn
 
         public class Locators
         {
-            public static By Container = By.XPath("//div[@class='try-on-steps shadow-panel']");
-            public static By HeightSelect = By.Id("SelectedHeight");
-            public static By WeightSelect = By.Id("SelectedWeight");
-            public static By CoatSizeSelect = By.Id("SelectedCoatSizeId");
-            public static By FirstNameInputBox = By.Id("FirstName");
-            public static By LastNameInputBox = By.Id("LastName");
-            public static By AddressOneInputBox = By.Id("AddressEditor_NewAddress_Line1");
-            public static By AddressTwoInputBox = By.Id("AddressEditor_NewAddress_Line2");
-            public static By CityInputBox = By.Id("AddressEditor_NewAddress_City");
-            public static By StateSelect = By.Id("AddressEditor_NewAddress_StateCode");
-            public static By ZipInputBox = By.Id("AddressEditor_NewAddress_ZipCode");
-            public static By ConfirmDeliveryAddressButton = By.Id("ConfirmAddressButton");
-            public static By ConfirmDeliveryAddressButtonSpinner = By.XPath("//*[@id='ConfirmAddressButton' and contains(@class, 'spinner')]");
-            public static By SaveAsDefaultAddressCheckbox = By.Id("AddressEditor_NewAddressSaveAsDefault");
-            public static By ContactNumberInputBox = By.Id("ContactNumber");
-            public static By WeddingDateSelector = By.Id("EventDate");
-            public static By PreferredTryOnDateSelector = By.Id("TryOnDate_Value");
-            public static By CollectionDateLabel = By.Id("CollectionDateLabel");
-            public static By WeddingDateDatePickerContainer = By.Id("EventDate_dw_pnl_0");
-            public static By PreferredDateDatePickerContainer = By.Id("TryOnDate_Value_dw_pnl_0");
-            public static By ConfirmedAddressLabel = By.Id("ConfirmedAddressLabel");
-            public static By AddressConfirmationSpinner = By.XPath("//*[@class='button secondary-cta floatright large spinner']");
-            public static By SuggestedAddressLabel = By.Id("SuggestedAddress");
+            public static readonly By Container = By.XPath("//div[@class='try-on-steps shadow-panel']");
+            public static readonly By HeightSelect = By.Id("SelectedHeight");
+            public static readonly By WeightSelect = By.Id("SelectedWeight");
+            public static readonly By CoatSizeSelect = By.Id("SelectedCoatSizeId");
+            public static readonly By FirstNameInputBox = By.Id("FirstName");
+            public static readonly By LastNameInputBox = By.Id("LastName");
+            public static readonly By AddressOneInputBox = By.Id("AddressEditor_NewAddress_Line1");
+            public static readonly By AddressTwoInputBox = By.Id("AddressEditor_NewAddress_Line2");
+            public static readonly By CityInputBox = By.Id("AddressEditor_NewAddress_City");
+            public static readonly By StateSelect = By.Id("AddressEditor_NewAddress_StateCode");
+            public static readonly By ZipInputBox = By.Id("AddressEditor_NewAddress_ZipCode");
+            public static readonly By ConfirmDeliveryAddressButton = By.Id("ConfirmAddressButton");
+            public static readonly By ConfirmDeliveryAddressButtonSpinner = By.XPath("//*[@id='ConfirmAddressButton' and contains(@class, 'spinner')]");
+            public static readonly By SaveAsDefaultAddressCheckbox = By.Id("AddressEditor_NewAddressSaveAsDefault");
+            public static readonly By ContactNumberInputBox = By.Id("ContactNumber");
+            public static readonly By WeddingDateSelector = By.Id("EventDate");
+            public static readonly By PreferredTryOnDateSelector = By.Id("TryOnDate_Value");
+            public static readonly By CollectionDateLabel = By.Id("CollectionDateLabel");
+            public static readonly By WeddingDateDatePickerContainer = By.Id("EventDate_dw_pnl_0");
+            public static readonly By PreferredDateDatePickerContainer = By.Id("TryOnDate_Value_dw_pnl_0");
+            public static readonly By ConfirmedAddressLabel = By.Id("ConfirmedAddressLabel");
+            public static readonly By AddressConfirmationSpinner = By.XPath("//*[@class='button secondary-cta floatright large spinner']");
+            public static readonly By SuggestedAddressLabel = By.Id("SuggestedAddress");
 
-            public static By ConfirmUserEnteredAddressButton = By.Id("ConfirmUserEnteredAddressButton");
-            public static By ConfirmSuggestedAddressButton = By.Id("ConfirmSuggestedAddressButton");
+            public static readonly By ConfirmUserEnteredAddressButton = By.Id("ConfirmUserEnteredAddressButton");
+            public static readonly By ConfirmSuggestedAddressButton = By.Id("ConfirmSuggestedAddressButton");
 
-            public static By InputNewAddressButton = By.Id("InputNewAddressButton");
-            public static By InvalidZipErrorLabel = By.XPath("//*[@class='field-validation-error']");
+            public static readonly By InputNewAddressButton = By.Id("InputNewAddressButton");
+            public static readonly By InvalidZipErrorLabel = By.XPath("//*[@class='field-validation-error']");
             
         }
     }

@@ -19,7 +19,7 @@ namespace AlfredAngeloModel.Controls.OutfitBuilder.FiltersPanel.Filters
 
         public new class Locators : UkSuitFilter.Locators
         {
-            public static By PrinceEdwardSelect = By.CssSelector("[value='Prince Edward']");
+            public static readonly By PrinceEdwardSelect = By.CssSelector("[value='Prince Edward']");
         }
     }
 }

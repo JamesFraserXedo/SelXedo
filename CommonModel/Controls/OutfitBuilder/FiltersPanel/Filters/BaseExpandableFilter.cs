@@ -30,7 +30,7 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters
 
         public new class Locators : BaseFilter.Locators
         {
-            public static By Body = By.ClassName("filters-section-body");
+            public static readonly By Body = By.ClassName("filters-section-body");
         }
     }
 }

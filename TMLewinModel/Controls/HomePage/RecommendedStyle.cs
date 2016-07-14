@@ -41,9 +41,9 @@ namespace TMLewinModel.Controls.HomePage
 
         public class Locators
         {
-            public static By ImageElement = By.CssSelector("img");
-            public static By NameLabel = By.CssSelector("p");
-            public static By Button = By.CssSelector("[role='button']");
+            public static readonly By ImageElement = By.CssSelector("img");
+            public static readonly By NameLabel = By.CssSelector("p");
+            public static readonly By Button = By.CssSelector("[role='button']");
         }
     }
 }
