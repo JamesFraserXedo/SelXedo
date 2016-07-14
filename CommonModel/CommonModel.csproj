@@ -61,6 +61,7 @@
     <Compile Include="Controls\Common\Header\LoginSidebar\BaseLoginSidebar.cs" />
     <Compile Include="Controls\Common\Header\MenuHeader.cs" />
     <Compile Include="Controls\Common\Header\NavigationSidebar\BaseNavigationSidebar.cs" />
+    <Compile Include="Controls\OutfitBuilder\BaseOutfitViewer.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\BaseCataloguePanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Accessories\BaseUkAccessoriesCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Accessories\BaseUsAccessoriesCatalogue.cs" />

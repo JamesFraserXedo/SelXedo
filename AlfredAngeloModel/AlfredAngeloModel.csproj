@@ -63,12 +63,14 @@
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\ShirtsCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\SuitsCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\WaistcoatsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\OutfitControls.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\FilterPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\AccessoriesFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\NeckwearFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\ShirtsFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\SuitFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\WaistcoatFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\OutfitViewer.cs" />
     <Compile Include="Controls\Registration\RegistrationForm.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

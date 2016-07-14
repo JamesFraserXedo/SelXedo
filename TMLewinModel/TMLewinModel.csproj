@@ -71,6 +71,8 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\ShirtsFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\SuitFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\WaistcoatFilter.cs" />
+    <Compile Include="Controls\OutfitBuilder\OutfitControls.cs" />
+    <Compile Include="Controls\OutfitBuilder\OutfitViewer.cs" />
     <Compile Include="Controls\PriceListPage\PriceListItem.cs" />
     <Compile Include="Controls\Registration\RegistrationForm.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
