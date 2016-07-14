@@ -1,19 +1,13 @@
 ﻿using Core.CustomElements;
-using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace CommonModel.Pages
+namespace CommonModel.Controls.Registration
 {
-    public abstract class BaseRegistrationPage : PageBase
+    public abstract class BaseRegistrationForm : ControlBase
     {
-        protected BaseRegistrationPage(TestSettings testSettings) : base(testSettings)
+        protected BaseRegistrationForm(TestSettings testSettings) : base(testSettings)
         {
-        }
-
-        public override bool IsLoaded()
-        {
-            return Driver.ElementDisplayed(Locators.EmailInputbox);
         }
 
         public InputBox FirstNameInputbox

@@ -66,6 +66,7 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\SuitFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\WaistcoatFilter.cs" />
     <Compile Include="Controls\PriceListPage\PriceListItem.cs" />
+    <Compile Include="Controls\Registration\RegistrationForm.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\FreeDeliveryPage.cs" />
     <Compile Include="Pages\HomePage.cs" />

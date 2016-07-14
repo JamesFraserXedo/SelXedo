@@ -48,6 +48,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClothingItems\Accessory.cs" />
+    <Compile Include="ClothingItems\ClothingBase.cs" />
+    <Compile Include="ClothingItems\Shirt.cs" />
+    <Compile Include="ClothingItems\Neckwear.cs" />
+    <Compile Include="ClothingItems\Suit.cs" />
+    <Compile Include="ClothingItems\Waistcoat.cs" />
     <Compile Include="Controls\Common\Footer\BaseFooter.cs" />
     <Compile Include="Controls\Common\Footer\SignupFooter.cs" />
     <Compile Include="Controls\Common\Header\BaseHeader.cs" />
@@ -55,6 +61,19 @@
     <Compile Include="Controls\Common\Header\LoginSidebar\BaseLoginSidebar.cs" />
     <Compile Include="Controls\Common\Header\MenuHeader.cs" />
     <Compile Include="Controls\Common\Header\NavigationSidebar\BaseNavigationSidebar.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\BaseCataloguePanel.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Accessories\BaseUkAccessoriesCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Accessories\BaseUsAccessoriesCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\BaseCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\BaseUkCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Suits\BaseUkSuitsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Suits\BaseUsSuitsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Neckwear\BaseUkNeckwearCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Neckwear\BaseUsNeckwearCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Waistcoats\BaseUkWaistcoatsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Waistcoats\BaseUsWaistcoatsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Shirts\BaseUkShirtsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Shirts\BaseUsShirtsCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\BaseFilterPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Accessories\BaseAccessoriesFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\BaseExpandableFilter.cs" />
@@ -69,8 +88,9 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Waistcoat\BaseWaistcoatFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Waistcoat\UkWaistcoatFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Waistcoat\UsWaistcoatFilter.cs" />
-    <Compile Include="Pages\BaseOutfitBuilderPage.cs" />
-    <Compile Include="Pages\BaseRegistrationPage.cs" />
+    <Compile Include="Controls\OutfitBuilder\OutfitControls\BaseOutfitControls.cs" />
+    <Compile Include="Controls\OutfitBuilder\OutfitControls\ZoomableOutfitControls.cs" />
+    <Compile Include="Controls\Registration\BaseRegistrationForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

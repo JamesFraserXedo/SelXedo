@@ -79,6 +79,7 @@
     <Compile Include="Controls\QuickTryOn\InfoForm.cs" />
     <Compile Include="Controls\QuickTryOn\SelectedColour.cs" />
     <Compile Include="Controls\QuickTryOn\TryOnPopup.cs" />
+    <Compile Include="Controls\Registration\RegistrationForm.cs" />
     <Compile Include="Pages\CollectionsPage.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
