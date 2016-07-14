@@ -34,7 +34,7 @@ namespace CommonModel.ClothingItems
         {
             get
             {
-                string type = _container.GetAttribute("data-neckwear-type");
+                var type = _container.GetAttribute("data-neckwear-type");
                 if (type == "1")
                 {
                     return "Ruche";
@@ -58,6 +58,7 @@ namespace CommonModel.ClothingItems
 
         protected new class Locators : ClothingBase.Locators
         {
+            //TODO 
             public static readonly By Name = By.ClassName("item-text-link"); // Needs data-at hook
         }
     }

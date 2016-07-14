@@ -1,9 +1,9 @@
 ﻿using CommonModel.Pages;
 using Core.Model.TestObjects.Bases;
-using TMLewinModel.Controls.OutfitSummary;
-using TMLewinModel.Controls.OutfitSummary.OutfitOptions;
+using YoungsModel.Controls.OutfitSummary;
+using YoungsModel.Controls.OutfitSummary.OutfitOptions;
 
-namespace TMLewinModel.Pages
+namespace YoungsModel.Pages
 {
     public class OutfitSummaryPage : BaseOutfitSummaryPage
     {

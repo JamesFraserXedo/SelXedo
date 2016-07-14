@@ -1,9 +1,9 @@
 ﻿using CommonModel.Pages;
 using Core.Model.TestObjects.Bases;
-using TMLewinModel.Controls.OutfitSummary;
-using TMLewinModel.Controls.OutfitSummary.OutfitOptions;
+using PromGuyModel.Controls.OutfitSummary;
+using PromGuyModel.Controls.OutfitSummary.OutfitOptions;
 
-namespace TMLewinModel.Pages
+namespace AlfredAngeloModel.Pages
 {
     public class OutfitSummaryPage : BaseOutfitSummaryPage
     {

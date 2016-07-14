@@ -3,9 +3,9 @@ using Core.Model.TestObjects.Bases;
 
 namespace AlfredAngeloModel.Controls.OutfitSummary
 {
-    public abstract class TotalPanel : BaseUkTotalPanel
+    public class TotalPanel : BaseUkTotalPanel
     {
-        protected TotalPanel(TestSettings testSettings) : base(testSettings)
+        public TotalPanel(TestSettings testSettings) : base(testSettings)
         {
         }
     }

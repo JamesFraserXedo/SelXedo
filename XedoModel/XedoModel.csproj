@@ -74,6 +74,11 @@
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\WaistcoatFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitControls.cs" />
     <Compile Include="Controls\OutfitBuilder\OutfitViewer.cs" />
+    <Compile Include="Controls\OutfitSummary\OutfitOptions\AccessoryOutfitOption.cs" />
+    <Compile Include="Controls\OutfitSummary\OutfitOptions\NeckwearOutfitOption.cs" />
+    <Compile Include="Controls\OutfitSummary\OutfitOptions\ShirtOutfitOption.cs" />
+    <Compile Include="Controls\OutfitSummary\OutfitOptions\SuitOutfitOption.cs" />
+    <Compile Include="Controls\OutfitSummary\OutfitOptions\WaistcoatOutfitOption.cs" />
     <Compile Include="Controls\OutfitSummary\SummaryOutfitViewer.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPanel.cs" />
     <Compile Include="Controls\PartyBuilder\GroomGoesFreePopup.cs" />

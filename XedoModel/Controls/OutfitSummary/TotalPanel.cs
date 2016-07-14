@@ -6,9 +6,9 @@ using OpenQA.Selenium;
 
 namespace XedoModel.Controls.OutfitSummary
 {
-    public abstract class TotalPanel : BaseUsTotalPanel
+    public class TotalPanel : BaseUsTotalPanel
     {
-        protected TotalPanel(TestSettings testSettings) : base(testSettings)
+        public TotalPanel(TestSettings testSettings) : base(testSettings)
         {
         }
 

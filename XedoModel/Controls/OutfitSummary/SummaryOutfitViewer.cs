@@ -6,7 +6,7 @@ namespace XedoModel.Controls.OutfitSummary
 {
     public class SummaryOutfitViewer : BaseSummaryOutfitViewer
     {
-        protected SummaryOutfitViewer(TestSettings testSettings) : base(testSettings)
+        public SummaryOutfitViewer(TestSettings testSettings) : base(testSettings)
         {
         }
 
