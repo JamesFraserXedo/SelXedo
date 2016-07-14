@@ -1,9 +1,10 @@
-﻿using Core.Model.TestObjects.Bases;
+﻿using CommonModel.Controls.OutfitBuilder.CataloguePanel;
+using Core.Model.TestObjects.Bases;
 using YoungsModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
 
 namespace YoungsModel.Controls.OutfitBuilder.CataloguePanel
 {
-    public class CataloguePanel : ControlBase
+    public class CataloguePanel : BaseCataloguePanel
     {
         public CataloguePanel(TestSettings testSettings) : base(testSettings)
         {
