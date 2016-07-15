@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Bases\XedoStepBase.cs" />
     <Compile Include="Controls\Collections\CollectionOutfit.cs" />
+    <Compile Include="Controls\Common\DatePicker.cs" />
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
     <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
@@ -93,7 +94,8 @@
     <Compile Include="Controls\QuickTryOn\InfoForm.cs" />
     <Compile Include="Controls\QuickTryOn\SelectedColour.cs" />
     <Compile Include="Controls\QuickTryOn\TryOnPopup.cs" />
-    <Compile Include="Controls\Registration\RegistrationForm.cs" />
+    <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel.cs" />
+    <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
     <Compile Include="Pages\CollectionsPage.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
@@ -107,6 +109,7 @@
     <Compile Include="Pages\PaymentProcess\SelectWeddingDatePage.cs" />
     <Compile Include="Pages\QuickTryOnPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
+    <Compile Include="Pages\TryOnBasketPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bases\TMLewinStepBase.cs" />
+    <Compile Include="Controls\Common\DatePicker.cs" />
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
     <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
@@ -81,7 +82,8 @@
     <Compile Include="Controls\OutfitSummary\SummaryOutfitViewer.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPanel.cs" />
     <Compile Include="Controls\PriceListPage\PriceListItem.cs" />
-    <Compile Include="Controls\Registration\RegistrationForm.cs" />
+    <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel.cs" />
+    <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\FreeDeliveryPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
@@ -90,6 +92,7 @@
     <Compile Include="Pages\OutfitSummaryPage.cs" />
     <Compile Include="Pages\PriceListPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
+    <Compile Include="Pages\TryOnBasketPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

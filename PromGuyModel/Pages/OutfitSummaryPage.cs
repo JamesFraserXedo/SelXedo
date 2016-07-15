@@ -3,7 +3,7 @@ using Core.Model.TestObjects.Bases;
 using PromGuyModel.Controls.OutfitSummary;
 using PromGuyModel.Controls.OutfitSummary.OutfitOptions;
 
-namespace AlfredAngeloModel.Pages
+namespace PromGuyModel.Pages
 {
     public class OutfitSummaryPage : BaseOutfitSummaryPage
     {

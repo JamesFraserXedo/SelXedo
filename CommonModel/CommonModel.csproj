@@ -54,6 +54,7 @@
     <Compile Include="ClothingItems\Neckwear.cs" />
     <Compile Include="ClothingItems\Suit.cs" />
     <Compile Include="ClothingItems\Waistcoat.cs" />
+    <Compile Include="Controls\Common\BaseDatePicker.cs" />
     <Compile Include="Controls\Common\Footer\BaseFooter.cs" />
     <Compile Include="Controls\Common\Footer\SignupFooter.cs" />
     <Compile Include="Controls\Common\Header\BaseHeader.cs" />
@@ -101,7 +102,13 @@
     <Compile Include="Controls\OutfitSummary\TotalPane\BaseUkTotalPanel.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPane\BaseUsTotalPanel.cs" />
     <Compile Include="Controls\Registration\BaseRegistrationForm.cs" />
+    <Compile Include="Controls\TryOnBasket\BaseSizeInfoPanel.cs" />
+    <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseDeliveryAddressPanel.cs" />
+    <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseUkDeliveryAddressPanel.cs" />
+    <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseUsDeliveryAddressPanel.cs" />
     <Compile Include="Pages\BaseOutfitSummaryPage.cs" />
+    <Compile Include="Pages\BaseRegistrationPage.cs" />
+    <Compile Include="Pages\BaseTryOnBasketPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
