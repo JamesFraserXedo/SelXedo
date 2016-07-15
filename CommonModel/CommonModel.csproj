@@ -109,6 +109,7 @@
     <Compile Include="Pages\BaseOutfitSummaryPage.cs" />
     <Compile Include="Pages\BaseRegistrationPage.cs" />
     <Compile Include="Pages\BaseTryOnBasketPage.cs" />
+    <Compile Include="Pages\BaseTryOnReviewPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
