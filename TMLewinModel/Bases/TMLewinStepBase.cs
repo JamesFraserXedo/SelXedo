@@ -10,8 +10,7 @@ namespace TMLewinModel.Bases
     [Binding]
     public abstract class TMLewinStepBase : StepBase
     {
-        protected TMLewinStepBase(Context context)
-            : base(context)
+        protected TMLewinStepBase(Context context) : base(context)
         {
         }
 

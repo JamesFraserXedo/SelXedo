@@ -1,21 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C19806F-7CFF-4114-8DAE-7B2318A5174C}</ProjectGuid>
+    <ProjectGuid>{ADE2D2E8-3524-46BA-A872-2585EB49C5CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XedoTests</RootNamespace>
     <AssemblyName>XedoTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
-    <IsCodedUITest>False</IsCodedUITest>
-    <TestProjectType>UnitTest</TestProjectType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,22 +30,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.0.5797.27534, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+    <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.3.0.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="SpecRun.SpecFlowPlugin, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecRun.SpecFlow.1.5.1\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
+    <Reference Include="SpecRun.SpecFlowPlugin, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.1.5.2\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
     <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="TechTalk.SpecRun, Version=1.5.1.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecRun.SpecFlow.1.5.1\lib\net45\TechTalk.SpecRun.dll</HintPath>
+    <Reference Include="TechTalk.SpecRun, Version=1.5.2.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.1.5.2\lib\net45\TechTalk.SpecRun.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -62,60 +62,49 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <Choose>
-    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
-      <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-      </ItemGroup>
-    </When>
-    <Otherwise>
-      <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
-      </ItemGroup>
-    </Otherwise>
-  </Choose>
   <ItemGroup>
-    <Compile Include="Features\HomePage\LogInFromHomePage.feature.cs">
+    <Compile Include="Features\HomePage\LogInFromHomePage1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LogInFromHomePage.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\HomePage\NavigateFromHomePageToAccountRegistration.feature.cs">
+    <Compile Include="Features\HomePage\NavigateFromHomePageToAccountRegistration1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NavigateFromHomePageToAccountRegistration.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\HomePage\PerfectMatch1.feature.cs">
+    <Compile Include="Features\HomePage\PerfectMatch.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PerfectMatch.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\LoadTimes\HomePageLoad1.feature.cs">
+    <Compile Include="Features\LoadTimes\HomePageLoad.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HomePageLoad.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\QuickTryOn\PocketSquares1.feature.cs">
+    <Compile Include="Features\QuickTryOn\PocketSquares.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PocketSquares.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\QuickTryOn\QuickTryOn1.feature.cs">
+    <Compile Include="Features\QuickTryOn\QuickTryOn.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuickTryOn.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\QuickTryOn\ShippingAddress1.feature.cs">
+    <Compile Include="Features\QuickTryOn\ShippingAddress.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ShippingAddress.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\UserJourneys\GroomGoesFree1.feature.cs">
+    <Compile Include="Features\UserJourneys\GroomGoesFree.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GroomGoesFree.feature</DependentUpon>
     </Compile>
     <Compile Include="Hooks\ScenarioHooks.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\BillingAddressSteps.cs" />
     <Compile Include="Steps\BuildPartySteps.cs" />
     <Compile Include="Steps\CollectionsSteps.cs" />
@@ -129,7 +118,6 @@
     <Compile Include="Steps\SharedSteps\HeaderSteps.cs" />
     <Compile Include="Steps\SharedSteps\HomePageSteps.cs" />
     <Compile Include="Steps\SharedSteps\LogInSteps.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\SharedSteps\SidebarSteps.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,7 +126,7 @@
       <Name>CommonModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{FDD5BC60-D62B-4D2D-A4B6-6BA2F356D510}</Project>
+      <Project>{fdd5bc60-d62b-4d2d-a4b6-6ba2f356d510}</Project>
       <Name>Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\XedoModel\XedoModel.csproj">
@@ -153,35 +141,35 @@
     </None>
     <None Include="Features\HomePage\LogInFromHomePage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>LogInFromHomePage.feature.cs</LastGenOutput>
+      <LastGenOutput>LogInFromHomePage1.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\HomePage\NavigateFromHomePageToAccountRegistration.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>NavigateFromHomePageToAccountRegistration.feature.cs</LastGenOutput>
+      <LastGenOutput>NavigateFromHomePageToAccountRegistration1.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\HomePage\PerfectMatch.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>PerfectMatch1.feature.cs</LastGenOutput>
+      <LastGenOutput>PerfectMatch.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\LoadTimes\HomePageLoad.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>HomePageLoad1.feature.cs</LastGenOutput>
+      <LastGenOutput>HomePageLoad.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\QuickTryOn\PocketSquares.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>PocketSquares1.feature.cs</LastGenOutput>
+      <LastGenOutput>PocketSquares.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\QuickTryOn\QuickTryOn.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>QuickTryOn1.feature.cs</LastGenOutput>
+      <LastGenOutput>QuickTryOn.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\QuickTryOn\ShippingAddress.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ShippingAddress1.feature.cs</LastGenOutput>
+      <LastGenOutput>ShippingAddress.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\UserJourneys\GroomGoesFree.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>GroomGoesFree1.feature.cs</LastGenOutput>
+      <LastGenOutput>GroomGoesFree.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
@@ -192,25 +180,6 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <Choose>
-    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
-      <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-          <Private>False</Private>
-        </Reference>
-      </ItemGroup>
-    </When>
-  </Choose>
-  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

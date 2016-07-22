@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TestProfile xmlns="http://www.specflow.org/schemas/plus/TestProfile/1.5">
-  <Settings projectName="XedoTests" projectId="{2966c5b4-1f0c-4837-a09f-6ba79df979d2}" />
+  <Settings projectName="PromGuyTests" projectId="{3481da01-f04c-4299-a31c-0335d1165b2b}" />
   <Execution retryFor="None" stopAfterFailures="-1" testThreadCount="1" testSchedulingMode="Sequential" />
   <!-- For collecting by a SpecRun server update and enable the following element. For using the 
       collected statistics, set testSchedulingMode="Adaptive" attribute on the <Execution> element.
     <Server serverUrl="http://specrunserver:6365" publishResults="true" />
   -->
   <TestAssemblyPaths>
-    <TestAssemblyPath>XedoTests.dll</TestAssemblyPath>
+    <TestAssemblyPath>PromGuyTests.dll</TestAssemblyPath>
   </TestAssemblyPaths>
   <DeploymentTransformation>
     <Steps>
