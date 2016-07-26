@@ -10,7 +10,7 @@ Background:
 Scenario: user logs in with valid credentials via sidebar on home page
 	When I attempt to sign into the via the sidebar with username "sbullets200@mailinator.com" and password "password"
 	Then I should be logged in
-
+	
 @homepage @login
 Scenario Outline: user fails to log in with invalid credentials via sidebar on home page
 	When I attempt to sign into the via the sidebar with username "<email>" and password "<password>"

@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XedoModel", "XedoModel\Xedo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromGuyModel", "PromGuyModel\PromGuyModel.csproj", "{5BDAED54-91F8-4C2E-BEFC-56761A12D005}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F87114D5-5E9D-4829-BDAB-ED6E212BA90B}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMLewinModel", "TMLewinModel\TMLewinModel.csproj", "{59106070-6945-416E-8664-A9FD5DBB21FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMLewinTests", "TMLewinTests\TMLewinTests.csproj", "{BB4D91D6-6B4A-429F-9D7C-93919E4537A0}"

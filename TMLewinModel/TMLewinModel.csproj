@@ -84,6 +84,8 @@
     <Compile Include="Controls\PriceListPage\PriceListItem.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel.cs" />
     <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\ConfirmationMethodPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\BillingAddressPanel.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\FreeDeliveryPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
@@ -93,6 +95,8 @@
     <Compile Include="Pages\PriceListPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
     <Compile Include="Pages\TryOnBasketPage.cs" />
+    <Compile Include="Pages\TryOnConfirmationPagecs.cs" />
+    <Compile Include="Pages\TryOnPaymentPage.cs" />
     <Compile Include="Pages\TryOnReviewPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

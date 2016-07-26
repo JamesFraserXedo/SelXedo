@@ -106,10 +106,19 @@
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseDeliveryAddressPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseUkDeliveryAddressPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseUsDeliveryAddressPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\BillingAdress\UsBillingAddressPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\BillingAdress\UkBillingAddressPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\ConfirmationMethod\BaseConfirmationMethodPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\ConfirmationMethod\UkConfirmationMethodPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\ConfirmationMethod\UsConfirmationMethodPanel.cs" />
     <Compile Include="Pages\BaseOutfitSummaryPage.cs" />
     <Compile Include="Pages\BaseRegistrationPage.cs" />
     <Compile Include="Pages\BaseTryOnBasketPage.cs" />
+    <Compile Include="Pages\BaseTryOnConfirmationPage.cs" />
+    <Compile Include="Pages\TryOnPayment\BaseTryOnPaymentPage.cs" />
     <Compile Include="Pages\BaseTryOnReviewPage.cs" />
+    <Compile Include="Pages\TryOnPayment\UsTryOnPaymentPage.cs" />
+    <Compile Include="Pages\TryOnPayment\UkTryOnPaymentPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

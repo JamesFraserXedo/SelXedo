@@ -75,16 +75,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Features\HomeTest.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HomeTest.feature</DependentUpon>
-    </Compile>
     <Compile Include="Hooks\ScenarioHooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Steps\HomePageSteps.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonModel\CommonModel.csproj">
+      <Project>{A212D5F3-7E08-44B4-B0C1-4A0DCB6F5F37}</Project>
+      <Name>CommonModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{fdd5bc60-d62b-4d2d-a4b6-6ba2f356d510}</Project>
       <Name>Core</Name>
@@ -99,10 +97,6 @@
     <None Include="Default.srprofile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Features\HomeTest.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>HomeTest.feature.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
     <None Include="SpecRunTestProfile.xsd">
@@ -112,7 +106,10 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Steps\" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

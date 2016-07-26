@@ -80,10 +80,14 @@
     <Compile Include="Controls\OutfitSummary\TotalPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel.cs" />
     <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\BillingAddressPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\ConfirmationMethodPanel.cs" />
     <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
     <Compile Include="Pages\TryOnBasketPage.cs" />
+    <Compile Include="Pages\TryOnConfirmationPagecs.cs" />
+    <Compile Include="Pages\TryOnPaymentPage.cs" />
     <Compile Include="Pages\TryOnReviewPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -11,7 +11,7 @@ namespace XedoTests.Steps
         public PaymentOptions(Context context) : base(context)
         {
         }
-
+        
         [Then(@"the groom should be shown the quoted price")]
         public void ThenTheGroomShouldBeShownTheQuotedPrice()
         {

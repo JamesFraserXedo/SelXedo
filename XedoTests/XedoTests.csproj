@@ -98,6 +98,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShippingAddress.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\SampleTests.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SampleTests.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\UserJourneys\GroomGoesFree.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -166,6 +171,10 @@
     <None Include="Features\QuickTryOn\ShippingAddress.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ShippingAddress.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SampleTests.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SampleTests.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\UserJourneys\GroomGoesFree.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

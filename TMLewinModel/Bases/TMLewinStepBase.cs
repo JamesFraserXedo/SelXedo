@@ -33,5 +33,15 @@ namespace TMLewinModel.Bases
         {
             get { return new Footer(GetTestSettings()); }
         }
+
+        public static RegistrationPage RegistrationPage
+        {
+            get { return new RegistrationPage(GetTestSettings()); }
+        }
+
+        public static TryOnPaymentPage TryOnPaymentPage
+        {
+            get { return new TryOnPaymentPage(GetTestSettings()); }
+        }
     }
 }

@@ -198,6 +198,7 @@ namespace XedoTests.Steps
         [Given(@"the Try-On has less then two Pocket Squares")]
         public void GivenTheTry_OnHasLessThenTwoPocketSquares()
         {
+
             QuickTryOnPage.ColourSelect.SecondSelectedColour.Remove();
         }
 

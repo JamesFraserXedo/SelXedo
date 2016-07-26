@@ -77,6 +77,36 @@ namespace CommonModel.Pages
             get { return Driver.FindElement(Locators.InvalidPasswordConfirmationPrintedLabel); }
         }
 
+        public string FirstName
+        {
+            get { return FirstNameInputbox.Text; }
+            set { FirstNameInputbox.SendKeys(value); }
+        }
+
+        public string LastName
+        {
+            get { return LastNameInputbox.Text; }
+            set { LastNameInputbox.SendKeys(value); }
+        }
+
+        public string Email
+        {
+            get { return EmailInputbox.Text; }
+            set { EmailInputbox.SendKeys(value); }
+        }
+
+        public string Password
+        {
+            get { return PasswordInputbox.Text; }
+            set { PasswordInputbox.SendKeys(value); }
+        }
+
+        public string PasswordConfirmation
+        {
+            get { return PasswordConfirmationInputbox.Text; }
+            set { PasswordConfirmationInputbox.SendKeys(value); }
+        }
+
         public class Locators
         {
             public static readonly By FirstNameInputbox = By.CssSelector("[data-at='txt-reg-first-name']");
@@ -85,7 +115,6 @@ namespace CommonModel.Pages
             public static readonly By PasswordInputbox = By.CssSelector("[data-at='txt-reg-password']");
             public static readonly By PasswordConfirmationInputbox = By.CssSelector("[data-at='txt-reg-password-confirm']");
             public static readonly By CompleteRegistrationButton = By.CssSelector("[data-at='btn-complete-registration']");
-
             public static readonly By InvalidFirstNameLabel = By.CssSelector("[class='invalid'][for='MemberDetails_FirstName']");
             public static readonly By InvalidLastNameLabel = By.CssSelector("[class='invalid'][for='MemberDetails_Surname']");
             public static readonly By InvalidEmailLabel = By.CssSelector("[class='invalid'][for='MemberDetails_Email']");

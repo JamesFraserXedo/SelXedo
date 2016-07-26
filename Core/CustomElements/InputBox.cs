@@ -26,6 +26,11 @@ namespace Core.CustomElements
             _element.Click();
         }
 
+        public string Text
+        {
+            get { return _element.Text; }
+        }
+
         public void SendKeys(string keys)
         {
             _element.SendKeys(keys);

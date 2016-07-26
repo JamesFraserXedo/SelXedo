@@ -96,6 +96,8 @@
     <Compile Include="Controls\QuickTryOn\TryOnPopup.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel.cs" />
     <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\BillingAddressPanel.cs" />
+    <Compile Include="Controls\TryOnPayment\ConfirmationMethodPanel.cs" />
     <Compile Include="Pages\CollectionsPage.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
@@ -110,7 +112,9 @@
     <Compile Include="Pages\QuickTryOnPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
     <Compile Include="Pages\TryOnBasketPage.cs" />
+    <Compile Include="Pages\TryOnConfirmationPagecs.cs" />
     <Compile Include="Pages\TryOnReviewPage.cs" />
+    <Compile Include="Pages\TryOnPaymentPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
