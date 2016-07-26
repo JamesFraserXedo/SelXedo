@@ -5,10 +5,10 @@ using OpenQA.Selenium;
 
 namespace CommonModel.Controls.Common
 {
-    public class BaseDatePicker : ControlBase
+    public class MinimisedDatePicker : ControlBase
     {
         private IWebElement _element;
-        public BaseDatePicker(TestSettings testSettings, IWebElement element) : base(testSettings)
+        public MinimisedDatePicker(TestSettings testSettings, IWebElement element) : base(testSettings)
         {
             _element = element;
         }

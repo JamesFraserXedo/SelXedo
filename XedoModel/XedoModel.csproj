@@ -108,9 +108,9 @@
     <Compile Include="Pages\PaymentProcess\BillingAddressPage.cs" />
     <Compile Include="Pages\PaymentProcess\BuildPartyPage.cs" />
     <Compile Include="Pages\PaymentProcess\PaymentOptionsPage.cs" />
-    <Compile Include="Pages\PaymentProcess\SelectWeddingDatePage.cs" />
     <Compile Include="Pages\QuickTryOnPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
+    <Compile Include="Pages\SelectWeddingDatePage.cs" />
     <Compile Include="Pages\TryOnBasketPage.cs" />
     <Compile Include="Pages\TryOnConfirmationPagecs.cs" />
     <Compile Include="Pages\TryOnReviewPage.cs" />

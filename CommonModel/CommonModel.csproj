@@ -54,7 +54,8 @@
     <Compile Include="ClothingItems\Neckwear.cs" />
     <Compile Include="ClothingItems\Suit.cs" />
     <Compile Include="ClothingItems\Waistcoat.cs" />
-    <Compile Include="Controls\Common\BaseDatePicker.cs" />
+    <Compile Include="Controls\Common\MinimisedDatePicker.cs" />
+    <Compile Include="Controls\Common\DatePicker\EmbeddedDatePicker.cs" />
     <Compile Include="Controls\Common\Footer\BaseFooter.cs" />
     <Compile Include="Controls\Common\Footer\SignupFooter.cs" />
     <Compile Include="Controls\Common\Header\BaseHeader.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="Controls\TryOnPayment\ConfirmationMethod\UsConfirmationMethodPanel.cs" />
     <Compile Include="Pages\BaseOutfitSummaryPage.cs" />
     <Compile Include="Pages\BaseRegistrationPage.cs" />
+    <Compile Include="Pages\BaseSelectWeddingDatePage.cs" />
     <Compile Include="Pages\BaseTryOnBasketPage.cs" />
     <Compile Include="Pages\BaseTryOnConfirmationPage.cs" />
     <Compile Include="Pages\TryOnPayment\BaseTryOnPaymentPage.cs" />

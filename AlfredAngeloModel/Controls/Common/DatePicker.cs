@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 
 namespace AlfredAngeloModel.Controls.Common
 {
-    public class DatePicker : BaseDatePicker
+    public class DatePicker : MinimisedDatePicker
     {
         public DatePicker(TestSettings testSettings, IWebElement element) : base(testSettings, element)
         {

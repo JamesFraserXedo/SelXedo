@@ -85,6 +85,7 @@
     <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
+    <Compile Include="Pages\SelectWeddingDatePage.cs" />
     <Compile Include="Pages\TryOnBasketPage.cs" />
     <Compile Include="Pages\TryOnConfirmationPagecs.cs" />
     <Compile Include="Pages\TryOnPaymentPage.cs" />

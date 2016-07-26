@@ -14,8 +14,8 @@ namespace XedoTests.Steps
         [Given(@"I have chosen a wedding date")]
         public void GivenIHaveChosenAWeddingDate()
         {
-            SelectWeddingDatePage.ConfirmWeddingDate();
-            SelectWeddingDatePage.Continue();
+            SelectWeddingDatePage.ConfirmWeddingDateButton.Click();
+            SelectWeddingDatePage.ContinueButton.Click();
         }
     }
 }
