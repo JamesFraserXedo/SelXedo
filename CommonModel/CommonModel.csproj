@@ -54,6 +54,9 @@
     <Compile Include="ClothingItems\Neckwear.cs" />
     <Compile Include="ClothingItems\Suit.cs" />
     <Compile Include="ClothingItems\Waistcoat.cs" />
+    <Compile Include="Controls\Billing\BaseOrderBillingAddressPanel.cs" />
+    <Compile Include="Controls\Billing\NotPGOrderBillingAddressPanel.cs" />
+    <Compile Include="Controls\Billing\UkOrderBillingAddressPanel.cs" />
     <Compile Include="Controls\Common\MinimisedDatePicker.cs" />
     <Compile Include="Controls\Common\DatePicker\EmbeddedDatePicker.cs" />
     <Compile Include="Controls\Common\Footer\BaseFooter.cs" />
@@ -117,6 +120,7 @@
     <Compile Include="Pages\BaseSelectWeddingDatePage.cs" />
     <Compile Include="Pages\BaseTryOnBasketPage.cs" />
     <Compile Include="Pages\BaseTryOnConfirmationPage.cs" />
+    <Compile Include="Pages\OrderJourney\YourBillingAddressPage\BaseYourBillingAddressPage.cs" />
     <Compile Include="Pages\TryOnPayment\BaseTryOnPaymentPage.cs" />
     <Compile Include="Pages\BaseTryOnReviewPage.cs" />
     <Compile Include="Pages\TryOnPayment\UsTryOnPaymentPage.cs" />

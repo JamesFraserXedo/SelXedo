@@ -33,9 +33,9 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Neckwear
             get { return new ColourSelector(Driver.FindElement(Container, Locators.ColourGray)); }
         }
         
-        public SelectElement BowTieSelect
+        public Selector BowTieSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.BowTieSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.BowTieSelect)); }
         }
 
         public new class Locators : BaseNeckwearFilter.Locators

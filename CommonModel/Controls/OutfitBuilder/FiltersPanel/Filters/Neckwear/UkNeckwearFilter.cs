@@ -18,9 +18,9 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Neckwear
             get { return new ColourSelector(Driver.FindElement(Container, Locators.ColourGrey)); }
         }
 
-        public SelectElement RucheSelect
+        public Selector RucheSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.RucheSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.RucheSelect)); }
         }
 
         public new class Locators : BaseNeckwearFilter.Locators

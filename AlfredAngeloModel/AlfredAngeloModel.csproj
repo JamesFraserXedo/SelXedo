@@ -58,6 +58,7 @@
     <Compile Include="Controls\Common\Header\Header.cs" />
     <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
     <Compile Include="Controls\Common\Header\NavigationSidebar.cs" />
+    <Compile Include="Controls\OrderJourney\BillingAddressPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\CataloguePanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Controls\OutfitSummary\TotalPanel.cs" />
     <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel.cs" />
+    <Compile Include="Pages\OrderJourney\YourBillingAddressPage.cs" />
     <Compile Include="Pages\SelectWeddingDatePage.cs" />
     <Compile Include="Pages\TryOnConfirmationPagecs.cs" />
     <Compile Include="Pages\TryOnReviewPage.cs" />

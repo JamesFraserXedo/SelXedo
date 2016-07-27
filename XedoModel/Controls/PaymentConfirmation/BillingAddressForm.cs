@@ -26,9 +26,9 @@ namespace XedoModel.Controls.PaymentConfirmation
             get { return new InputBox(Driver.FindElement(_container, Locators.CityInputBox)); }
         }
 
-        public SelectElement StateSelect
+        public Selector StateSelect
         {
-            get { return new SelectElement(Driver.FindElement(_container, Locators.StateSelect)); }
+            get { return new Selector(Driver.FindElement(_container, Locators.StateSelect)); }
         }
 
         public InputBox ZipcodeInputBox

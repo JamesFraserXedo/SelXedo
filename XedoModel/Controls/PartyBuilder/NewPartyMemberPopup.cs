@@ -17,9 +17,9 @@ namespace XedoModel.Controls.PartyBuilder
             get { return Driver.FindElement(Locators.Container); }
         }
 
-        public SelectElement RoleSelect
+        public Selector RoleSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.RoleSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.RoleSelect)); }
         }
 
         public InputBox FirstNameInputBox
@@ -32,9 +32,9 @@ namespace XedoModel.Controls.PartyBuilder
             get { return new InputBox(Driver.FindElement(Container, Locators.LastNameInputBox)); }
         }
 
-        public SelectElement OutfitSelect
+        public Selector OutfitSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.OutfitSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.OutfitSelect)); }
         }
 
         public IWebElement SubmitButton

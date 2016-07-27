@@ -57,6 +57,7 @@
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
     <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
+    <Compile Include="Controls\OrderJourney\BillingAddressPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\CataloguePanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />

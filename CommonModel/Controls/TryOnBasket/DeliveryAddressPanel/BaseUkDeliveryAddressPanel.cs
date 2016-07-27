@@ -37,9 +37,9 @@ namespace CommonModel.Controls.TryOnBasket.DeliveryAddressPanel
             get { return new Button(Driver.FindElement(Container, Locators.FindPostCodeButton)); }
         }
 
-        public SelectElement PostCodeAddressSelect
+        public Selector PostCodeAddressSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.PostCodeAddressSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.PostCodeAddressSelect)); }
         }
 
         public Button UsePostCodeAddressButton

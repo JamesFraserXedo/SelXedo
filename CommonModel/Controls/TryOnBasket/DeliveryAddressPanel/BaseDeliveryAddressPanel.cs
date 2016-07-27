@@ -17,9 +17,9 @@ namespace CommonModel.Controls.TryOnBasket.DeliveryAddressPanel
             get { return Driver.FindElement(Locators.Container); }
         }
 
-        public SelectElement AddressBookSelect
+        public Selector AddressBookSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.AddressBookSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.AddressBookSelect)); }
         }
 
         public Button UseThisExistingAddressButton

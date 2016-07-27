@@ -61,6 +61,7 @@
     <Compile Include="Controls\HomePage\ExploreTheCollectionsPanel.cs" />
     <Compile Include="Controls\HomePage\HowItWorksPanel.cs" />
     <Compile Include="Controls\HomePage\PerfectMatchSelector.cs" />
+    <Compile Include="Controls\OrderJourney\BillingAddressPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\CataloguePanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\OrderConfirmationPage.cs" />
+    <Compile Include="Pages\OrderJourney\YourBillingAddressPage.cs" />
     <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />
     <Compile Include="Pages\PaymentConfirmationPage.cs" />

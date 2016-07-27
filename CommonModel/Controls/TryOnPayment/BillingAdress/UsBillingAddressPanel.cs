@@ -21,9 +21,9 @@ namespace CommonModel.Controls.TryOnPayment.BillingAdress
             get { return new InputBox(Driver.FindElement(Locators.CityInputbox)); }
         }
 
-        public SelectElement StateSelect
+        public Selector StateSelect
         {
-            get { return new SelectElement(Driver.FindElement(Locators.StateSelect)); }
+            get { return new Selector(Driver.FindElement(Locators.StateSelect)); }
         }
 
         public InputBox ZipcodeInputbox
@@ -51,7 +51,7 @@ namespace CommonModel.Controls.TryOnPayment.BillingAdress
         public string State
         {
             get { return StateSelect.SelectedOption.Text; }
-            set { StateSelect.SelectByText(value); }
+            set { StateSelect.SelectByTextThenValue(value); }
         }
 
         public string Zipcode

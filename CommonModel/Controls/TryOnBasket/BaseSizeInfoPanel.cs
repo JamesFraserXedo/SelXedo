@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
@@ -21,34 +22,34 @@ namespace CommonModel.Controls.TryOnBasket
             get { return Driver.FindElement(Locators.Container); }
         }
 
-        public SelectElement SuitChestSelect
+        public Selector SuitChestSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.SuitChestSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.SuitChestSelect)); }
         }
 
-        public SelectElement SuitLengthSelect
+        public Selector SuitLengthSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.SuitLengthSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.SuitLengthSelect)); }
         }
 
-        public SelectElement TrousersWaistSelect
+        public Selector TrousersWaistSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.TrousersWaistSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.TrousersWaistSelect)); }
         }
 
-        public SelectElement TrousersInsideLegSelect
+        public Selector TrousersInsideLegSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.TrousersInsideLegSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.TrousersInsideLegSelect)); }
         }
 
-        public SelectElement WaistcoatChestSelect
+        public Selector WaistcoatChestSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.WaistcoatChestSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.WaistcoatChestSelect)); }
         }
 
-        public SelectElement WaistcoatLengthSelect
+        public Selector WaistcoatLengthSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.WaistcoatLengthSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.WaistcoatLengthSelect)); }
         }
 
         public IWebElement DoesNotIncludeFullMessage

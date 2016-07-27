@@ -67,9 +67,9 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Neckwear
             get { return new ColourSelector(Driver.FindElement(Container, Locators.ColourPink)); }
         }
         
-        public SelectElement TieSelect
+        public Selector TieSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.TieSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.TieSelect)); }
         }
 
         public new class Locators : BaseExpandableFilter.Locators

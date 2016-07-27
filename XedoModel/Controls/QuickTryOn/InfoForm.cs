@@ -20,19 +20,19 @@ namespace XedoModel.Controls.QuickTryOn
             get { return Driver.FindElement(Locators.Container); }
         }
 
-        public SelectElement HeightSelect
+        public Selector HeightSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.HeightSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.HeightSelect)); }
         }
 
-        public SelectElement WeightSelect
+        public Selector WeightSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.WeightSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.WeightSelect)); }
         }
 
-        public SelectElement CoatSizeSelect
+        public Selector CoatSizeSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.CoatSizeSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.CoatSizeSelect)); }
         }
 
         public InputBox FirstNameInputBox
@@ -60,9 +60,9 @@ namespace XedoModel.Controls.QuickTryOn
             get { return new InputBox(Driver.FindElement(Container, Locators.CityInputBox)); }
         }
 
-        public SelectElement StateSelect
+        public Selector StateSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.StateSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.StateSelect)); }
         }
 
         public InputBox ZipInputBox
@@ -234,8 +234,8 @@ namespace XedoModel.Controls.QuickTryOn
             public static readonly By CityInputBox = By.Id("AddressEditor_NewAddress_City");
             public static readonly By StateSelect = By.Id("AddressEditor_NewAddress_StateCode");
             public static readonly By ZipInputBox = By.Id("AddressEditor_NewAddress_ZipCode");
-            public static readonly By ConfirmDeliveryAddressButton = By.Id("ConfirmAddressButton");
-            public static readonly By ConfirmDeliveryAddressButtonSpinner = By.XPath("//*[@id='ConfirmAddressButton' and contains(@class, 'spinner')]");
+            public static readonly By ConfirmDeliveryAddressButton = By.Id("ConfirmPostcodeAddressButton");
+            public static readonly By ConfirmDeliveryAddressButtonSpinner = By.XPath("//*[@id='ConfirmPostcodeAddressButton' and contains(@class, 'spinner')]");
             public static readonly By SaveAsDefaultAddressCheckbox = By.Id("AddressEditor_NewAddressSaveAsDefault");
             public static readonly By ContactNumberInputBox = By.Id("ContactNumber");
             public static readonly By WeddingDateSelector = By.Id("EventDate");
@@ -248,7 +248,7 @@ namespace XedoModel.Controls.QuickTryOn
             public static readonly By SuggestedAddressLabel = By.Id("SuggestedAddress");
 
             public static readonly By ConfirmUserEnteredAddressButton = By.Id("ConfirmUserEnteredAddressButton");
-            public static readonly By ConfirmSuggestedAddressButton = By.Id("ConfirmSuggestedAddressButton");
+            public static readonly By ConfirmSuggestedAddressButton = By.Id("ConfirmAddressBookAddressButton");
 
             public static readonly By InputNewAddressButton = By.Id("InputNewAddressButton");
             public static readonly By InvalidZipErrorLabel = By.XPath("//*[@class='field-validation-error']");

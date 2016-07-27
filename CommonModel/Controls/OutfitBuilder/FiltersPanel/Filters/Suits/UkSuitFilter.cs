@@ -27,14 +27,14 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits
             get { return new ColourSelector(Driver.FindElement(Container, Locators.ColourGray)); }
         }
 
-        public SelectElement TailcoatSelect
+        public Selector TailcoatSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.TailcoatSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.TailcoatSelect)); }
         }
 
-        public SelectElement ShortJacketSelect
+        public Selector ShortJacketSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.ShortJacketSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.ShortJacketSelect)); }
         }
 
         public new class Locators : BaseSuitsFilter.Locators

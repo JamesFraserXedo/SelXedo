@@ -1,8 +1,8 @@
 ﻿using CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits;
+using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 
 namespace YoungsModel.Controls.OutfitBuilder.FiltersPanel.Filters
 {
@@ -12,9 +12,9 @@ namespace YoungsModel.Controls.OutfitBuilder.FiltersPanel.Filters
         {
         }
 
-        public SelectElement PrinceEdwardSelect
+        public Selector PrinceEdwardSelect
         {
-            get { return new SelectElement(Driver.FindElement(Container, Locators.PrinceEdwardSelect)); }
+            get { return new Selector(Driver.FindElement(Container, Locators.PrinceEdwardSelect)); }
         }
 
         public new class Locators : UkSuitFilter.Locators
