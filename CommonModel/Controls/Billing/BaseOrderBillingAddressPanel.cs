@@ -17,7 +17,7 @@ namespace CommonModel.Controls.Billing
             get { return new Selector(Driver.FindElement(Locators.AddressBookSelector)); }
         }
 
-        public IWebElement ConfirmedAddressLabel
+        protected IWebElement ConfirmedAddressLabel
         {
             get { return Driver.FindElement(Locators.ConfirmedAddressLabel); }
         }

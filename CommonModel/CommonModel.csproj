@@ -57,7 +57,7 @@
     <Compile Include="Controls\Billing\BaseOrderBillingAddressPanel.cs" />
     <Compile Include="Controls\Billing\NotPGOrderBillingAddressPanel.cs" />
     <Compile Include="Controls\Billing\UkOrderBillingAddressPanel.cs" />
-    <Compile Include="Controls\Common\MinimisedDatePicker.cs" />
+    <Compile Include="Controls\Common\DatePicker\MinimisedDatePicker.cs" />
     <Compile Include="Controls\Common\DatePicker\EmbeddedDatePicker.cs" />
     <Compile Include="Controls\Common\Footer\BaseFooter.cs" />
     <Compile Include="Controls\Common\Footer\SignupFooter.cs" />
@@ -66,6 +66,9 @@
     <Compile Include="Controls\Common\Header\LoginSidebar\BaseLoginSidebar.cs" />
     <Compile Include="Controls\Common\Header\MenuHeader.cs" />
     <Compile Include="Controls\Common\Header\NavigationSidebar\BaseNavigationSidebar.cs" />
+    <Compile Include="Controls\OrderJourney\PartyPaymentPanel\BasePartyPaymentPanel.cs" />
+    <Compile Include="Controls\OrderJourney\PartyPaymentPanel\UsPartyPaymentPanel.cs" />
+    <Compile Include="Controls\OrderJourney\PartyPaymentPanel\UkPartyPaymentPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\BaseOutfitViewer.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\BaseCataloguePanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Accessories\BaseUkAccessoriesCatalogue.cs" />
@@ -105,7 +108,6 @@
     <Compile Include="Controls\OutfitSummary\BaseSummaryOutfitViewer.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPane\BaseUkTotalPanel.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPane\BaseUsTotalPanel.cs" />
-    <Compile Include="Controls\Registration\BaseRegistrationForm.cs" />
     <Compile Include="Controls\TryOnBasket\BaseSizeInfoPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseDeliveryAddressPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseUkDeliveryAddressPanel.cs" />

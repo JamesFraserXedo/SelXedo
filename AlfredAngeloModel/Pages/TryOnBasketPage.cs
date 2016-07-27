@@ -1,5 +1,6 @@
 ﻿using AlfredAngeloModel.Controls.Common;
 using AlfredAngeloModel.Controls.TryOnBasket;
+using CommonModel.Controls.Common.DatePicker;
 using CommonModel.Pages;
 using Core.Model.TestObjects.Bases;
 
@@ -16,14 +17,14 @@ namespace AlfredAngeloModel.Pages
             get { return new SizeInfoPanel(TestSettings); }
         }
 
-        public DatePicker PreferredTryOnDatePicker
+        public MinimisedDatePicker PreferredTryOnDatePicker
         {
-            get { return new DatePicker(TestSettings, Driver.FindElement(Locators.PreferredTryOnDatePicker)); }
+            get { return new MinimisedDatePicker(TestSettings, Driver.FindElement(Locators.PreferredTryOnDatePicker)); }
         }
 
-        public DatePicker WeddingDatePicker
+        public MinimisedDatePicker WeddingDatePicker
         {
-            get { return new DatePicker(TestSettings, Driver.FindElement(Locators.WeddingDatePicker)); }
+            get { return new MinimisedDatePicker(TestSettings, Driver.FindElement(Locators.WeddingDatePicker)); }
         }
     }
 }

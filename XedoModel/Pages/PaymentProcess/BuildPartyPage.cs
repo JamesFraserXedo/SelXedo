@@ -2,7 +2,6 @@
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
-using XedoModel.Controls.PartyBuilder;
 
 namespace XedoModel.Pages.PaymentProcess
 {
@@ -25,11 +24,6 @@ namespace XedoModel.Pages.PaymentProcess
         public IWebElement ContinueToBillingAddressButton
         {
             get { return Driver.FindElement(Container, Locators.ContinueToBillingAddressButton); }
-        }
-
-        public NewPartyMemberPopup NewPartyMemberPopup
-        {
-            get { return new NewPartyMemberPopup(TestSettings); }
         }
 
         public override bool IsLoaded()

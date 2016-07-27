@@ -1,5 +1,4 @@
-﻿using CommonModel.Controls.Registration;
-using Core.CustomElements;
+﻿using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;

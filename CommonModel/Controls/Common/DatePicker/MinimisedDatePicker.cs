@@ -1,9 +1,8 @@
-﻿using System.Threading;
-using Core.Model.SupportTools;
+﻿using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace CommonModel.Controls.Common
+namespace CommonModel.Controls.Common.DatePicker
 {
     public class MinimisedDatePicker : ControlBase
     {

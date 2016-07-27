@@ -45,6 +45,16 @@ namespace CommonModel.Controls.Common.Header
             get { return new Link(Driver.FindElement(Locators.LogoutLink)); }
         }
 
+        public int OrdersCount
+        {
+            get { return int.Parse(OrdersCountLabel.Text); }
+        }
+
+        public int FavouritesCount
+        {
+            get { return int.Parse(FavouritesCountLabel.Text); }
+        }
+
         public class Locators
         {
             public static readonly By SignInButton = By.CssSelector("[data-at='lnk-header-signin']");

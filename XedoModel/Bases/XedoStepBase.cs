@@ -4,7 +4,6 @@ using TechTalk.SpecFlow;
 using XedoModel.Controls.Common;
 using XedoModel.Controls.Common.Footer;
 using XedoModel.Controls.Common.Header;
-using XedoModel.Controls.PartyBuilder;
 using XedoModel.Pages;
 using XedoModel.Pages.PaymentProcess;
 
@@ -17,26 +16,6 @@ namespace XedoModel.Bases
         {
         }
         
-        public static HomePage HomePage
-        {
-            get { return new HomePage(GetTestSettings()); }
-        }
-
-        public static ExclusiveAccessPage ExclusiveAccessPage
-        {
-            get { return new ExclusiveAccessPage(GetTestSettings()); }
-        }
-
-        public static QuickTryOnPage QuickTryOnPage
-        {
-            get { return new QuickTryOnPage(GetTestSettings()); }
-        }
-        
-        public static CollectionsPage CollectionsPage
-        {
-            get { return new CollectionsPage(GetTestSettings()); }
-        }
-
         public static OutfitSummaryPage OutfitSummaryPage
         {
             get { return new OutfitSummaryPage(GetTestSettings()); }
@@ -70,11 +49,6 @@ namespace XedoModel.Bases
         public static BuildPartyPage BuildPartyPage
         {
             get { return new BuildPartyPage(GetTestSettings()); }
-        }
-
-        public static GroomGoesFreePopup GroomGoesFreePopup
-        {
-            get { return new GroomGoesFreePopup(GetTestSettings()); }
         }
 
         public static BillingAddressPage BillingAddressPage

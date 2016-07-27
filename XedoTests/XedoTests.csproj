@@ -111,17 +111,10 @@
     <Compile Include="Hooks\ScenarioHooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\BillingAddressSteps.cs" />
-    <Compile Include="Steps\BuildPartySteps.cs" />
-    <Compile Include="Steps\CollectionsSteps.cs" />
     <Compile Include="Steps\ConfirmWeddingDateSteps.cs" />
     <Compile Include="Steps\LoadTimeSteps\CommonLoadTimeSteps.cs" />
-    <Compile Include="Steps\OutfitBuilderSteps.cs" />
     <Compile Include="Steps\PaymentOptions.cs" />
-    <Compile Include="Steps\QuickTryOnSteps.cs" />
-    <Compile Include="Steps\SharedSteps\CommonSteps.cs" />
-    <Compile Include="Steps\SharedSteps\ExclusiveAccessPageSteps.cs" />
     <Compile Include="Steps\SharedSteps\HeaderSteps.cs" />
-    <Compile Include="Steps\SharedSteps\HomePageSteps.cs" />
     <Compile Include="Steps\SharedSteps\LogInSteps.cs" />
     <Compile Include="Steps\SharedSteps\SidebarSteps.cs" />
   </ItemGroup>

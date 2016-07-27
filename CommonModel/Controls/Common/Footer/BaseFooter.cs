@@ -36,14 +36,24 @@ namespace CommonModel.Controls.Common.Footer
             get { return new Link(Driver.FindElement(Container, Locators.HelpAndFaqsLink)); }
         }
 
-        public IWebElement PhoneNumberLabel
+        private IWebElement PhoneNumberLabel
         {
             get { return Driver.FindElement(Container, Locators.PhoneNumberLabel); }
         }
 
-        public IWebElement EmailLabel
+        private IWebElement EmailLabel
         {
             get { return Driver.FindElement(Container, Locators.EmailLabel); }
+        }
+
+        public string PhoneNumber
+        {
+            get { return PhoneNumberLabel.Text; }
+        }
+
+        public string Email
+        {
+            get { return EmailLabel.Text; }
         }
 
         public class Locators

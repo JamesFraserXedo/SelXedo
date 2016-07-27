@@ -15,7 +15,7 @@ namespace CommonModel.Controls.Billing
             get { return new Button(Driver.FindElement(Locators.AddAddressButton)); }
         }
 
-        public Button ConfirmSuggestedAddressButton
+        public Button ConfirmAddressBookAddressButton
         {
             get { return new Button(Driver.FindElement(Locators.ConfirmSuggestedAddressButton)); }
         }

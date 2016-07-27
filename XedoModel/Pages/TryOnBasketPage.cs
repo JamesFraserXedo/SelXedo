@@ -1,6 +1,6 @@
-﻿using CommonModel.Pages;
+﻿using CommonModel.Controls.Common.DatePicker;
+using CommonModel.Pages;
 using Core.Model.TestObjects.Bases;
-using XedoModel.Controls.Common;
 using XedoModel.Controls.TryOnBasket;
 
 namespace XedoModel.Pages
@@ -16,14 +16,14 @@ namespace XedoModel.Pages
             get { return new SizeInfoPanel(TestSettings); }
         }
 
-        public DatePicker PreferredTryOnDatePicker
+        public MinimisedDatePicker PreferredTryOnDatePicker
         {
-            get { return new DatePicker(TestSettings, Driver.FindElement(Locators.PreferredTryOnDatePicker)); }
+            get { return new MinimisedDatePicker(TestSettings, Driver.FindElement(Locators.PreferredTryOnDatePicker)); }
         }
 
-        public DatePicker WeddingDatePicker
+        public MinimisedDatePicker WeddingDatePicker
         {
-            get { return new DatePicker(TestSettings, Driver.FindElement(Locators.WeddingDatePicker)); }
+            get { return new MinimisedDatePicker(TestSettings, Driver.FindElement(Locators.WeddingDatePicker)); }
         }
     }
 }
