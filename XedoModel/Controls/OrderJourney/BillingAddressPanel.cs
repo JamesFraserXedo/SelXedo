@@ -10,24 +10,24 @@ namespace XedoModel.Controls.OrderJourney
         {
         }
 
-        protected InputBox OrganizationNameInputbox
+        protected Inputbox OrganizationNameInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.OrganisationNameInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.OrganisationNameInputbox)); }
         }
 
-        protected InputBox CityInputbox
+        protected Inputbox CityInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.Address3Inputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.Address3Inputbox)); }
         }
 
-        protected InputBox StateInputbox
+        protected Inputbox StateInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.Address4Inputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.Address4Inputbox)); }
         }
 
-        protected InputBox ZipcodeInputbox
+        protected Inputbox ZipcodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.PostcodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.PostcodeInputbox)); }
         }
 
         public string OrganizationName

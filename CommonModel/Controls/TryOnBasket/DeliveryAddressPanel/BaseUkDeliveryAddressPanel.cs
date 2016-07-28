@@ -12,24 +12,24 @@ namespace CommonModel.Controls.TryOnBasket.DeliveryAddressPanel
         {
         }
 
-        public InputBox AddressThreeInputbox
+        protected Inputbox Address3Inputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.AddressThreeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.AddressThreeInputbox)); }
         }
 
-        public InputBox CityInputbox
+        protected Inputbox CityInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.AddressFourInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.AddressFourInputbox)); }
         }
 
-        public InputBox PostCodeInputbox
+        protected Inputbox PostCodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.PostCodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.PostCodeInputbox)); }
         }
 
-        public InputBox SearchPostCodeInputbox
+        protected Inputbox SearchPostCodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.SearchPostCodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.SearchPostCodeInputbox)); }
         }
 
         public Button FindPostCodeButton
@@ -45,6 +45,30 @@ namespace CommonModel.Controls.TryOnBasket.DeliveryAddressPanel
         public Button UsePostCodeAddressButton
         {
             get { return new Button(Driver.FindElement(Container, Locators.UsePostCodeAddressButton)); }
+        }
+
+        public string Address3
+        {
+            get { return Address3Inputbox.Text; }
+            set { Address3Inputbox.SendKeys(value); }
+        }
+
+        public string City
+        {
+            get { return CityInputbox.Text; }
+            set { CityInputbox.SendKeys(value); }
+        }
+
+        public string PostCode
+        {
+            get { return PostCodeInputbox.Text; }
+            set { PostCodeInputbox.SendKeys(value); }
+        }
+
+        public string SearchPostCode
+        {
+            get { return SearchPostCodeInputbox.Text; }
+            set { SearchPostCodeInputbox.SendKeys(value); }
         }
 
         public new class Locators : BaseDeliveryAddressPanel.Locators

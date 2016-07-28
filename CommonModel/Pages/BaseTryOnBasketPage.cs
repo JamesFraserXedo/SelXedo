@@ -36,9 +36,9 @@ namespace CommonModel.Pages
             get { return new Button(Driver.FindElement(Locators.BackButton)); }
         }
 
-        public InputBox PhoneNumberInputbox
+        protected Inputbox PhoneNumberInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.PhoneNumberInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.PhoneNumberInputbox)); }
         }
 
         public IWebElement FeeLabel
@@ -49,6 +49,12 @@ namespace CommonModel.Pages
         public string Fee
         {
             get { return FeeLabel.Text; }
+        }
+
+        public string PhoneNumber
+        {
+            get { return PhoneNumberInputbox.Text; }
+            set { PhoneNumberInputbox.SendKeys(value); }
         }
 
         public class Locators

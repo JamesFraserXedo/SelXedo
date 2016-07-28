@@ -32,24 +32,42 @@ namespace CommonModel.Controls.TryOnBasket.DeliveryAddressPanel
             get { return new Button(Driver.FindElement(Container, Locators.EnterAddressButton)); }
         }
 
-        public InputBox OrganisationNameInputbox
+        protected Inputbox OrganisationNameInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.OrganisationNameInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.OrganisationNameInputbox)); }
         }
 
-        public InputBox AddressOneInputbox
+        protected Inputbox Address1Inputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.AddressOneInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.AddressOneInputbox)); }
         }
 
-        public InputBox AddressTwoInputbox
+        protected Inputbox Address2Inputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.AddressTwoInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.AddressTwoInputbox)); }
         }
 
         public Button UseEnteredAddressButton
         {
             get { return new Button(Driver.FindElement(Container, Locators.UseEnteredAddressButton)); }
+        }
+
+        public string OrganisationName
+        {
+            get { return OrganisationNameInputbox.Text; }
+            set { OrganisationNameInputbox.SendKeys(value); }
+        }
+
+        public string Address1
+        {
+            get { return Address1Inputbox.Text; }
+            set { Address1Inputbox.SendKeys(value); }
+        }
+
+        public string Address2
+        {
+            get { return Address2Inputbox.Text; }
+            set { Address2Inputbox.SendKeys(value); }
         }
         
         public class Locators

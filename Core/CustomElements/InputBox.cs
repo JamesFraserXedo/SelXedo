@@ -7,11 +7,11 @@ using OpenQA.Selenium;
 
 namespace Core.CustomElements
 {
-    public class InputBox
+    public class Inputbox
     {
         private IWebElement _element;
 
-        public InputBox(IWebElement element)
+        public Inputbox(IWebElement element)
         {
             _element = element;
         }
@@ -31,16 +31,16 @@ namespace Core.CustomElements
             get { return _element.Text; }
         }
 
-        public void SendKeys(string keys)
+        public void Append(string keys)
         {
             _element.SendKeys(keys);
         }
 
-        public void Input(string keys)
+        public void SendKeys(string keys)
         {
             Click();
             Clear();
-            SendKeys(keys);
+            Append(keys);
         }
     }
 }

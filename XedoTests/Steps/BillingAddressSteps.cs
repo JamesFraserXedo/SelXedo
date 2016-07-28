@@ -23,15 +23,15 @@ namespace XedoTests.Steps
             }
             else
             {
-                BillingAddressPage.Address1InputBox.SendKeys("4400 Quality Drive");
-                BillingAddressPage.StateInputBox.SendKeys("TN");
-                BillingAddressPage.ZipInputBox.SendKeys("30329");
+                BillingAddressPage.Address1 = "4400 Quality Drive";
+                BillingAddressPage.State = "TN";
+                BillingAddressPage.Zipcode = "30329";
                 BillingAddressPage.ConfirmEnteredAddressButton.Click();
 
                 //Driver.WaitForElementToAppear(By.Id("confirm-suggested-address"));
                 //Driver.FindElement(By.Id("confirm-suggested-address")).Click();
             }
-            BillingAddressPage.ContactNumberInputBox.SendKeys("866-574-6088");
+            BillingAddressPage.ContactNumber = "866-574-6088";
             Thread.Sleep(3000);
             BillingAddressPage.PaymentOptionsButton.Click();
         }

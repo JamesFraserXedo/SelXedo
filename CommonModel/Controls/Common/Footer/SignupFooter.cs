@@ -11,9 +11,9 @@ namespace CommonModel.Controls.Common.Footer
         {
         }
 
-        public InputBox SignUpEmailInputBox
+        protected Inputbox SignUpEmailInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.SignUpEmailInputBox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.SignUpEmailInputbox)); }
         }
 
         public Button SignUpSubmitButton
@@ -21,9 +21,15 @@ namespace CommonModel.Controls.Common.Footer
             get { return new Button(Driver.FindElement(Container, Locators.SignUpSubmitButton)); }
         }
 
+        public string SignUpEmail
+        {
+            get { return SignUpEmailInputbox.Text; }
+            set { SignUpEmailInputbox.SendKeys(value); }
+        }
+
         public new class Locators : BaseFooter.Locators
         {
-            public static readonly By SignUpEmailInputBox = By.CssSelector("[data-at='txt-footer-mailing']");
+            public static readonly By SignUpEmailInputbox = By.CssSelector("[data-at='txt-footer-mailing']");
             public static readonly By SignUpSubmitButton = By.CssSelector("[data-at='btn-footer-mailing']");
         }
     }

@@ -26,11 +26,11 @@ namespace XedoTests.Steps.SharedSteps
 
             Header.SignInButton.Click();
             LoginSidebar.RegisterLink.Click();
-            RegistrationPage.FirstNameInputbox.Input("Selenium");
-            RegistrationPage.LastNameInputbox.Input("Tester");
-            RegistrationPage.EmailInputbox.Input(email);
-            RegistrationPage.PasswordInputbox.Input("Password");
-            RegistrationPage.PasswordConfirmationInputbox.Input("Password");
+            RegistrationPage.FirstName = "Selenium";
+            RegistrationPage.LastName = "Tester";
+            RegistrationPage.Email = email;
+            RegistrationPage.Password = "Password";
+            RegistrationPage.PasswordConfirmation = "Password";
             RegistrationPage.CompleteRegistrationButton.Click();
             //Should automatically redirect to original page
         }
@@ -40,8 +40,8 @@ namespace XedoTests.Steps.SharedSteps
         {
             Header.SignInButton.Click();
 
-            LoginSidebar.EmailInputbox.Input(username);
-            LoginSidebar.PasswordInputbox.Input(password);
+            LoginSidebar.Email = username;
+            LoginSidebar.Password = password;
             LoginSidebar.LoginButton.Click();
         }
 

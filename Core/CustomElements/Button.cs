@@ -4,7 +4,7 @@ namespace Core.CustomElements
 {
     public class Button
     {
-        private IWebElement _element;
+        private readonly IWebElement _element;
 
         public Button(IWebElement element)
         {

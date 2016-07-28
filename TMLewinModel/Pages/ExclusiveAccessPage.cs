@@ -15,7 +15,7 @@ namespace TMLewinModel.Pages
 
         public override bool IsLoaded()
         {
-            return Driver.ElementDisplayed(Locators.PasswordInputBox);
+            return Driver.ElementDisplayed(Locators.PasswordInputbox);
         }
 
         public IWebElement Container
@@ -23,9 +23,9 @@ namespace TMLewinModel.Pages
             get { return Driver.FindElement(Locators.Container); }
         }
 
-        public InputBox PasswordInputBox
+        protected Inputbox PasswordInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.PasswordInputBox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.PasswordInputbox)); }
         }
 
         public IWebElement SubmitPasswordButton
@@ -38,16 +38,9 @@ namespace TMLewinModel.Pages
             get { return Driver.FindElements(Locators.Container).Any(); }
         }
 
-        public void ClearPasswordInputBox()
+        public void ClearPasswordInputbox()
         {
-            PasswordInputBox.Clear();
-        }
-
-        public void InputPassword(string password)
-        {
-            PasswordInputBox.Click();
-            ClearPasswordInputBox();
-            PasswordInputBox.SendKeys(password);
+            PasswordInputbox.Clear();
         }
 
         public void Submit()
@@ -55,10 +48,16 @@ namespace TMLewinModel.Pages
             SubmitPasswordButton.Click();
         }
 
+        public string Password
+        {
+            get { return PasswordInputbox.Text; }
+            set { PasswordInputbox.SendKeys(value); }
+        }
+
         public class Locators
         {
             public static readonly By Container = By.CssSelector("[class='password-page-section']");
-            public static readonly By PasswordInputBox = By.Id("Password");
+            public static readonly By PasswordInputbox = By.Id("Password");
             public static readonly By SubmitPasswordButton = By.CssSelector("[data-at='btn-submit-password']");
         }
     }

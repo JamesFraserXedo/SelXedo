@@ -26,14 +26,14 @@ namespace PromGuyModel.Controls.OrderJourney
             get { return new Button(Driver.FindElement(Locators.ChangeAddressButton)); }
         }
 
-        public InputBox BuildingNameInputbox
+        protected Inputbox BuildingNameInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.OrganisationNameInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.OrganisationNameInputbox)); }
         }
 
-        public InputBox CityInputbox
+        protected Inputbox CityInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.Address3Inputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.Address3Inputbox)); }
         }
 
         public Selector StateSelect
@@ -41,9 +41,9 @@ namespace PromGuyModel.Controls.OrderJourney
             get { return new Selector(Driver.FindElement(Locators.Address4Inputbox)); }
         }
 
-        public InputBox ZipcodeInputbox
+        protected Inputbox ZipcodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.PostcodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.PostcodeInputbox)); }
         }
 
         public Button UseEnteredAddressButton

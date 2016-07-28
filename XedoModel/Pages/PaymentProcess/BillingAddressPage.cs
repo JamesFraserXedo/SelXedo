@@ -17,40 +17,66 @@ namespace XedoModel.Pages.PaymentProcess
             get { return Driver.FindElement(Locators.Container); }
         }
 
-        public IWebElement ConfirmListedAddressButton
+        public Button ConfirmListedAddressButton
         {
-            get { return Driver.FindElement(Container, Locators.ConfirmListedAddressButton); }
+            get { return new Button(Driver.FindElement(Container, Locators.ConfirmListedAddressButton)); }
         }
 
-        public InputBox Address1InputBox
+        protected Inputbox Address1Inputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.Address1InputBox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.Address1Inputbox)); }
         }
 
-        public InputBox StateInputBox
+        protected Inputbox StateInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.StateInputBox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.StateInputbox)); }
         }
 
-        public InputBox ZipInputBox
+        protected Inputbox ZipInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.ZipInputBox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.ZipInputbox)); }
         }
 
-        public IWebElement ConfirmEnteredAddressButton
+        public Button ConfirmEnteredAddressButton
         {
-            get { return Driver.FindElement(Container, Locators.ConfirmEnteredAddressButton); }
+            get { return new Button(Driver.FindElement(Container, Locators.ConfirmEnteredAddressButton)); }
         }
 
-        public InputBox ContactNumberInputBox
+        protected Inputbox ContactNumberInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.ContactNumberInputBox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.ContactNumberInputbox)); }
         }
 
-        public IWebElement PaymentOptionsButton
+        public Button PaymentOptionsButton
         {
-            get { return Driver.FindElement(Container, Locators.PaymentOptionsButton); }
+            get { return new Button(Driver.FindElement(Container, Locators.PaymentOptionsButton)); }
         }
+
+        public string Address1
+        {
+            get { return Address1Inputbox.Text; }
+            set { Address1Inputbox.SendKeys(value); }
+        }
+
+        public string State
+        {
+            get { return StateInputbox.Text; }
+            set { StateInputbox.SendKeys(value); }
+        }
+
+        public string Zipcode
+        {
+            get { return ZipInputbox.Text; }
+            set { ZipInputbox.SendKeys(value); }
+        }
+
+        public string ContactNumber
+        {
+            get { return ContactNumberInputbox.Text; }
+            set { ContactNumberInputbox.SendKeys(value); }
+        }
+
+
 
         public override bool IsLoaded()
         {
@@ -62,12 +88,12 @@ namespace XedoModel.Pages.PaymentProcess
             public static readonly By Container = By.XPath("//*[@class='content-section-holder']");
             public static readonly By ConfirmListedAddressButton = By.Id("confirm-address");
 
-            public static readonly By Address1InputBox = By.Id("address1");
-            public static readonly By StateInputBox = By.Id("address4");
-            public static readonly By ZipInputBox = By.Id("postcode");
+            public static readonly By Address1Inputbox = By.Id("address1");
+            public static readonly By StateInputbox = By.Id("address4");
+            public static readonly By ZipInputbox = By.Id("postcode");
             public static readonly By ConfirmEnteredAddressButton = By.Id("confirm-manual-address");
 
-            public static readonly By ContactNumberInputBox = By.Id("ContactNumber");
+            public static readonly By ContactNumberInputbox = By.Id("ContactNumber");
             public static readonly By PaymentOptionsButton = By.Id("btn-outfit-delivery-next");
         }
     }

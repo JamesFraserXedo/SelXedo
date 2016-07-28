@@ -10,9 +10,9 @@ namespace CommonModel.Controls.Billing
         {
         }
 
-        public InputBox PostcodeSearchInputbox
+        protected Inputbox PostcodeSearchInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.PostcodeSearchInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.PostcodeSearchInputbox)); }
         }
 
         public Button FindPostcodeButton
@@ -35,24 +35,24 @@ namespace CommonModel.Controls.Billing
             get { return new Button(Driver.FindElement(Locators.ConfirmPostcodeAddressButton)); }
         }
 
-        public InputBox OrganisationNameInputbox
+        protected Inputbox OrganisationNameInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.OrganisationNameInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.OrganisationNameInputbox)); }
         }
 
-        public InputBox Address3Inputbox
+        protected Inputbox Address3Inputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.Address3Inputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.Address3Inputbox)); }
         }
 
-        public InputBox CityInputbox
+        protected Inputbox CityInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.CityInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.CityInputbox)); }
         }
 
-        public InputBox PostcodeInputbox
+        protected Inputbox PostcodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.PostcodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.PostcodeInputbox)); }
         }
 
         public string PostcodeSearch

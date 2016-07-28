@@ -15,29 +15,29 @@ namespace CommonModel.Controls.TryOnPayment.ConfirmationMethod
             get { return new Checkbox(Driver.FindElement(Locators.VisaElectronCheckbox)); }
         }
 
-        protected InputBox CardholderNameInputbox
+        protected Inputbox CardholderNameInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.CardholderNameInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.CardholderNameInputbox)); }
         }
 
-        protected InputBox CardNumberInputbox
+        protected Inputbox CardNumberInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.CardNumberInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.CardNumberInputbox)); }
         }
 
-        protected InputBox ExpiryDateMonthInputbox
+        protected Inputbox ExpiryDateMonthInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.ExpiryDateMonthInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.ExpiryDateMonthInputbox)); }
         }
 
-        protected InputBox ExpiryDateYearInputbox
+        protected Inputbox ExpiryDateYearInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.ExpiryDateYearInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.ExpiryDateYearInputbox)); }
         }
 
-        protected InputBox SecurityCodeInputbox
+        protected Inputbox SecurityCodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.SecurityCodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.SecurityCodeInputbox)); }
         }
 
         public string CardholderName

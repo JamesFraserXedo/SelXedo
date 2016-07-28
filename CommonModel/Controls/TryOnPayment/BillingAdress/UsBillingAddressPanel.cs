@@ -11,29 +11,29 @@ namespace CommonModel.Controls.TryOnPayment.BillingAdress
         {
         }
 
-        public InputBox Address1Inputbox
+        protected Inputbox Address1Inputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.Address1Inputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.Address1Inputbox)); }
         }
 
-        public InputBox CityInputbox
+        protected Inputbox CityInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.CityInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.CityInputbox)); }
         }
 
-        public Selector StateSelect
+        protected Selector StateSelect
         {
             get { return new Selector(Driver.FindElement(Locators.StateSelect)); }
         }
 
-        public InputBox ZipcodeInputbox
+        protected Inputbox ZipcodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.ZipcodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.ZipcodeInputbox)); }
         }
 
-        public InputBox CountryInputbox
+        protected Inputbox CountryInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.CountryInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.CountryInputbox)); }
         }
 
         public string Address1

@@ -22,19 +22,19 @@ namespace CommonModel.Controls.Billing
             get { return Driver.FindElement(Locators.ConfirmedAddressLabel); }
         }
 
-        public InputBox Address1Inputbox
+        protected Inputbox Address1Inputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.Address1Inputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.Address1Inputbox)); }
         }
 
-        public InputBox Address2Inputbox
+        protected Inputbox Address2Inputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.Address2Inputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.Address2Inputbox)); }
         }
-            
-        public InputBox ContactNumberInputbox
+
+        protected Inputbox ContactNumberInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.ContactNumberInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.ContactNumberInputbox)); }
         }
 
         public bool AddressConfirmed

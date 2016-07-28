@@ -16,14 +16,14 @@ namespace CommonModel.Controls.Common.Header.LoginSidebar
             get { return Driver.FindElement(Locators.Container); }
         }
 
-        public InputBox EmailInputbox
+        protected Inputbox EmailInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.EmailInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.EmailInputbox)); }
         }
 
-        public InputBox PasswordInputbox
+        protected Inputbox PasswordInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.PasswordInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.PasswordInputbox)); }
         }
 
         public Button ToggleShowPasswordButton
@@ -61,6 +61,17 @@ namespace CommonModel.Controls.Common.Header.LoginSidebar
             get { return Driver.ElementDisplayed(Locators.Container); }
         }
 
+        public string Email
+        {
+            get { return EmailInputbox.Text; }
+            set { EmailInputbox.SendKeys(value); }
+        }
+
+        public string Password
+        {
+            get { return PasswordInputbox.Text; }
+            set { PasswordInputbox.SendKeys(value); }
+        }
         public class Locators
         {
             public static readonly By Container = By.ClassName("signin-wrapper panel-equalize");

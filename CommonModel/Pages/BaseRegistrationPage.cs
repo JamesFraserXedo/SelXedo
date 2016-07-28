@@ -16,29 +16,29 @@ namespace CommonModel.Pages
             return Driver.ElementDisplayed(Locators.CompleteRegistrationButton);
         }
 
-        public InputBox FirstNameInputbox
+        protected Inputbox FirstNameInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.FirstNameInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.FirstNameInputbox)); }
         }
 
-        public InputBox LastNameInputbox
+        protected Inputbox LastNameInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.LastNameInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.LastNameInputbox)); }
         }
 
-        public InputBox EmailInputbox
+        protected Inputbox EmailInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.EmailInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.EmailInputbox)); }
         }
 
-        public InputBox PasswordInputbox
+        protected Inputbox PasswordInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.PasswordInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.PasswordInputbox)); }
         }
 
-        public InputBox PasswordConfirmationInputbox
+        protected Inputbox PasswordConfirmationInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.PasswordConfirmationInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.PasswordConfirmationInputbox)); }
         }
 
         public Button CompleteRegistrationButton

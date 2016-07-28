@@ -10,19 +10,19 @@ namespace CommonModel.Controls.TryOnBasket.DeliveryAddressPanel
         {
         }
 
-        public InputBox CityInputbox
+        public Inputbox CityInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.AddressThreeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.AddressThreeInputbox)); }
         }
 
-        public InputBox StateInputbox
+        public Inputbox StateInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.AddressFourInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.AddressFourInputbox)); }
         }
 
-        public InputBox ZipCodeInputbox
+        public Inputbox ZipCodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Container, Locators.PostCodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Container, Locators.PostCodeInputbox)); }
         }
     }
 }

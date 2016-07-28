@@ -44,9 +44,9 @@ namespace PromGuyModel.Pages
             get { return new SizeSelectorPanel(TestSettings); }
         }
 
-        public InputBox PromoCodeInputbox
+        protected Inputbox PromoCodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.PromoCodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.PromoCodeInputbox)); }
         }
 
         public IWebElement TuxPriceLabel

@@ -15,24 +15,24 @@ namespace CommonModel.Controls.TryOnPayment.ConfirmationMethod
             get { return new Checkbox(Driver.FindElement(Locators.AmexCreditCheckbox)); }
         }
 
-        public InputBox CardholderNameInputbox
+        public Inputbox CardholderNameInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.CardholderNameInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.CardholderNameInputbox)); }
         }
 
-        public InputBox CardNumberInputbox
+        public Inputbox CardNumberInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.CardNumberInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.CardNumberInputbox)); }
         }
 
-        public InputBox ExpiryDateInputbox
+        public Inputbox ExpiryDateInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.ExpiryDateInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.ExpiryDateInputbox)); }
         }
 
-        public InputBox SecurityCodeInputbox
+        public Inputbox SecurityCodeInputbox
         {
-            get { return new InputBox(Driver.FindElement(Locators.SecurityCodeInputbox)); }
+            get { return new Inputbox(Driver.FindElement(Locators.SecurityCodeInputbox)); }
         }
 
         public string CardholderName
