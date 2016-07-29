@@ -67,6 +67,7 @@
     <Compile Include="Model\SupportTools\WebElementExtensions.cs" />
     <Compile Include="Model\TestObjects\Bases\ControlBase.cs" />
     <Compile Include="Model\TestObjects\Bases\PageBase.cs" />
+    <Compile Include="Model\TestObjects\Bases\PopupControlBase.cs" />
     <Compile Include="Model\TestObjects\Bases\TestObjectBase.cs" />
     <Compile Include="Model\TestObjects\Bases\TestSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

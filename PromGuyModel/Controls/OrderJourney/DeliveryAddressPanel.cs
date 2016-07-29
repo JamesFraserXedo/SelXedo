@@ -5,9 +5,9 @@ using OpenQA.Selenium;
 
 namespace PromGuyModel.Controls.OrderJourney
 {
-    public class BillingAddressPanel : BaseOrderBillingAddressPanel
+    public class DeliveryAddressPanel : BaseOrderBillingAddressPanel
     {
-        public BillingAddressPanel(TestSettings testSettings) : base(testSettings)
+        public DeliveryAddressPanel(TestSettings testSettings) : base(testSettings)
         {
         }
 

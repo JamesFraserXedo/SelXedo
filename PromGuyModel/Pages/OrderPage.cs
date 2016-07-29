@@ -1,5 +1,4 @@
-﻿using CommonModel.Controls.Common;
-using CommonModel.Controls.Common.DatePicker;
+﻿using CommonModel.Controls.Common.DatePicker;
 using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
@@ -24,9 +23,9 @@ namespace PromGuyModel.Pages
             get { return new MinimisedDatePicker(TestSettings, Driver.FindElement(Locators.EventDatePicker)); }
         }
 
-        public BillingAddressPanel BillingAddressForm
+        public DeliveryAddressPanel DeliveryAddressForm
         {
-            get { return new BillingAddressPanel(TestSettings); }
+            get { return new DeliveryAddressPanel(TestSettings); }
         }
 
         public IWebElement DeliveryDateLabel

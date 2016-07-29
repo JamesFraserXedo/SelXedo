@@ -53,10 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bases\PromGuyStepBase.cs" />
+    <Compile Include="Controls\Billing\BillingAddressPanel.cs" />
+    <Compile Include="Controls\Billing\ConfirmationMethodPanel.cs" />
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
     <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
-    <Compile Include="Controls\OrderJourney\BillingAddressPanel.cs" />
+    <Compile Include="Controls\OrderJourney\DeliveryAddressPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\CataloguePanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Controls\OutfitSummary\OutfitOptions\WaistcoatOutfitOption.cs" />
     <Compile Include="Controls\OutfitSummary\SummaryOutfitViewer.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPanel.cs" />
+    <Compile Include="Pages\ConfirmOrderPage.cs" />
     <Compile Include="Pages\OrderPage.cs" />
     <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />

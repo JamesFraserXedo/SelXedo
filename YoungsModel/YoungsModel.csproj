@@ -56,7 +56,10 @@
     <Compile Include="Controls\Common\Footer\Footer.cs" />
     <Compile Include="Controls\Common\Header\Header.cs" />
     <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
+    <Compile Include="Controls\OrderJourney\AdwWarningPopup.cs" />
     <Compile Include="Controls\OrderJourney\BillingAddressPanel.cs" />
+    <Compile Include="Controls\OrderJourney\OutfitReviewPanel.cs" />
+    <Compile Include="Controls\OrderJourney\PartyPaymentPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\CataloguePanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />
@@ -82,6 +85,8 @@
     <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
     <Compile Include="Controls\TryOnPayment\BillingAddressPanel.cs" />
     <Compile Include="Controls\TryOnPayment\ConfirmationMethodPanel.cs" />
+    <Compile Include="Pages\OrderJourney\OrderReviewPage.cs" />
+    <Compile Include="Pages\OrderJourney\OutfitPaymentPage.cs" />
     <Compile Include="Pages\OrderJourney\YourBillingAddressPage.cs" />
     <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />
