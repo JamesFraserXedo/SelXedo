@@ -66,6 +66,16 @@
     <Compile Include="Controls\Common\Header\LoginSidebar\BaseLoginSidebar.cs" />
     <Compile Include="Controls\Common\Header\MenuHeader.cs" />
     <Compile Include="Controls\Common\Header\NavigationSidebar\BaseNavigationSidebar.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\FavouriteOutfit\BaseFavouriteOutfit.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\FavouriteOutfit\UsedFavouriteOutfit.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\FavouriteOutfit\UnusedFavouriteOutfit.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\OutfitWearersPanel\OutfitWearer\OutfitWearer.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\OutfitWearersPanel\UkWearersPanel.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\OutfitWearersPanel\BaseOutfitWearersPanel.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\OutfitWearersPanel\UsWearersPanel.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\PartyMemberInformation\MemberSizesForm.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\PartyMemberInformation\MemberDetailsForm.cs" />
+    <Compile Include="Controls\OrderJourney\BuildYourParty\PartyMemberInformation\PartyMemberInformationPanel.cs" />
     <Compile Include="Controls\OrderJourney\OutfitReviewPanel\BaseOutfitReviewPanel.cs" />
     <Compile Include="Controls\OrderJourney\OutfitReviewPanel\UsOutfitReviewPanel.cs" />
     <Compile Include="Controls\OrderJourney\OutfitReviewPanel\UkOutfitReviewPanel.cs" />
@@ -126,15 +136,18 @@
     <Compile Include="Pages\BaseSelectWeddingDatePage.cs" />
     <Compile Include="Pages\BaseTryOnBasketPage.cs" />
     <Compile Include="Pages\BaseTryOnConfirmationPage.cs" />
+    <Compile Include="Pages\OrderJourney\BuildYourPartyPage\BaseBuildYourPartyPage.cs" />
+    <Compile Include="Pages\OrderJourney\BuildYourPartyPage\UsBuildYourPartyPage.cs" />
     <Compile Include="Pages\OrderJourney\OrderReviewPage\BaseOrderReviewPage.cs" />
     <Compile Include="Pages\OrderJourney\BaseOutfitPaymentPage.cs" />
     <Compile Include="Pages\OrderJourney\OrderReviewPage\UkOrderReviewPage.cs" />
     <Compile Include="Pages\OrderJourney\OrderReviewPage\UsOrderReviewPage.cs" />
+    <Compile Include="Pages\OrderJourney\BuildYourPartyPage\UkBuildYourPartyPage.cs" />
     <Compile Include="Pages\OrderJourney\YourBillingAddressPage\BaseYourBillingAddressPage.cs" />
-    <Compile Include="Pages\TryOnPayment\BaseTryOnPaymentPage.cs" />
+    <Compile Include="Pages\Payment\BasePaymentPage.cs" />
     <Compile Include="Pages\BaseTryOnReviewPage.cs" />
-    <Compile Include="Pages\TryOnPayment\UsTryOnPaymentPage.cs" />
-    <Compile Include="Pages\TryOnPayment\UkTryOnPaymentPage.cs" />
+    <Compile Include="Pages\Payment\UsPaymentPage.cs" />
+    <Compile Include="Pages\Payment\UkPaymentPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

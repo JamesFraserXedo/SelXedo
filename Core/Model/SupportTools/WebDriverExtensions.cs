@@ -13,7 +13,6 @@ namespace Core.Model.SupportTools
 
         public static IWebElement FindElement(this IWebDriver driver, IWebElement parent, By loc)
         {
-            
             return Utils.FindElement(driver, parent, loc);
         }
 

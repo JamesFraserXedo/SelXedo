@@ -3,11 +3,11 @@ using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace CommonModel.Pages.TryOnPayment
+namespace CommonModel.Pages.Payment
 {
-    public abstract class BaseTryOnPaymentPage : PageBase
+    public abstract class BasePaymentPage : PageBase
     {
-        protected BaseTryOnPaymentPage(TestSettings testSettings) : base(testSettings)
+        protected BasePaymentPage(TestSettings testSettings) : base(testSettings)
         {
         }
 

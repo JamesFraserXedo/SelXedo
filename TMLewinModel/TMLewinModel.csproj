@@ -103,7 +103,7 @@
     <Compile Include="Pages\SelectWeddingDatePage.cs" />
     <Compile Include="Pages\TryOnBasketPage.cs" />
     <Compile Include="Pages\TryOnConfirmationPagecs.cs" />
-    <Compile Include="Pages\TryOnPaymentPage.cs" />
+    <Compile Include="Pages\PaymentPage.cs" />
     <Compile Include="Pages\TryOnReviewPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,12 +1,12 @@
-﻿using CommonModel.Pages.TryOnPayment;
+﻿using CommonModel.Pages.Payment;
 using Core.Model.TestObjects.Bases;
-using TMLewinModel.Controls.TryOnPayment;
+using YoungsModel.Controls.TryOnPayment;
 
-namespace TMLewinModel.Pages
+namespace YoungsModel.Pages
 {
-    public class TryOnPaymentPage : UkTryOnPaymentPage
+    public class PaymentPage : UkPaymentPage
     {
-        public TryOnPaymentPage(TestSettings testSettings) : base(testSettings)
+        public PaymentPage(TestSettings testSettings) : base(testSettings)
         {
         }
 

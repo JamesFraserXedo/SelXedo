@@ -1,12 +1,12 @@
-﻿using CommonModel.Pages.TryOnPayment;
+﻿using CommonModel.Pages.Payment;
 using Core.Model.TestObjects.Bases;
-using YoungsModel.Controls.TryOnPayment;
+using XedoModel.Controls.TryOnPayment;
 
-namespace YoungsModel.Pages
+namespace XedoModel.Pages
 {
-    public class TryOnPaymentPage : UkTryOnPaymentPage
+    public class PaymentPage : UsPaymentPage
     {
-        public TryOnPaymentPage(TestSettings testSettings) : base(testSettings)
+        public PaymentPage(TestSettings testSettings) : base(testSettings)
         {
         }
 

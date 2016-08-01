@@ -39,9 +39,9 @@ namespace TMLewinModel.Bases
             get { return new RegistrationPage(GetTestSettings()); }
         }
 
-        public static TryOnPaymentPage TryOnPaymentPage
+        public static PaymentPage PaymentPage
         {
-            get { return new TryOnPaymentPage(GetTestSettings()); }
+            get { return new PaymentPage(GetTestSettings()); }
         }
     }
 }

@@ -1,10 +1,11 @@
 ﻿using Core.CustomElements;
 using Core.Model.TestObjects.Bases;
-namespace CommonModel.Pages.TryOnPayment
+
+namespace CommonModel.Pages.Payment
 {
-    public abstract class UsTryOnPaymentPage : BaseTryOnPaymentPage
+    public abstract class UsPaymentPage : BasePaymentPage
     {
-        protected UsTryOnPaymentPage(TestSettings testSettings) : base(testSettings)
+        protected UsPaymentPage(TestSettings testSettings) : base(testSettings)
         {
         }
         
