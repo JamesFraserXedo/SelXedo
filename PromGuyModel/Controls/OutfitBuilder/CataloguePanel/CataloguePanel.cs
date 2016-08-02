@@ -1,6 +1,6 @@
 ﻿using CommonModel.Controls.OutfitBuilder.CataloguePanel;
+using CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
 using Core.Model.TestObjects.Bases;
-using PromGuyModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
 
 namespace PromGuyModel.Controls.OutfitBuilder.CataloguePanel
 {
@@ -10,9 +10,9 @@ namespace PromGuyModel.Controls.OutfitBuilder.CataloguePanel
         {
         }
 
-        public SuitsCatalogue SuitsCatalogue
+        public TuxedosCatalogue TuxedosCatalogue
         {
-            get { return new SuitsCatalogue(TestSettings); }
+            get { return new TuxedosCatalogue(TestSettings); }
         }
 
         public NeckwearCatalogue NeckwearCatalogue
@@ -20,9 +20,9 @@ namespace PromGuyModel.Controls.OutfitBuilder.CataloguePanel
             get { return new NeckwearCatalogue(TestSettings); }
         }
 
-        public WaistcoatsCatalogue WaistcoatsCatalogue
+        public VestsAndCummerbundsCatalogue VestsAndCummerbundsCatalogue
         {
-            get { return new WaistcoatsCatalogue(TestSettings); }
+            get { return new VestsAndCummerbundsCatalogue(TestSettings); }
         }
 
         public ShirtsCatalogue ShirtsCatalogue
@@ -30,9 +30,9 @@ namespace PromGuyModel.Controls.OutfitBuilder.CataloguePanel
             get { return new ShirtsCatalogue(TestSettings); }
         }
 
-        public AccessoriesCatalogue AccessoriesCatalogue
+        public ShoesCatalogue ShoesCatalogue
         {
-            get { return new AccessoriesCatalogue(TestSettings); }
+            get { return new ShoesCatalogue(TestSettings); }
         }
     }
 }

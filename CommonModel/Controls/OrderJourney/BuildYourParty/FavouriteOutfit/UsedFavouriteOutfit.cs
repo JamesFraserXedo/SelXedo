@@ -11,7 +11,7 @@ namespace CommonModel.Controls.OrderJourney.BuildYourParty.FavouriteOutfit
 
         public new class Locators : BaseFavouriteOutfit.Locators
         {
-            public static readonly By AlreadyInUseLabel = By.ClassName("already-used");
+            public static readonly By AlreadyInUseLabel = By.CssSelector("[class='already-used']");
         }
     }
 }

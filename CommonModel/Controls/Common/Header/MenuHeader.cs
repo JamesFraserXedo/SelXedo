@@ -1,4 +1,5 @@
 ﻿using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -37,7 +38,7 @@ namespace CommonModel.Controls.Common.Header
 
         public new class Locators : BaseHeader.Locators
         {
-            public static readonly By LargeLogo = By.ClassName("main-logo");
+            public static readonly By LargeLogo = By.CssSelector("[class*='main-logo']");
             public static readonly By SmallLogo = By.CssSelector("[data-at='lnk-menu-home']");
             public static readonly By HowItWorksLink = By.CssSelector("[data-at='lnk-menu-how-it-works']");
             public static readonly By InspireMeLink = By.CssSelector("[data-at='lnk-menu-inspired']");

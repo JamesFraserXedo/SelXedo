@@ -1,4 +1,5 @@
 ﻿using System;
+using Core.Driver;
 using Core.StepsSupport;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -59,8 +60,7 @@ namespace Core.Utilities
                 driver.Manage().Window.Maximize();
                 driver.Manage().Cookies.DeleteAllCookies();
             }
-            
-            return driver;
+            return new CustomWebDriver(driver);
         }
 
         private static IWebDriver GetDriverForLocalEnvironment(Utils.BrowserType browserToUse)

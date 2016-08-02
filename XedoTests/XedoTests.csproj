@@ -73,16 +73,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NavigateFromHomePageToAccountRegistration.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\HomePage\PerfectMatch.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PerfectMatch.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\LoadTimes\HomePageLoad.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HomePageLoad.feature</DependentUpon>
-    </Compile>
     <Compile Include="Features\QuickTryOn\PocketSquares.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,22 +88,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShippingAddress.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\SampleTests.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SampleTests.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\UserJourneys\GroomGoesFree.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GroomGoesFree.feature</DependentUpon>
-    </Compile>
     <Compile Include="Hooks\ScenarioHooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\BillingAddressSteps.cs" />
     <Compile Include="Steps\ConfirmWeddingDateSteps.cs" />
     <Compile Include="Steps\LoadTimeSteps\CommonLoadTimeSteps.cs" />
+    <Compile Include="Steps\NavigationSteps.cs" />
+    <Compile Include="Steps\OutfitBuilderSteps.cs" />
     <Compile Include="Steps\PaymentOptions.cs" />
+    <Compile Include="Steps\RegistrationSteps.cs" />
+    <Compile Include="Features\RegressionTests\UserJourneys.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserJourneys.feature</DependentUpon>
+    </Compile>
     <Compile Include="Steps\SharedSteps\HeaderSteps.cs" />
     <Compile Include="Steps\SharedSteps\LogInSteps.cs" />
     <Compile Include="Steps\SharedSteps\SidebarSteps.cs" />
@@ -145,14 +133,6 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>NavigateFromHomePageToAccountRegistration1.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\HomePage\PerfectMatch.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>PerfectMatch.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\LoadTimes\HomePageLoad.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>HomePageLoad.feature.cs</LastGenOutput>
-    </None>
     <None Include="Features\QuickTryOn\PocketSquares.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PocketSquares.feature.cs</LastGenOutput>
@@ -165,14 +145,6 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ShippingAddress.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\SampleTests.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SampleTests.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\UserJourneys\GroomGoesFree.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>GroomGoesFree.feature.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
     <None Include="SpecRunTestProfile.xsd">
@@ -181,7 +153,12 @@
     <None Include="SpecRunTestProfile_2011_09.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Features\RegressionTests\UserJourneys.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>UserJourneys.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

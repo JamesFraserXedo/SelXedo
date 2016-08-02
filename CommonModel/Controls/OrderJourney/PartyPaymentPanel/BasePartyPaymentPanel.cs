@@ -50,9 +50,9 @@ namespace CommonModel.Controls.OrderJourney.PartyPaymentPanel
 
         public class Locators
         {
-            public static readonly By ChildBadge = By.ClassName("child-badge");
+            public static readonly By ChildBadge = By.CssSelector("[class='child-badge']");
             public static readonly By RoleLabel = By.CssSelector("p>strong");
-            public static readonly By NameLabel = By.ClassName("wearer-name");
+            public static readonly By NameLabel = By.CssSelector("[class='wearer-name']");
             public static readonly By PayLaterCheckbox = By.CssSelector("[value='Deferred']");
             public static readonly By PayInFullCheckbox = By.CssSelector("[value='Full']");
         }

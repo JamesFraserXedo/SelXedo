@@ -53,7 +53,7 @@ namespace CommonModel.Controls.TryOnBasket
         
         public class Locators
         {
-            public static By Container = By.ClassName("size-info-row");
+            public static By Container = By.CssSelector("[class='size-info-row']");
 
             //TODO better hooks
             public static By SuitChestSelect = By.Name("Wearer.wearerOutfitModel.ClothingItemsList[0].PrimarySizes.SelectedSize");
@@ -63,8 +63,8 @@ namespace CommonModel.Controls.TryOnBasket
             public static By WaistcoatChestSelect = By.Name("Wearer.wearerOutfitModel.ClothingItemsList[2].PrimarySizes.SelectedSize");
             public static By WaistcoatLengthSelect = By.Name("Wearer.wearerOutfitModel.ClothingItemsList[2].SecondarySizes.SelectedSize");
 
-            public static By DoesNotIncludeFullMessage = By.ClassName("unavailable-holder-wrap message-alerts message-announcement");
-            public static By DoesNotIncludeItemsMessage = By.ClassName("unavailable-holder-wrap message-alerts message-announcement");
+            public static By DoesNotIncludeFullMessage = By.CssSelector("[class='unavailable-holder-wrap message-alerts message-announcement']");
+            public static By DoesNotIncludeItemsMessage = By.CssSelector("[class='unavailable-holder-wrap message-alerts message-announcement']");
         }
     }
 }

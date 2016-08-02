@@ -3,7 +3,9 @@ using System.Collections.ObjectModel;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Threading;
+using Core.Driver;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -50,23 +52,7 @@ namespace Core.Model.SupportTools
                 return true;
             }
         }
-
-        public static IWebElement FindElement(IWebDriver driver, By by, int timeout = Timeouts.StandardTimeout)
-        {
-            IWebElement element;
-            if (timeout > 0)
-            {
-                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
-                element = wait.Until(drv => drv.FindElement(by));
-            }
-            else
-            {
-                element = driver.FindElement(by);
-            }
-            ShowElementOnScreen(driver, element);
-            return element;
-        }
-
+        
         public static void WaitForElementToAppear(IWebDriver driver, By by, int timeout = Timeouts.StandardTimeout)
         {
             if (timeout > 0)
@@ -105,7 +91,7 @@ namespace Core.Model.SupportTools
             {
                 element = parent.FindElement(by);
             }
-            ShowElementOnScreen(driver, element);
+            driver.ShowElementOnScreen(element);
             return element;
         }
 
@@ -158,15 +144,15 @@ namespace Core.Model.SupportTools
             public const int StandardTimeout = 15;
         }
 
-        public static void ShowElementOnScreen(IWebDriver driver, IWebElement element)
+        public static IJavaScriptExecutor IJavaScriptExecutor(IWebDriver driver)
         {
-            //((IJavaScriptExecutor) driver).ExecuteScript("arguments[0].scrollIntoView(false);", element);
-
-            var js = driver as IJavaScriptExecutor;
-            var script = "window.scrollTo(" + element.Location.X + "," + (element.Location.Y - 400) + ");";
-            js.ExecuteScript(script);
+            if (driver.GetType() == typeof (CustomWebDriver))
+            {
+                return ((CustomWebDriver)driver).IJavaScriptExecutor;   
+            }
+            return ((IJavaScriptExecutor) driver);
         }
-
+        
         public static string TakeScreenshot(IWebDriver driver, string strFilename)
         {
             if (!Directory.Exists(ErrorScreenshotDirName))
@@ -189,12 +175,12 @@ namespace Core.Model.SupportTools
 
         public static void HighlightElement(IWebDriver driver, IWebElement element)
         {
-            ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].style.border='3px solid red'", element);
+            IJavaScriptExecutor(driver).ExecuteScript("arguments[0].style.border='3px solid red'", element);
         }
 
         public static void ScrollToElement(IWebDriver driver, IWebElement element)
         {
-            ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
+            IJavaScriptExecutor(driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
         }
 
         public static string StripBreaks(string input)

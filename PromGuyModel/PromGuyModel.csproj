@@ -60,11 +60,6 @@
     <Compile Include="Controls\Common\Header\LoginSidebar.cs" />
     <Compile Include="Controls\OrderJourney\DeliveryAddressPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\CataloguePanel.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\ShirtsCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\SuitsCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\WaistcoatsCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\FilterPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\AccessoriesFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\NeckwearFilter.cs" />
@@ -81,6 +76,7 @@
     <Compile Include="Controls\OutfitSummary\SummaryOutfitViewer.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPanel.cs" />
     <Compile Include="Pages\ConfirmOrderPage.cs" />
+    <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\OrderPage.cs" />
     <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />

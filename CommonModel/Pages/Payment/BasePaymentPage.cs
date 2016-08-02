@@ -35,7 +35,7 @@ namespace CommonModel.Pages.Payment
         {
             public static readonly By EnterDefaultCreditCardDetailsButton = By.Id("enter-test-details");
             public static readonly By CancelButton = By.Id("pay-back");
-            public static readonly By TotalLabel = By.ClassName("form-inner-totaltext");
+            public static readonly By TotalLabel = By.CssSelector("[class='form-inner-totaltext']");
             public static readonly By ConfirmButton = By.Id("btn-pay-submit");
         }
     }

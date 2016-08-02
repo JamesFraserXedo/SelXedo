@@ -9,4 +9,4 @@ Background:
 @homepage
 Scenario: Click register now link
 	When I click the register now link in the sidebar
-	Then I am on the Xedo AccountRegistration page
+	Then I am on the registration page

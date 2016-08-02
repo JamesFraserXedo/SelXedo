@@ -1,4 +1,5 @@
 ﻿using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -34,7 +35,7 @@ namespace CommonModel.Controls.Billing
         {
             public static readonly By AddAddressButton = By.CssSelector("[onclick='addNewAddressToAddressBook()']");
             public static readonly By ConfirmSuggestedAddressButton = By.Id("confirm-address");
-            public static readonly By CancelConfirmedAddressButton = By.ClassName("iconset-close");
+            public static readonly By CancelConfirmedAddressButton = By.CssSelector("[class='iconset-close']");
             public static readonly By ConfirmEnteredAddressButton = By.Id("confirm-manual-address");
         }
     }

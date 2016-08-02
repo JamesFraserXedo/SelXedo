@@ -33,7 +33,7 @@ namespace CommonModel.Controls.OrderJourney.PartyPaymentPanel
 
         public new class Locators
         {
-            public static readonly By Container = By.ClassName("modal-content");
+            public static readonly By Container = By.CssSelector("[class='modal-content']");
             public static readonly By ProceedButton = By.Id("btn-outfit-payment-adw-confirmed");
             public static readonly By CancelButton = By.Id("btn-con");
         }

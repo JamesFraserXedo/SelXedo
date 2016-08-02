@@ -80,10 +80,10 @@ namespace CommonModel.Controls.OutfitBuilder
             public static readonly By Container = By.Id("outfit-view");
             public static readonly By InitialImage = By.Id("initial-image");
             public static readonly By HankieImage = By.Id("hankie-image");
-            public static readonly By JacketImage = By.ClassName("img-responsive ob-image jacket");
-            public static readonly By TrousersImage = By.ClassName("img-responsive ob-image trousers");
-            public static readonly By WaistcoatImage = By.ClassName("img-responsive ob-image waistcoat");
-            public static readonly By NeckwearImage = By.ClassName("img-responsive ob-image neckwear");
+            public static readonly By JacketImage = By.CssSelector("[class='img-responsive ob-image jacket']");
+            public static readonly By TrousersImage = By.CssSelector("[class='img-responsive ob-image trousers']");
+            public static readonly By WaistcoatImage = By.CssSelector("[class='img-responsive ob-image waistcoat']");
+            public static readonly By NeckwearImage = By.CssSelector("[class='img-responsive ob-image neckwear']");
         }
     }
 }

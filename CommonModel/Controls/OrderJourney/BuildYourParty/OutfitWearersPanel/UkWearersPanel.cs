@@ -74,8 +74,8 @@ namespace CommonModel.Controls.OrderJourney.BuildYourParty.OutfitWearersPanel
         public new class Locators : BaseOutfitWearersPanel.Locators
         {
             public static readonly By ViewDetailsAndPriceButton = By.CssSelector("[class*='show-build-party-tux-details-popup-button']");
-            public static readonly By IndividualPriceLabel = By.ClassName("outfit-price-total-amount");
-            public static readonly By OutfitSubTotalLabel = By.ClassName("outfit-details-combined-amount-price");
+            public static readonly By IndividualPriceLabel = By.CssSelector("[class='outfit-price-total-amount']");
+            public static readonly By OutfitSubTotalLabel = By.CssSelector("[class='outfit-details-combined-amount-price']");
         }
     }
 }

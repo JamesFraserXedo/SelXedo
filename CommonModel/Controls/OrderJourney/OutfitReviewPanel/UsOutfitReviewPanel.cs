@@ -62,8 +62,8 @@ namespace CommonModel.Controls.OrderJourney.OutfitReviewPanel
         {
             public static readonly By TaxChargeLabel = By.CssSelector("[class='additional-payment-detail border']>span");
             public static readonly By DamageHandlingChargeLabel = By.CssSelector("[class='additional-payment-detail']>span");
-            public static readonly By DiscountMessageLabel = By.ClassName("payment-wearer-discount-label");
-            public static readonly By TotalPriceLabel = By.ClassName("total-price-display");
+            public static readonly By DiscountMessageLabel = By.CssSelector("[class='payment-wearer-discount-label']");
+            public static readonly By TotalPriceLabel = By.CssSelector("[class='total-price-display']");
             public static readonly By EditSizesLink = By.CssSelector("[class='edit-details']>a");
         }
     }

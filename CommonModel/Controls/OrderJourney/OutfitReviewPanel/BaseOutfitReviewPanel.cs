@@ -133,13 +133,13 @@ namespace CommonModel.Controls.OrderJourney.OutfitReviewPanel
             public static readonly By EditPartyMemberLink = By.CssSelector("div:not([class='delivery-details'])>h2~a");
             public static readonly By RoleLabel = By.CssSelector("[class='role']>span");
 
-            public static readonly By OutfitNameLabel = By.ClassName("summary-outfit-name");
+            public static readonly By OutfitNameLabel = By.CssSelector("[class='summary-outfit-name']");
             public static readonly By DeliveryAddressLabel = By.CssSelector("[class='delivery-wrap delivery']>div>[class*='delivery-details-address']");
             public static readonly By DeliveryDateLabel = By.CssSelector("[class='delivery-wrap delivery']>div>[class='delivery-date']");
             public static readonly By ReturnAddressLabel = By.CssSelector("[class='delivery-wrap return']>div>[class*='delivery-details-address']");
             public static readonly By ReturnDateLabel = By.CssSelector("[class='delivery-wrap return']>div>[class='delivery-date']");
 
-            public static readonly By AllGarments = By.ClassName("garment");
+            public static readonly By AllGarments = By.CssSelector("[class='garment']");
             public static readonly By GarmentNameLabel = By.CssSelector("[class='garment-label-orderSummary']>label");
             public static readonly By GarmentSizeLabel = By.CssSelector("[class='selected-size-orderSummary']");
         }

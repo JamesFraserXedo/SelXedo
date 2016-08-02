@@ -1,4 +1,5 @@
-﻿using Core.Model.TestObjects.Bases;
+﻿using Core.Model.SupportTools;
+using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
 namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits

@@ -1,5 +1,6 @@
 ﻿using System;
 using Core.Contexts;
+using Core.Model.SupportTools;
 using Core.Utilities;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
@@ -57,7 +58,7 @@ namespace Core.StepsSupport
 
         private static void SaucelabsTearDown()
         {
-            ((IJavaScriptExecutor)Driver).ExecuteScript("sauce:job-result=" + (DidTestPass() ? "passed" : "failed"));
+            Utils.IJavaScriptExecutor(Driver).ExecuteScript("sauce:job-result=" + (DidTestPass() ? "passed" : "failed"));
             QuitDriver();
         }
 

@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 
 namespace CommonModel.ClothingItems
 {
-    public class Waistcoat : ClothingBase
+    public class Waistcoat : NonNeckwearBase
     {
         public Waistcoat(TestSettings testSettings, IWebElement container) : base(testSettings, container)
         {

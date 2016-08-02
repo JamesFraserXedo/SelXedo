@@ -1,6 +1,6 @@
 ﻿using CommonModel.Controls.OutfitBuilder.CataloguePanel;
+using CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
 using Core.Model.TestObjects.Bases;
-using YoungsModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
 
 namespace YoungsModel.Controls.OutfitBuilder.CataloguePanel
 {

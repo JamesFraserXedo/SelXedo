@@ -18,7 +18,7 @@ namespace CommonModel.Controls.OrderJourney.BuildYourParty.FavouriteOutfit
 
         public new class Locators : BaseFavouriteOutfit.Locators
         {
-            public static readonly By AddToOrderButton = By.ClassName("build-party-favourites-selectoutfit button simple-cta");
+            public static readonly By AddToOrderButton = By.CssSelector("[class='build-party-favourites-selectoutfit button simple-cta']");
         }
     }
 }

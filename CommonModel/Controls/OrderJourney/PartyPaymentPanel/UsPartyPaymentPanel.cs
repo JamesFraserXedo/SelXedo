@@ -42,9 +42,9 @@ namespace CommonModel.Controls.OrderJourney.PartyPaymentPanel
         
         public new class Locators : BasePartyPaymentPanel.Locators
         {
-            public static readonly By PriceLabel = By.ClassName("sub-total-amount");
-            public static readonly By DiscountLabel = By.ClassName("sub-total-discount");
-            public static readonly By TotalLabel = By.ClassName("total-amount");
+            public static readonly By PriceLabel = By.CssSelector("[class='sub-total-amount']");
+            public static readonly By DiscountLabel = By.CssSelector("[class='sub-total-discount']");
+            public static readonly By TotalLabel = By.CssSelector("[class='total-amount']");
         }
     }
 }

@@ -56,7 +56,7 @@ namespace PromGuyModel.Pages
         {
             public static readonly By CancelButton = By.Id("pay-back");
             public static readonly By ConfirmButton = By.CssSelector("[data-at='btn-pay-submit']");
-            public static readonly By TotalLabel = By.ClassName("form-inner-totaltext");
+            public static readonly By TotalLabel = By.CssSelector("[class='form-inner-totaltext']");
         }
     }
 }

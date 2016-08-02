@@ -2,6 +2,7 @@
 using AlfredAngeloModel.Controls.TryOnBasket;
 using CommonModel.Controls.Common.DatePicker;
 using CommonModel.Pages;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 
 namespace AlfredAngeloModel.Pages

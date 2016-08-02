@@ -74,7 +74,7 @@ namespace CommonModel.Controls.Billing
         public class Locators
         {
             public static readonly By AddressBookSelector = By.Id("address-book-dropdown");
-            public static readonly By IsAddressConfirmedLabel = By.ClassName("confirmedtext");
+            public static readonly By IsAddressConfirmedLabel = By.CssSelector("[class='confirmedtext']");
             public static readonly By ConfirmedAddressLabel = By.CssSelector("[class*='displayAddress confirmed']>p");
             public static readonly By Address1Inputbox = By.Id("address1");
             public static readonly By Address2Inputbox = By.Id("address2");

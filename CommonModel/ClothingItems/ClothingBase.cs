@@ -1,4 +1,5 @@
-﻿using Core.Model.SupportTools;
+﻿using System;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -11,53 +12,15 @@ namespace CommonModel.ClothingItems
         {
             _container = container;
         }
+        
+        public abstract string Name { get; }
 
-        protected IWebElement DetailsElement
-        {
-            get { return Driver.FindElement(_container, Locators.Details); }
-        }
+        public abstract string Id { get; }
 
-        public string Name
-        {
-            get { return Driver.FindElement(_container, Locators.NameLabel).Text; }
-        }
+        public abstract bool Selected { get; }
 
-        public string Id
-        {
-            get { return DetailsElement.GetAttribute("id"); }
-        }
+        public abstract void Select();
 
-        public bool Selected
-        {
-            get { return Driver.FindElement(_container, Locators.Selected).GetAttribute("class").Contains("selected"); }
-        }
-
-        public string ImagePath
-        {
-            get { return DetailsElement.GetAttribute("data-preview"); }
-        }
-
-        public void Select()
-        {
-            if (!Selected)
-            {
-                _container.Click();
-            }
-        }
-
-        public void Deselect()
-        {
-            if (Selected)
-            {
-                _container.Click();
-            }
-        }
-
-        protected class Locators
-        {
-            public static readonly By NameLabel = By.ClassName("item-text-link");
-            public static readonly By Selected = By.CssSelector("span");
-            public static readonly By Details = By.CssSelector("a");
-        }
+        public abstract void Deselect();
     }
 }

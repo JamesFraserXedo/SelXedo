@@ -72,7 +72,7 @@ namespace CommonModel.Controls.TryOnBasket.DeliveryAddressPanel
         
         public class Locators
         {
-            public static By Container = By.ClassName("tryon-address-selection-container");
+            public static By Container = By.CssSelector("[class='tryon-address-selection-container']");
 
             public static By AddressBookSelect = By.Id("address-book-dropdown");
             public static By UseThisExistingAddressButton = By.Id("btn-confirm-address");

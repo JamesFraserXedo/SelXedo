@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
+using Core.Model.SupportTools;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace Core.Model.TestObjects.Bases
 {
@@ -10,7 +13,7 @@ namespace Core.Model.TestObjects.Bases
 
         protected PageBase(TestSettings testSettings) : base(testSettings)
         {
-            WaitUntilLoaded();
+            //WaitUntilLoaded();
         }
 
         public string Url
@@ -42,6 +45,7 @@ namespace Core.Model.TestObjects.Bases
         {
             var s = new Stopwatch();
             s.Start();
+
             while (s.Elapsed < TimeSpan.FromSeconds(PageTimeoutSeconds))
             {
                 if (IsLoaded())

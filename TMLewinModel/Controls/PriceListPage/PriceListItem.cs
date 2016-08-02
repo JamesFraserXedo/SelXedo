@@ -68,10 +68,10 @@ namespace TMLewinModel.Controls.PriceListPage
 
         public class Locators
         {
-            public static readonly By TitleAndDescriptionLabel = By.ClassName("pricelist-suit-title");
+            public static readonly By TitleAndDescriptionLabel = By.CssSelector("[class='pricelist-suit-title']");
             public static readonly By DescriptionLabel = By.CssSelector("[class='pricelist-suit-title']>span");
-            public static readonly By ColourLabels = By.ClassName("colour-block");
-            public static readonly By PriceLabels = By.ClassName("price-detail");
+            public static readonly By ColourLabels = By.CssSelector("[class='colour-block']");
+            public static readonly By PriceLabels = By.CssSelector("[class='price-detail']");
         }
     }
 }

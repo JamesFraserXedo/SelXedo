@@ -58,13 +58,13 @@ namespace CommonModel.Controls.OutfitSummary.OutfitOptions
         public class Locators
         {
             public static readonly By Container;
-            public static readonly By SummaryPane = By.ClassName("outfit-summary-header");
-            public static readonly By ContentPane = By.ClassName("outfit-selection-content");
+            public static readonly By SummaryPane = By.CssSelector("[class='outfit-summary-header']");
+            public static readonly By ContentPane = By.CssSelector("[class='outfit-selection-content']");
             public static readonly By CategoryLabel = By.CssSelector("[class='details']>h2");
             public static readonly By NameLabel = By.CssSelector("[class='details']>p");
-            public static readonly By PriceLabel = By.ClassName("componentPriceValue");
-            public static readonly By EditButton = By.ClassName("product-type-edit ga-event-click");
-            public static readonly By NotSelectedLabel = By.ClassName("none-selected");
+            public static readonly By PriceLabel = By.CssSelector("[class='componentPriceValue']");
+            public static readonly By EditButton = By.CssSelector("[class='product-type-edit ga-event-click']");
+            public static readonly By NotSelectedLabel = By.CssSelector("[class='none-selected']");
         }
     }
 }

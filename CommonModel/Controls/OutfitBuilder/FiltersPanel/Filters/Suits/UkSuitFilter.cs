@@ -2,7 +2,6 @@
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 
 namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits
 {

@@ -5,9 +5,9 @@ using OpenQA.Selenium;
 
 namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters.Suits
 {
-    public abstract class UsSuitFilter : BaseSuitsFilter
+    public class UsSuitFilter : BaseSuitsFilter
     {
-        protected UsSuitFilter(TestSettings testSettings) : base(testSettings)
+        public UsSuitFilter(TestSettings testSettings) : base(testSettings)
         {
         }
 

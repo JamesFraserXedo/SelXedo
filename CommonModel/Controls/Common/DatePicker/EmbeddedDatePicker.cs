@@ -39,8 +39,8 @@ namespace CommonModel.Controls.Common.DatePicker
 
         public class Locators
         {
-            public static readonly By MonthLabel = By.ClassName("dw-cal-month");
-            public static readonly By YearLabel = By.ClassName("dw-cal-year");
+            public static readonly By MonthLabel = By.CssSelector("[class='dw-cal-month']");
+            public static readonly By YearLabel = By.CssSelector("[class='dw-cal-year']");
 
             public static readonly By PreviousMonthButton = By.CssSelector("[aria-label='Previous Month']");
             public static readonly By NextMonthButton = By.CssSelector("[aria-label='Next Month']");

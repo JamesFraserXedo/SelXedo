@@ -1,5 +1,6 @@
 ﻿using CommonModel.Controls.Billing;
 using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -79,7 +80,7 @@ namespace PromGuyModel.Controls.OrderJourney
         {
             public static readonly By EnterAddressButton = By.Id("btn-manual-address");
             public static readonly By UseSuggestedAddressButton = By.Id("btn-confirm-address");
-            public static readonly By ChangeAddressButton = By.ClassName("remove-address-from-singlewearer");
+            public static readonly By ChangeAddressButton = By.CssSelector("[class='remove-address-from-singlewearer']");
             public static readonly By UseEnteredAddressButton = By.Id("btn-confirm-manual-address");
         }
     }

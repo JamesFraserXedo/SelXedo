@@ -77,9 +77,9 @@ namespace CommonModel.Controls.OrderJourney.PartyPaymentPanel
             public static readonly By PayDepositPriceLabel = By.CssSelector("[value='Deposit']~label>[class='input-checkbox-price']>strong");
             public static readonly By PayDepositCheckbox = By.CssSelector("[value='Deposit']");
             public static readonly By TodaysPaymentLabel = By.CssSelector("[class*='payment-wearer-price today-price']");
-            public static readonly By AdwChargeCheckbox = By.ClassName("check-adw-charge");
+            public static readonly By AdwChargeCheckbox = By.CssSelector("[class='check-adw-charge']");
             public static readonly By AdwChargeLabel = By.CssSelector("[class='label-adw-charge']>span");
-            public static readonly By OutfitPriceLabel = By.ClassName("payment-wearer-price outfit-price");
+            public static readonly By OutfitPriceLabel = By.CssSelector("[class='payment-wearer-price outfit-price']");
             
         }
     }

@@ -1,4 +1,5 @@
 ﻿using CommonModel.Controls.OutfitSummary.TotalPane;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -17,7 +18,7 @@ namespace PromGuyModel.Controls.OutfitSummary
 
         public new class Locators : BaseUsTotalPanel.Locators
         {
-            public static readonly By Container = By.ClassName("row generic-row totals-row-promguy");
+            public static readonly By Container = By.CssSelector("[class='row generic-row totals-row-promguy']");
         }
     }
 }

@@ -73,7 +73,7 @@ namespace CommonModel.Controls.Common.Header.NavigationSidebar
 
         public class Locators
         {
-            public static readonly By Container = By.ClassName("menu-wrapper");
+            public static readonly By Container = By.CssSelector("[class='menu-wrapper']");
             public static readonly By DismissSidebarButton = By.Id("nav-close-button");
             public static readonly By HomeButton = By.CssSelector("[data-at='lnk-menu-home']");
             public static readonly By OutfitBuilderButton = By.CssSelector("[data-at='lnk-menu-outfit-builder']");

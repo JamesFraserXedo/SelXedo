@@ -161,12 +161,12 @@ namespace CommonModel.Pages
             public static readonly By OutfitItemNameLabels = By.CssSelector(".garment-label-tryonSummary>label");
             public static readonly By OutfitItemSizeLabels = By.CssSelector(".selected-size-tryonSummary");
 
-            public static readonly By EditSizesLink = By.ClassName("link primary-cta");
-            public static readonly By ItemsNotAvailable = By.ClassName("unavailable-wearer-item");
+            public static readonly By EditSizesLink = By.CssSelector("[class='link primary-cta']");
+            public static readonly By ItemsNotAvailable = By.CssSelector("[class='unavailable-wearer-item']");
 
             public static readonly By DeliveryDayLabel = By.CssSelector(".tryon-date-day:nth-of-type(1)");
             public static readonly By DeliveryDateLabel = By.CssSelector(".tryon-date-fulldate:nth-of-type(2)");
-            public static readonly By ChangeDeliveryDateLink = By.ClassName("link.primary-cta.change-date");
+            public static readonly By ChangeDeliveryDateLink = By.CssSelector("[class='link.primary-cta.change-date']");
 
             public static readonly By ReturnByDayLabel = By.CssSelector(".tryon-date-day:nth-of-type(4)");
             public static readonly By ReturnDateLabel = By.CssSelector(".tryon-date-fulldate:nth-of-type(5)");
@@ -177,7 +177,7 @@ namespace CommonModel.Pages
             public static readonly By AddressLine4 = By.Id("SelectedAddress_AddressModel_Address4");
             public static readonly By AddressLinePostCode = By.Id("SelectedAddress_AddressModel_Postcode");
 
-            public static readonly By CostLabel = By.ClassName("total-price-amount");
+            public static readonly By CostLabel = By.CssSelector("[class='total-price-amount']");
             public static readonly By ConfirmTryOnButton = By.Id("btn-confirm-submit");
             public static readonly By BackButton = By.Id("btn-try-on-prev-confirmation");
         }

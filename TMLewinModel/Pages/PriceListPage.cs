@@ -37,8 +37,8 @@ namespace TMLewinModel.Pages
 
         public class Locators
         {
-            public static readonly By PriceListItems = By.ClassName("outfit-pricelist-inner");
-            public static readonly By FinishingTouchLabels = By.ClassName("finishing-touches-item");
+            public static readonly By PriceListItems = By.CssSelector("[class='outfit-pricelist-inner']");
+            public static readonly By FinishingTouchLabels = By.CssSelector("[class='finishing-touches-item']");
 
         }
     }

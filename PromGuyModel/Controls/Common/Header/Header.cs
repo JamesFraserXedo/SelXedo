@@ -1,5 +1,6 @@
 ﻿using CommonModel.Controls.Common.Header;
 using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -24,7 +25,7 @@ namespace PromGuyModel.Controls.Common.Header
         public new class Locators : MenuHeader.Locators
         {
             public static readonly By CollectionsLink = By.CssSelector("[data-at='lnk-menu-collections']");
-            public static readonly By PromotionBanner = By.ClassName("free-try-on-message");
+            public static readonly By PromotionBanner = By.CssSelector("[class='free-try-on-message']");
         }
     }
 }

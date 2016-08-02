@@ -140,16 +140,16 @@ namespace CommonModel.Pages.OrderJourney.BuildYourPartyPage
             public static readonly By OutfitPanels = By.CssSelector("[class*='worn-outfits']>[class='outfit-holder']");
             public static readonly By AddAnotherOutfitButton = By.Id("add-new-outfit-from-unworn-favourites");
             public static readonly By CreateNewPartyMemberButton = By.Id("add-new-wearer-button");
-            public static readonly By ViewGroupShotButton = By.ClassName("button simple-cta photolink");
+            public static readonly By ViewGroupShotButton = By.CssSelector("[class='button simple-cta photolink']");
             public static readonly By BackButton = By.CssSelector("[data-at='lnk-back-build-party']");
             public static readonly By SaveAndContinueToBillingAddressButton = By.CssSelector("[data-at='lnk-build-party-go-button']");
             public static readonly By SaveToDraftButton = By.Id("save-draft-order");
-            public static readonly By CloseFavouritesButton = By.ClassName("close-unworn-favourites");
-            public static readonly By ClearUnusedFavouritesButton = By.ClassName("clear-unused-favourites remove-unusedOutfits");
-            public static readonly By CreateNewOutfitButton = By.ClassName("outfit-add-wearer-button");
+            public static readonly By CloseFavouritesButton = By.CssSelector("[class='close-unworn-favourites']");
+            public static readonly By ClearUnusedFavouritesButton = By.CssSelector("[class='clear-unused-favourites remove-unusedOutfits']");
+            public static readonly By CreateNewOutfitButton = By.CssSelector("[class='outfit-add-wearer-button']");
             public static readonly By FavouriteOutfits = By.CssSelector("[class*='control control-favourite favourite-']");
-            public static readonly By UnusedFavouriteOutfits = By.ClassName("control control-favourite favourite-not-used");
-            public static readonly By UsedFavouriteOutfits = By.ClassName("control control-favourite favourite-in-use");
+            public static readonly By UnusedFavouriteOutfits = By.CssSelector("[class='control control-favourite favourite-not-used']");
+            public static readonly By UsedFavouriteOutfits = By.CssSelector("[class='control control-favourite favourite-in-use']");
         }
     }
 }

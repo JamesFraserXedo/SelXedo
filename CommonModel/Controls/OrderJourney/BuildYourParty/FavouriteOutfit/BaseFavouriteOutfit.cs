@@ -62,12 +62,12 @@ namespace CommonModel.Controls.OrderJourney.BuildYourParty.FavouriteOutfit
        
         public class Locators
         {
-            public static readonly By PreviewImage = By.ClassName("control-favourite-image img-responsive");
-            public static readonly By OpenOptionsButton = By.ClassName("control-pen-icon iconset-more-vert");
-            public static readonly By CloseOptionsButton = By.ClassName("control-pen-icon iconset-close2");
-            public static readonly By OptionsMenu = By.ClassName("control-menu");
-            public static readonly By ViewOutfitButton = By.ClassName("control-favourite-view-button");
-            public static readonly By CopyAndEditButton = By.ClassName("build-party-favourites-copyedit");
+            public static readonly By PreviewImage = By.CssSelector("[class='control-favourite-image img-responsive']");
+            public static readonly By OpenOptionsButton = By.CssSelector("[class='control-pen-icon iconset-more-vert']");
+            public static readonly By CloseOptionsButton = By.CssSelector("[class='control-pen-icon iconset-close2']");
+            public static readonly By OptionsMenu = By.CssSelector("[class='control-menu']");
+            public static readonly By ViewOutfitButton = By.CssSelector("[class='control-favourite-view-button']");
+            public static readonly By CopyAndEditButton = By.CssSelector("[class='build-party-favourites-copyedit']");
         }
     }
 }

@@ -26,5 +26,10 @@ namespace Core.StepsSupport
             get { return (Context)ScenarioContext.Current[ContextName]; }
             set { ScenarioContext.Current[ContextName] = value; }
         }
+
+        protected string BaseUrl
+        {
+            get { return TestsConfig.BaseUrl; }
+        }
     }
 }

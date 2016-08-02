@@ -43,7 +43,7 @@ namespace CommonModel.Controls.OutfitSummary.TotalPane
 
         public new class Locators : BaseTotalPanel.Locators
         {
-            public static readonly By Container = By.ClassName("row generic-row totals-row");
+            public static readonly By Container = By.CssSelector("[class='row generic-row totals-row']");
             public static readonly By OrderFreeTryOnButton = By.CssSelector("[data-at='lnk-try-on']");
             public static readonly By TotalLabel = By.Id("outfit-price-total");
             public static readonly By TotalOrderValueLabel = By.Id("outfit-price-value");

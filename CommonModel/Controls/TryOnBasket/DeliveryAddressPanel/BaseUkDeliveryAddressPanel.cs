@@ -76,7 +76,7 @@ namespace CommonModel.Controls.TryOnBasket.DeliveryAddressPanel
             public static By SearchPostCodeInputbox = By.Id("postcodeField");
             public static By FindPostCodeButton = By.CssSelector("[class='postcode-lookup']>a");
             public static By PostCodeAddressSelect = By.Id("post-code-dropdown");
-            public static By UsePostCodeAddressButton = By.ClassName("btn-confirm-postcode button primary-cta");
+            public static By UsePostCodeAddressButton = By.CssSelector("[class='btn-confirm-postcode button primary-cta']");
         }
     }
 }

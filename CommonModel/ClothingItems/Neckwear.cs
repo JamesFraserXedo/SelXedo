@@ -1,4 +1,5 @@
-﻿using Core.Model.SupportTools;
+﻿using System.Threading;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -10,19 +11,14 @@ namespace CommonModel.ClothingItems
         {
         }
 
-        protected new IWebElement DetailsElement
-        {
-            get { return _container; }
-        }
-
-        public new string Id
+        public override string Id
         {
             get { return Utils.StripBreaks(_container.GetAttribute("id")); }
         }
 
-        public new string Name
+        public override string Name
         {
-            get { return Utils.StripBreaks(Driver.FindElement(_container, Locators.Name).Text); }
+            get { return Utils.StripBreaks(Driver.FindElement(_container, Locators.NameLabel).Text); }
         }
         
         public string HankieImagePath
@@ -51,15 +47,30 @@ namespace CommonModel.ClothingItems
             }
         }
 
-        public new bool Selected
+        public override bool Selected
         {
             get { return _container.GetAttribute("class").Contains("selected"); }
         }
 
-        protected new class Locators : ClothingBase.Locators
+        public override void Select()
         {
-            //TODO 
-            public static readonly By Name = By.ClassName("item-text-link"); // Needs data-at hook
+            if (!Selected)
+            {
+                _container.Click();
+            }
+        }
+
+        public override void Deselect()
+        {
+            if (Selected)
+            {
+                _container.Click();
+            }
+        }
+
+        protected class Locators
+        {
+            public new static readonly By NameLabel = By.CssSelector("[class*='colour-name']"); 
         }
     }
 }

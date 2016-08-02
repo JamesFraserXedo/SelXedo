@@ -1,13 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Linq;
-using CommonModel.Controls.OrderJourney.BuildYourParty.OutfitWearersPanel.OutfitWearer;
 using Core.CustomElements;
 using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
-namespace CommonModel.Controls.OrderJourney.BuildYourParty
+namespace CommonModel.Controls.OrderJourney.BuildYourParty.OutfitWearersPanel
 {
     public abstract class BaseOutfitWearersPanel : ControlBase
     {
@@ -47,21 +45,21 @@ namespace CommonModel.Controls.OrderJourney.BuildYourParty
             get { return ChildPanel.FindElements(Locators.OutfitItemLabels); }
         }
 
-        public ReadOnlyCollection<OutfitWearer> AdultOutfitWearers
+        public ReadOnlyCollection<OutfitWearer.OutfitWearer> AdultOutfitWearers
         {
             get
             {
                 var elements = AdultPanel.FindElements(Locators.OutfitWearers);
-                return elements.Select(o => new OutfitWearer(TestSettings, o)).ToList().AsReadOnly();
+                return elements.Select(o => new OutfitWearer.OutfitWearer(TestSettings, o)).ToList().AsReadOnly();
             }
         }
 
-        public ReadOnlyCollection<OutfitWearer> ChildOutfitWearers
+        public ReadOnlyCollection<OutfitWearer.OutfitWearer> ChildOutfitWearers
         {
             get
             {
                 var elements = ChildPanel.FindElements(Locators.OutfitWearers);
-                return elements.Select(o => new OutfitWearer(TestSettings, o)).ToList().AsReadOnly();
+                return elements.Select(o => new OutfitWearer.OutfitWearer(TestSettings, o)).ToList().AsReadOnly();
             }
         }
 
@@ -88,8 +86,8 @@ namespace CommonModel.Controls.OrderJourney.BuildYourParty
         public class Locators
         {
             public static readonly By OutfitWearers = By.CssSelector("[data-wearer-id]:not([data-wearer-id=''])");
-            public static readonly By OutfitNameLabel = By.ClassName("outfit-name-details-outfitname");
-            public static readonly By RenameButton = By.ClassName("link blue outfit-name-edit");
+            public static readonly By OutfitNameLabel = By.CssSelector("[class='outfit-name-details-outfitname']");
+            public static readonly By RenameButton = By.CssSelector("[class='link blue outfit-name-edit']");
             public static readonly By AdultPanel = By.CssSelector("[class='adult-outfit']");
             public static readonly By ChildPanel = By.CssSelector("[class='child-outfit']");
             public static readonly By OutfitItemLabels = By.CssSelector("[class='outfit-info-items-list']>li");

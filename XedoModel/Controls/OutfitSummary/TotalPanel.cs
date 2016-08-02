@@ -24,7 +24,7 @@ namespace XedoModel.Controls.OutfitSummary
     
         public new class Locators : BaseUsTotalPanel.Locators
         {
-            public static readonly By Container = By.ClassName("row generic-row totals-row-promguy");
+            public static readonly By Container = By.CssSelector("[class='row generic-row totals-row-promguy']");
             public static readonly By OrderFreeTryOnButton = By.CssSelector("[data-at='lnk-try-on']");
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -33,7 +34,7 @@ namespace CommonModel.Controls.OrderJourney.BuildYourParty.PartyMemberInformatio
         public class Locators
         {
             public static readonly By SubmitDetailsButton = By.CssSelector("[data-at='btn-submit-party-member']");
-            public static readonly By CancelButton = By.ClassName("mfp-close");
+            public static readonly By CancelButton = By.CssSelector("[class='mfp-close']");
         }
     }
 }

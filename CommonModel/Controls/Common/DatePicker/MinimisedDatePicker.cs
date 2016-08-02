@@ -97,11 +97,11 @@ namespace CommonModel.Controls.Common.DatePicker
 
         public class Locators
         {
-            public static readonly By Container = By.ClassName("dw-cal-pnl");
+            public static readonly By Container = By.CssSelector("[class='dw-cal-pnl']");
 
-            public static readonly By Body = By.ClassName("dw-cal-body");
-            public static readonly By MonthPicker = By.ClassName("class='dw-cal-month");
-            public static readonly By YearPicker = By.ClassName("class='dw-cal-year");
+            public static readonly By Body = By.CssSelector("[class='dw-cal-body']");
+            public static readonly By MonthPicker = By.CssSelector("[class='dw-cal-month']");
+            public static readonly By YearPicker = By.CssSelector("[class='dw-cal-year']");
             public static readonly By SelectedDate = By.CssSelector("[aria-selected='true']");
             public static readonly By ValidDates = By.CssSelector("[class*='dw-cal-day-v']");
 

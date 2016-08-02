@@ -15,6 +15,7 @@ namespace XedoTests.Steps.SharedSteps
         {
         }
 
+        [Given(@"I am logged in")]
         [Given(@"I am logged on to the site")]
         public void GivenIAmLoggedOnToTheSite()
         {

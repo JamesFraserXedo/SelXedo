@@ -1,6 +1,7 @@
 ﻿using CommonModel.Controls.OutfitBuilder.CataloguePanel;
+using CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
 using Core.Model.TestObjects.Bases;
-using XedoModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
+using ShirtsCatalogue = CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues.ShirtsCatalogue;
 
 namespace XedoModel.Controls.OutfitBuilder.CataloguePanel
 {
@@ -10,29 +11,49 @@ namespace XedoModel.Controls.OutfitBuilder.CataloguePanel
         {
         }
 
-        public SuitsCatalogue SuitsCatalogue
+        public TuxedosCatalogue TuxedosCatalogue
         {
-            get { return new SuitsCatalogue(TestSettings); }
+            get
+            {
+                WaitUntilLoaded();
+                return new TuxedosCatalogue(TestSettings);
+            }
         }
 
         public NeckwearCatalogue NeckwearCatalogue
         {
-            get { return new NeckwearCatalogue(TestSettings); }
+            get
+            {
+                WaitUntilLoaded(); 
+                return new NeckwearCatalogue(TestSettings);
+            }
         }
 
-        public WaistcoatsCatalogue WaistcoatsCatalogue
+        public VestsAndCummerbundsCatalogue VestsCatalogue
         {
-            get { return new WaistcoatsCatalogue(TestSettings); }
+            get
+            {
+                WaitUntilLoaded();
+                return new VestsAndCummerbundsCatalogue(TestSettings);
+            }
         }
 
         public ShirtsCatalogue ShirtsCatalogue
         {
-            get { return new ShirtsCatalogue(TestSettings); }
+            get
+            {
+                WaitUntilLoaded(); 
+                return new ShirtsCatalogue(TestSettings);
+            }
         }
 
-        public AccessoriesCatalogue AccessoriesCatalogue
+        public ShoesCatalogue AccessoriesCatalogue
         {
-            get { return new AccessoriesCatalogue(TestSettings); }
+            get
+            {
+                WaitUntilLoaded(); 
+                return new ShoesCatalogue(TestSettings);
+            }
         }
     }
 }

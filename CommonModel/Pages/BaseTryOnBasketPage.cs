@@ -63,7 +63,7 @@ namespace CommonModel.Pages
             public static readonly By TermsAndConditionsCheckbox = By.CssSelector("[data-at='chk-check-tryon-tandc']");
             public static readonly By SaveOutfitButton = By.Id("btn-tryon-save");
             public static readonly By BackButton = By.CssSelector("[data-at='lnk-back']");
-            public static readonly By FeeLabel = By.ClassName("total-price-display");
+            public static readonly By FeeLabel = By.CssSelector("[class='total-price-display']");
             public static readonly By PhoneNumberInputbox = By.CssSelector("[data-at='txt-try-on-basket-phone-no']");
             public static readonly By PreferredTryOnDatePicker = By.Id("try-on-calendar");
             public static readonly By WeddingDatePicker = By.Id("event-calendar");

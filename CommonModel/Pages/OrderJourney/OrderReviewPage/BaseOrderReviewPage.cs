@@ -83,7 +83,7 @@ namespace CommonModel.Pages.OrderJourney.OrderReviewPage
         
         public class Locators
         {
-            public static readonly By OutfitReviewPanels = By.ClassName("row wearer-order-summary-panel-wrap");
+            public static readonly By OutfitReviewPanels = By.CssSelector("[class='row wearer-order-summary-panel-wrap']");
             public static readonly By BillingAddressLabel = By.CssSelector("[class='row order-billing-address'] p:nth-of-type(1)");
             public static readonly By ContactNumberLabel = By.CssSelector("[class='row order-billing-address'] p:nth-of-type(2)");
             public static readonly By DiscountCodeInputbox = By.Id("DiscountCode");

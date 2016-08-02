@@ -1,4 +1,5 @@
-﻿using Core.Model.TestObjects.Bases;
+﻿using Core.Model.SupportTools;
+using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
 namespace CommonModel.Pages.OrderJourney.OrderReviewPage
@@ -32,7 +33,7 @@ namespace CommonModel.Pages.OrderJourney.OrderReviewPage
         public new class Locators : BaseOrderReviewPage.Locators
         {
             public static readonly By TotalOrderValueLabel = By.CssSelector("[class='order-summary-sub-total']>[class='order-summary-total total']");
-            public static readonly By AdwChargeLabel = By.ClassName("additional-total-order-detail");
+            public static readonly By AdwChargeLabel = By.CssSelector("[class='additional-total-order-detail']");
         }
     }
 }

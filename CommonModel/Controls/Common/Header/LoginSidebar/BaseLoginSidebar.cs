@@ -74,7 +74,7 @@ namespace CommonModel.Controls.Common.Header.LoginSidebar
         }
         public class Locators
         {
-            public static readonly By Container = By.ClassName("signin-wrapper panel-equalize");
+            public static readonly By Container = By.CssSelector("[class='signin-wrapper panel-equalize']");
             public static readonly By EmailInputbox = By.CssSelector("[data-at='txt-signin-username']");
             public static readonly By PasswordInputbox = By.CssSelector("[data-at='txt-signin-password']");
             public static readonly By ToggleShowPasswordButton = By.CssSelector("[role='button']");
@@ -82,7 +82,7 @@ namespace CommonModel.Controls.Common.Header.LoginSidebar
             public static readonly By LoginButton = By.CssSelector("[data-at='btn-signin']");
             public static readonly By RegisterLink = By.CssSelector("[data-at='lnk-signin-register']");
             public static readonly By DismissSidebarButton = By.CssSelector("[data-at='lnk-signin-close']");
-            public static readonly By IncorrectDetailsMessage = By.ClassName("signin-error-holder message-alerts message-alert");
+            public static readonly By IncorrectDetailsMessage = By.CssSelector("[class='signin-error-holder message-alerts message-alert']");
         }
     }
 }

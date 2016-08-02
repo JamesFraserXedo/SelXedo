@@ -13,7 +13,7 @@ namespace Core.Model.SupportTools
         public static IWebElement GetParent(this IWebElement element)
         {
             var driver = ((IWrapsDriver)element).WrappedDriver;
-            return (IWebElement) ((IJavaScriptExecutor)driver).ExecuteScript("return arguments[0].parentNode;", element);
+            return (IWebElement) Utils.IJavaScriptExecutor(driver).ExecuteScript("return arguments[0].parentNode;", element);
         }
     }
 }

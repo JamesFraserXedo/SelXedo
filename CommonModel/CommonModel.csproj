@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ClothingItems\Accessory.cs" />
     <Compile Include="ClothingItems\ClothingBase.cs" />
+    <Compile Include="ClothingItems\NonNeckwearBase.cs" />
     <Compile Include="ClothingItems\Shirt.cs" />
     <Compile Include="ClothingItems\Neckwear.cs" />
     <Compile Include="ClothingItems\Suit.cs" />
@@ -85,18 +86,16 @@
     <Compile Include="Controls\OrderJourney\PartyPaymentPanel\UkPartyPaymentPanel.cs" />
     <Compile Include="Controls\OutfitBuilder\BaseOutfitViewer.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\BaseCataloguePanel.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Accessories\BaseUkAccessoriesCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Accessories\BaseUsAccessoriesCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\BaseCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\BaseUkCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Suits\BaseUkSuitsCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Suits\BaseUsSuitsCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Neckwear\BaseUkNeckwearCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Neckwear\BaseUsNeckwearCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Waistcoats\BaseUkWaistcoatsCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Waistcoats\BaseUsWaistcoatsCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Shirts\BaseUkShirtsCatalogue.cs" />
-    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\Shirts\BaseUsShirtsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\NeckwearCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\ShirtsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\ShoesCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\SuitsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\TuxedosCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\VestsAndCummerbundsCatalogue.cs" />
+    <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\WaistcoatsCatalogue.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\Accessories\BaseAccessoriesFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\BaseExpandableFilter.cs" />
     <Compile Include="Controls\OutfitBuilder\FiltersPanel\Filters\BaseFilter.cs" />
@@ -122,6 +121,7 @@
     <Compile Include="Controls\OutfitSummary\BaseSummaryOutfitViewer.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPane\BaseUkTotalPanel.cs" />
     <Compile Include="Controls\OutfitSummary\TotalPane\BaseUsTotalPanel.cs" />
+    <Compile Include="Controls\TidioChat\Chatbox.cs" />
     <Compile Include="Controls\TryOnBasket\BaseSizeInfoPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseDeliveryAddressPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel\BaseUkDeliveryAddressPanel.cs" />
@@ -136,6 +136,7 @@
     <Compile Include="Pages\BaseSelectWeddingDatePage.cs" />
     <Compile Include="Pages\BaseTryOnBasketPage.cs" />
     <Compile Include="Pages\BaseTryOnConfirmationPage.cs" />
+    <Compile Include="Pages\BaseExclusiveAccessPage.cs" />
     <Compile Include="Pages\OrderJourney\BuildYourPartyPage\BaseBuildYourPartyPage.cs" />
     <Compile Include="Pages\OrderJourney\BuildYourPartyPage\UsBuildYourPartyPage.cs" />
     <Compile Include="Pages\OrderJourney\OrderReviewPage\BaseOrderReviewPage.cs" />

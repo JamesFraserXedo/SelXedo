@@ -1,5 +1,6 @@
 ﻿using CommonModel.Controls.Common.Header;
 using Core.CustomElements;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -23,7 +24,7 @@ namespace TMLewinModel.Controls.Common.Header
 
         public new class Locators : BurgerBarHeader.Locators
         {
-            public static readonly By PromotionBanner = By.ClassName("free-try-on-message");
+            public static readonly By PromotionBanner = By.CssSelector("[class='free-try-on-message']");
             public static readonly By ReturnToMainSiteLink = By.CssSelector("[data-at='lnk-back-to-main-site']");
         }
     }

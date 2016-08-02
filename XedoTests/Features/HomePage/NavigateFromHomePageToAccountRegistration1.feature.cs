@@ -84,7 +84,7 @@ this.FeatureBackground();
 #line 11
  testRunner.When("I click the register now link in the sidebar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
- testRunner.Then("I am on the Xedo AccountRegistration page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I am on the registration page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -93,6 +93,83 @@ this.FeatureBackground();
         public virtual void TestRunCleanup()
         {
             TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
+    [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [NUnit.Framework.TestFixtureAttribute()]
+    [NUnit.Framework.DescriptionAttribute("NavigateFromHomePageToAccountRegistration")]
+    public partial class NavigateFromHomePageToAccountRegistrationFeature_NUnit
+    {
+        
+        private TechTalk.SpecFlow.ITestRunner testRunner;
+        
+#line 1 "NavigateFromHomePageToAccountRegistration.feature"
+#line hidden
+        
+        [NUnit.Framework.TestFixtureSetUpAttribute()]
+        public virtual void FeatureSetup()
+        {
+            testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "NavigateFromHomePageToAccountRegistration", "\tIn order to reach the account registration page\r\n\tAs a user on the home page\r\n\tI" +
+                    " want to be able to navigate to the registration page", ProgrammingLanguage.CSharp, ((string[])(null)));
+            testRunner.OnFeatureStart(featureInfo);
+        }
+        
+        [NUnit.Framework.TestFixtureTearDownAttribute()]
+        public virtual void FeatureTearDown()
+        {
+            testRunner.OnFeatureEnd();
+            testRunner = null;
+        }
+        
+        [NUnit.Framework.SetUpAttribute()]
+        public virtual void TestInitialize()
+        {
+        }
+        
+        [NUnit.Framework.TearDownAttribute()]
+        public virtual void ScenarioTearDown()
+        {
+            testRunner.OnScenarioEnd();
+        }
+        
+        public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
+        {
+            testRunner.OnScenarioStart(scenarioInfo);
+        }
+        
+        public virtual void ScenarioCleanup()
+        {
+            testRunner.CollectScenarioErrors();
+        }
+        
+        public virtual void FeatureBackground()
+        {
+#line 6
+#line 7
+ testRunner.Given("I am on the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Click register now link")]
+        [NUnit.Framework.CategoryAttribute("homepage")]
+        public virtual void ClickRegisterNowLink()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click register now link", new string[] {
+                        "homepage"});
+#line 10
+this.ScenarioSetup(scenarioInfo);
+#line 6
+this.FeatureBackground();
+#line 11
+ testRunner.When("I click the register now link in the sidebar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
+ testRunner.Then("I am on the registration page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
         }
     }
 }

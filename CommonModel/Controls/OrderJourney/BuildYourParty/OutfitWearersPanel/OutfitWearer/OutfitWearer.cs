@@ -87,20 +87,20 @@ namespace CommonModel.Controls.OrderJourney.BuildYourParty.OutfitWearersPanel.Ou
         }
         public class Locators
         {
-            public static readonly By RoleLabel = By.ClassName("outfit-wearer-head-role");
-            public static readonly By WearerNameLabel = By.ClassName("outfit-wearer-name-text");
-            public static readonly By EmailLabel = By.ClassName("outfit-wearer-email");
-            public static readonly By EditWearerButton = By.ClassName("link blue outfit-wearer-name-edit");
+            public static readonly By RoleLabel = By.CssSelector("[class='outfit-wearer-head-role']");
+            public static readonly By WearerNameLabel = By.CssSelector("[class='outfit-wearer-name-text']");
+            public static readonly By EmailLabel = By.CssSelector("[class='outfit-wearer-email']");
+            public static readonly By EditWearerButton = By.CssSelector("[class='link blue outfit-wearer-name-edit']");
 
             public static readonly By AddSizesButton = By.CssSelector("[data-at='click-outfit-wearer-sizes-select-addsizes']");
-            public static readonly By EditSizesButton = By.ClassName("link blue outfit-wearer-name-edit enter-sizing-info outfit-sizing-link");
+            public static readonly By EditSizesButton = By.CssSelector("[class='link blue outfit-wearer-name-edit enter-sizing-info outfit-sizing-link']");
 
-            public static readonly By AllSizesEnteredLabel = By.ClassName("message-alerts message-success");
-            public static readonly By SomeSizesEnteredLabel = By.ClassName("message-alerts message-warning");
+            public static readonly By AllSizesEnteredLabel = By.CssSelector("[class='message-alerts message-success']");
+            public static readonly By SomeSizesEnteredLabel = By.CssSelector("[class='message-alerts message-warning']");
 
-            public static readonly By ItemWrappers = By.ClassName("sizing-overview");
-            public static readonly By ItemName = By.ClassName("sizing-overview-name");
-            public static readonly By ItemSize = By.ClassName("sizing-overview-value");
+            public static readonly By ItemWrappers = By.CssSelector("[class='sizing-overview']");
+            public static readonly By ItemName = By.CssSelector("[class='sizing-overview-name']");
+            public static readonly By ItemSize = By.CssSelector("[class='sizing-overview-value']");
         }
 
         public class ItemSizing

@@ -38,10 +38,10 @@ namespace CommonModel.Pages
 
         public class Locators
         {
-            public static readonly By SuccessLabel = By.ClassName("sage-status-holder confirmed");
-            public static readonly By DeniedLabel = By.ClassName("sage-status-holder denied");
-            public static readonly By OrderNumberLabel = By.ClassName("sage-order-number-text");
-            public static readonly By BackToOrderSummaryLink = By.ClassName("link blue");
+            public static readonly By SuccessLabel = By.CssSelector("[class='sage-status-holder confirmed']");
+            public static readonly By DeniedLabel = By.CssSelector("[class='sage-status-holder denied']");
+            public static readonly By OrderNumberLabel = By.CssSelector("[class='sage-order-number-text']");
+            public static readonly By BackToOrderSummaryLink = By.CssSelector("[class='link blue']");
         }
     }
 }

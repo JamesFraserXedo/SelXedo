@@ -4,9 +4,9 @@ using OpenQA.Selenium;
 
 namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues
 {
-    public abstract class BaseCatalogue : ControlBase
+    public class BaseCatalogue : ControlBase
     {
-        protected BaseCatalogue(TestSettings testSettings) : base(testSettings)
+        public BaseCatalogue(TestSettings testSettings) : base(testSettings)
         {
         }
 

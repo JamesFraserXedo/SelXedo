@@ -1,5 +1,5 @@
-﻿using AlfredAngeloModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
-using CommonModel.Controls.OutfitBuilder.CataloguePanel;
+﻿using CommonModel.Controls.OutfitBuilder.CataloguePanel;
+using CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues;
 using Core.Model.TestObjects.Bases;
 
 namespace AlfredAngeloModel.Controls.OutfitBuilder.CataloguePanel

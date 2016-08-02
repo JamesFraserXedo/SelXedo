@@ -132,7 +132,7 @@ namespace PromGuyModel.Pages
 
             public static readonly By PromoCodeInputbox = By.CssSelector("[data-at='txt-singlewearer-order-commission-code']");
             public static readonly By TuxPriceLabel = By.Id("order-summary-outfit-price");
-            public static readonly By DiscountLabel = By.ClassName("sub-total-discount");
+            public static readonly By DiscountLabel = By.CssSelector("[class='sub-total-discount']");
             public static readonly By DamageAndHandlingLabel = By.Id("order-summary-adw-price");
             public static readonly By SalesTaxLabel = By.Id("order-summary-sales-tax");
             public static readonly By TotalLabel = By.Id("order-summary-price-inc-tax");

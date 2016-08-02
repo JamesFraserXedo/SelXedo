@@ -24,13 +24,13 @@ namespace CommonModel.Controls.OutfitBuilder.FiltersPanel.Filters
         {
             if (!Expanded)
             {
-                base.Select();
+                Header.Click();
             }
         }
 
         public new class Locators : BaseFilter.Locators
         {
-            public static readonly By Body = By.ClassName("filters-section-body");
+            public static readonly By Body = By.CssSelector("[class='filters-section-body']");
         }
     }
 }

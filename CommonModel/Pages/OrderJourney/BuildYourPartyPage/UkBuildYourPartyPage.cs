@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using CommonModel.Controls.OrderJourney.BuildYourParty;
 using CommonModel.Controls.OrderJourney.BuildYourParty.OutfitWearersPanel;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -31,7 +32,7 @@ namespace CommonModel.Pages.OrderJourney.BuildYourPartyPage
 
         public new class Locators : BaseBuildYourPartyPage.Locators
         {
-            public static readonly By TotalOrderValueLabel = By.ClassName("build-party-total-amount");
+            public static readonly By TotalOrderValueLabel = By.CssSelector("[class='build-party-total-amount']");
         }
     }
 }

@@ -16,15 +16,5 @@ namespace Core.Model.TestObjects.Bases
         {
             get { return TestSettings.Driver; }
         }
-
-        public Utils.SiteVersion SiteVersion
-        {
-            get { return TestSettings.SiteVersion; }
-        }
-
-        public string BaseUrl
-        {
-            get { return TestSettings.BaseUrl; }
-        }
     }
 }

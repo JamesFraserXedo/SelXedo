@@ -17,7 +17,7 @@ namespace CommonModel.Pages
 
         public class Locators
         {
-            public static readonly By Loading = By.ClassName("outfit-builder ob-loading");
+            public static readonly By Loading = By.CssSelector("[class='outfit-builder ob-loading']");
         }
     }
 }

@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Core.Model.SupportTools;
-using Core.Model.TestObjects.Bases;
+﻿using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
 namespace CommonModel.ClothingItems
 {
-    public class Suit : ClothingBase
+    public class Suit : NonNeckwearBase
     {
         public Suit(TestSettings testSettings, IWebElement container) : base(testSettings, container)
         {
