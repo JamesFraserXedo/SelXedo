@@ -41,5 +41,15 @@ namespace Core.Model.SupportTools
         {
             return Utils.FindDisplayedElements(driver, loc);
         }
+
+        public static bool ElementExists(this IWebDriver driver, By loc)
+        {
+            return Utils.ElementExists(driver, loc);
+        }
+
+        public static bool ElementExists(this IWebDriver driver, IWebElement parent, By loc)
+        {
+            return Utils.ElementExists(parent, loc);
+        }
     }
 }

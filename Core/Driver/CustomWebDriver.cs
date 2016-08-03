@@ -23,6 +23,11 @@ namespace Core.Driver
             get { return ((IJavaScriptExecutor) _driver); }
         }
 
+        public ITakesScreenshot ITakesScreenshot
+        {
+            get { return ((ITakesScreenshot)_driver); }
+        }
+
         public void ShowElementOnScreen(IWebElement element)
         {
             var script = "window.scrollTo(" + element.Location.X + "," + (element.Location.Y - 400) + ");";

@@ -1,8 +1,6 @@
 ﻿using CommonModel.Controls.Common.DatePicker;
 using CommonModel.Pages;
-using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
-using YoungsModel.Controls.Common;
 using YoungsModel.Controls.TryOnBasket;
 
 namespace YoungsModel.Pages
@@ -16,6 +14,11 @@ namespace YoungsModel.Pages
         public SizeInfoPanel SizeInfoPanel
         {
             get { return new SizeInfoPanel(TestSettings); }
+        }
+
+        public DeliveryAddressPanel DeliveryAddressPanel
+        {
+            get { return new DeliveryAddressPanel(TestSettings); }
         }
 
         public MinimisedDatePicker PreferredTryOnDatePicker

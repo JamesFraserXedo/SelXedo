@@ -61,7 +61,7 @@ namespace CommonModel.Controls.TidioChat
         public class Locators
         {
             public static readonly By ChatboxButton = By.Id("tidio-chat-button");
-            public static readonly By CloseButton = By.CssSelector(".header>a");
+            public static readonly By CloseButton = By.CssSelector(".image");
         }
     }
 }

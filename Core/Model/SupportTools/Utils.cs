@@ -3,7 +3,6 @@ using System.Collections.ObjectModel;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
 using System.Threading;
 using Core.Driver;
 using OpenQA.Selenium;
@@ -58,7 +57,7 @@ namespace Core.Model.SupportTools
             if (timeout > 0)
             {
                 var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
-                wait.Until(drv => drv.FindDisplayedElements(by).Any());
+                wait.Until(drv => driver.FindElement(by).Displayed);
             }
             else
             {
@@ -114,6 +113,11 @@ namespace Core.Model.SupportTools
             return driver.FindElements(loc).Count > 0;
         }
 
+        public static bool ElementExists(IWebElement parent, By loc)
+        {
+            return parent.FindElements(loc).Count > 0;
+        }
+
         public static bool ElementDisplayed(IWebDriver driver, By loc)
         {
             return FindDisplayedElements(driver, loc).Any();
@@ -152,6 +156,15 @@ namespace Core.Model.SupportTools
             }
             return ((IJavaScriptExecutor) driver);
         }
+
+        public static ITakesScreenshot ITakesScreenshot(IWebDriver driver)
+        {
+            if (driver.GetType() == typeof (CustomWebDriver))
+            {
+                return ((CustomWebDriver)driver).ITakesScreenshot;   
+            }
+            return ((ITakesScreenshot) driver);
+        }
         
         public static string TakeScreenshot(IWebDriver driver, string strFilename)
         {
@@ -169,7 +182,8 @@ namespace Core.Model.SupportTools
             }
 
             // Bug: This could fail due to System.IO.PathTooLongException. Need a more intelligent mechanism.
-            ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile(filePath, ImageFormat.Png);
+            ITakesScreenshot(driver).GetScreenshot().SaveAsFile(filePath, ImageFormat.Png);
+            
             return filePath;
         }
 

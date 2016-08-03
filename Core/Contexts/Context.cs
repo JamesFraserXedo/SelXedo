@@ -6,12 +6,14 @@
         public LoadTimeContext LoadTime { get; set; }
         public QuickTryOnContext QuickTryOn { get; set; }
         public UserJourneyContext UserJourney { get; set; }
-
+        public TryOnContext TryOn { get; set; }
+        
         public Context()
         {
             Common = new CommonContext();
             LoadTime = new LoadTimeContext();
             QuickTryOn = new QuickTryOnContext();
+            TryOn = new TryOnContext();;
             UserJourney = new UserJourneyContext();
         }
 
@@ -37,6 +39,11 @@
             public string EnteredZip { get; set; }
             public string ThePocketSquareColour { get; set; }
             public string FedexSuggestedAddress { get; set; }
+        }
+
+        public class TryOnContext
+        {
+            public string OrderNumber { get; set; }
         }
 
         public class UserJourneyContext

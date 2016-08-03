@@ -1,4 +1,6 @@
-﻿using Core.Contexts;
+﻿using System.Threading;
+using CommonModel.Controls.TidioChat;
+using Core.Contexts;
 using TechTalk.SpecFlow;
 using YoungsModel.Bases;
 
@@ -15,6 +17,8 @@ namespace YoungsTests.Steps
         public void GivenIAmOnTheHomePage()
         {
             Driver.Navigate().GoToUrl(BaseUrl);
+            CookiesDirective.DismissIfPresent();
+
             if (ExclusiveAccessPage.IsLoaded())
             {
                 ExclusiveAccessPage.Login();
@@ -26,6 +30,7 @@ namespace YoungsTests.Steps
         public void GivenIAmOnTheOutfitBuilder()
         {
             Driver.Navigate().GoToUrl(BaseUrl + "OutfitBuilder/build");
+            CookiesDirective.DismissIfPresent();
             if (ExclusiveAccessPage.IsLoaded())
             {
                 ExclusiveAccessPage.Login();

@@ -58,6 +58,7 @@
     <Compile Include="Controls\Billing\BaseOrderBillingAddressPanel.cs" />
     <Compile Include="Controls\Billing\NotPGOrderBillingAddressPanel.cs" />
     <Compile Include="Controls\Billing\UkOrderBillingAddressPanel.cs" />
+    <Compile Include="Controls\Common\Cookies\CookiesDirective.cs" />
     <Compile Include="Controls\Common\DatePicker\MinimisedDatePicker.cs" />
     <Compile Include="Controls\Common\DatePicker\EmbeddedDatePicker.cs" />
     <Compile Include="Controls\Common\Footer\BaseFooter.cs" />
@@ -84,6 +85,16 @@
     <Compile Include="Controls\OrderJourney\PartyPaymentPanel\BasePartyPaymentPanel.cs" />
     <Compile Include="Controls\OrderJourney\PartyPaymentPanel\UsPartyPaymentPanel.cs" />
     <Compile Include="Controls\OrderJourney\PartyPaymentPanel\UkPartyPaymentPanel.cs" />
+    <Compile Include="Controls\OrdersPage\BaseOrders\BaseOrder.cs" />
+    <Compile Include="Controls\OrdersPage\BaseOrders\ActiveOrder.cs" />
+    <Compile Include="Controls\OrdersPage\BaseOrders\BaseTryOnOrder.cs" />
+    <Compile Include="Controls\OrdersPage\BaseOrders\BaseFullOrder.cs" />
+    <Compile Include="Controls\OrdersPage\PromOrders\PromOrder.cs" />
+    <Compile Include="Controls\OrdersPage\PreviousOrders\PreviousOrder.cs" />
+    <Compile Include="Controls\OrdersPage\DraftTryOnOrders\DraftTryOnOrder.cs" />
+    <Compile Include="Controls\OrdersPage\OpenOrders\OpenOrder.cs" />
+    <Compile Include="Controls\OrdersPage\TryOnOrders\TryOnOrder.cs" />
+    <Compile Include="Controls\OrdersPage\DraftOrders\DraftOrder.cs" />
     <Compile Include="Controls\OutfitBuilder\BaseOutfitViewer.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\BaseCataloguePanel.cs" />
     <Compile Include="Controls\OutfitBuilder\CataloguePanel\Catalogues\AccessoriesCatalogue.cs" />
@@ -131,6 +142,7 @@
     <Compile Include="Controls\TryOnPayment\ConfirmationMethod\BaseConfirmationMethodPanel.cs" />
     <Compile Include="Controls\TryOnPayment\ConfirmationMethod\UkConfirmationMethodPanel.cs" />
     <Compile Include="Controls\TryOnPayment\ConfirmationMethod\UsConfirmationMethodPanel.cs" />
+    <Compile Include="Pages\BaseOrdersPage.cs" />
     <Compile Include="Pages\BaseOutfitSummaryPage.cs" />
     <Compile Include="Pages\BaseRegistrationPage.cs" />
     <Compile Include="Pages\BaseSelectWeddingDatePage.cs" />

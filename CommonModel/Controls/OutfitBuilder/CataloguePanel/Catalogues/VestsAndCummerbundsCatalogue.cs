@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Runtime.CompilerServices;
 using CommonModel.ClothingItems;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -11,6 +12,7 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues
     {
         public VestsAndCummerbundsCatalogue(TestSettings testSettings) : base(testSettings)
         {
+            Driver.WaitForElementToAppear(Locators.VestsAndCummerbunds);
         }
 
         public ReadOnlyCollection<Waistcoat> Vests
@@ -43,6 +45,7 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues
         {
             public static readonly By Vests = By.CssSelector("[class='item waistcoat']");
             public static readonly By Cummerbunds = By.CssSelector("[class='item cummerbund']");
+            public static readonly By VestsAndCummerbunds = By.CssSelector("[class*='item-container all-waistcoats']>div");
 
         }
     }

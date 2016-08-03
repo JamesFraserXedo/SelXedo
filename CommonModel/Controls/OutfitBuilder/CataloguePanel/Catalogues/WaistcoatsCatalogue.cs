@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
 using CommonModel.ClothingItems;
+using Core.Model.SupportTools;
 using Core.Model.TestObjects.Bases;
 using OpenQA.Selenium;
 
@@ -10,6 +11,7 @@ namespace CommonModel.Controls.OutfitBuilder.CataloguePanel.Catalogues
     {
         public WaistcoatsCatalogue(TestSettings testSettings) : base(testSettings)
         {
+            Driver.WaitForElementToAppear(Locators.Waistcoats);
         }
 
         public ReadOnlyCollection<Waistcoat> Waistcoats

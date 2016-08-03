@@ -84,12 +84,13 @@
     <Compile Include="Pages\OrderJourney\OrderReviewPage.cs" />
     <Compile Include="Pages\OrderJourney\OutfitPaymentPage.cs" />
     <Compile Include="Pages\OrderJourney\YourBillingAddressPage.cs" />
+    <Compile Include="Pages\OrdersPage.cs" />
     <Compile Include="Pages\OutfitBuilderPage.cs" />
     <Compile Include="Pages\OutfitSummaryPage.cs" />
     <Compile Include="Pages\RegistrationPage.cs" />
     <Compile Include="Pages\SelectWeddingDatePage.cs" />
     <Compile Include="Pages\TryOnBasketPage.cs" />
-    <Compile Include="Pages\TryOnConfirmationPagecs.cs" />
+    <Compile Include="Pages\TryOnConfirmationPage.cs" />
     <Compile Include="Pages\PaymentPage.cs" />
     <Compile Include="Pages\TryOnReviewPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
