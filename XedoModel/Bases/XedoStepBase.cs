@@ -14,6 +14,11 @@ namespace XedoModel.Bases
         {
         }
 
+        public HomePage HomePage
+        {
+            get { return new HomePage(GetTestSettings()); }
+        }
+
         public ExclusiveAccessPage ExclusiveAccessPage
         {
             get { return new ExclusiveAccessPage(GetTestSettings()); }

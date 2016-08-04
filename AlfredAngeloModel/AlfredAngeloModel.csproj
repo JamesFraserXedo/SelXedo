@@ -80,6 +80,7 @@
     <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
     <Compile Include="Controls\TryOnBasket\DeliveryAddressPanel.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
+    <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\OrderJourney\OrderReviewPage.cs" />
     <Compile Include="Pages\OrderJourney\OutfitPaymentPage.cs" />
     <Compile Include="Pages\OrderJourney\YourBillingAddressPage.cs" />

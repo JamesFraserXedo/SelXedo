@@ -58,6 +58,7 @@
     <Compile Include="Controls\Billing\BaseOrderBillingAddressPanel.cs" />
     <Compile Include="Controls\Billing\NotPGOrderBillingAddressPanel.cs" />
     <Compile Include="Controls\Billing\UkOrderBillingAddressPanel.cs" />
+    <Compile Include="Controls\CollectionsPage\Collection.cs" />
     <Compile Include="Controls\Common\Cookies\CookiesDirective.cs" />
     <Compile Include="Controls\Common\DatePicker\MinimisedDatePicker.cs" />
     <Compile Include="Controls\Common\DatePicker\EmbeddedDatePicker.cs" />
@@ -68,6 +69,10 @@
     <Compile Include="Controls\Common\Header\LoginSidebar\BaseLoginSidebar.cs" />
     <Compile Include="Controls\Common\Header\MenuHeader.cs" />
     <Compile Include="Controls\Common\Header\NavigationSidebar\BaseNavigationSidebar.cs" />
+    <Compile Include="Controls\HomePage\ColourMatch\BaseColourMatch.cs" />
+    <Compile Include="Controls\HomePage\ColourMatch\UkColourMatch.cs" />
+    <Compile Include="Controls\HomePage\ColourMatch\UsColourMatch.cs" />
+    <Compile Include="Controls\HomePage\StyleCarousel.cs" />
     <Compile Include="Controls\OrderJourney\BuildYourParty\FavouriteOutfit\BaseFavouriteOutfit.cs" />
     <Compile Include="Controls\OrderJourney\BuildYourParty\FavouriteOutfit\UsedFavouriteOutfit.cs" />
     <Compile Include="Controls\OrderJourney\BuildYourParty\FavouriteOutfit\UnusedFavouriteOutfit.cs" />

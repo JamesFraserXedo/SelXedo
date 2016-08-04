@@ -1,5 +1,6 @@
 ﻿using Core.Contexts;
 using Core.StepsSupport;
+using PromGuyModel.Pages;
 
 namespace PromGuyModel.Bases
 {
@@ -7,6 +8,11 @@ namespace PromGuyModel.Bases
     {
         protected PromGuyStepBase(Context context) : base(context)
         {
+        }
+
+        public HomePage HomePage
+        {
+            get { return new HomePage(GetTestSettings()); }
         }
     }
 }

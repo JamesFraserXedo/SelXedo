@@ -13,6 +13,11 @@ namespace YoungsModel.Bases
         {
         }
 
+        public HomePage HomePage
+        {
+            get { return new HomePage(GetTestSettings()); }
+        }
+
         public Chatbox Chatbox
         {
             get { return new Chatbox(GetTestSettings()); }

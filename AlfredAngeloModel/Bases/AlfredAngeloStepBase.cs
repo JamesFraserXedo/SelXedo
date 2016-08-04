@@ -1,4 +1,5 @@
-﻿using Core.Contexts;
+﻿using AlfredAngeloModel.Pages;
+using Core.Contexts;
 using Core.StepsSupport;
 
 namespace AlfredAngeloModel.Bases
@@ -7,6 +8,11 @@ namespace AlfredAngeloModel.Bases
     {
         protected AlfredAngeloStepBase(Context context) : base(context)
         {
+        }
+
+        public HomePage HomePage
+        {
+            get { return new HomePage(GetTestSettings()); }
         }
     }
 }
