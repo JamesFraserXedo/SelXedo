@@ -79,6 +79,7 @@
     <Compile Include="Controls\TryOnBasket\SizeInfoPanel.cs" />
     <Compile Include="Controls\TryOnPayment\BillingAddressPanel.cs" />
     <Compile Include="Controls\TryOnPayment\ConfirmationMethodPanel.cs" />
+    <Compile Include="Pages\CollectionsPage.cs" />
     <Compile Include="Pages\ExclusiveAccessPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\OrderJourney\OrderReviewPage.cs" />

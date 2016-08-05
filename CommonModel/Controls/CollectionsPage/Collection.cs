@@ -17,6 +17,11 @@ namespace CommonModel.Controls.CollectionsPage
             get { return Driver.FindElement(_container, Locators.Details); }
         }
 
+        private IWebElement ImageElement
+        {
+            get { return Driver.FindElement(_container, Locators.Image); }
+        }
+
         public string Name
         {
             get { return Details.GetAttribute("data-tryon-productname"); }
@@ -27,9 +32,20 @@ namespace CommonModel.Controls.CollectionsPage
             get { return Details.GetAttribute("data-tryon-price"); }
         }
 
+        public string ImageSource
+        {
+            get { return ImageElement.GetAttribute("src"); }
+        }
+
+        public void Select()
+        {
+            _container.Click();
+        }
+
         public class Locators
         {
             public static readonly By Details = By.CssSelector("a");
+            public static readonly By Image = By.CssSelector("img");
         }
     }
 }

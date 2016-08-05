@@ -2,6 +2,7 @@
 {
     public class Context
     {
+        public CollectionContext Collection { get; set; }
         public CommonContext Common { get; set; }
         public LoadTimeContext LoadTime { get; set; }
         public QuickTryOnContext QuickTryOn { get; set; }
@@ -10,11 +11,19 @@
         
         public Context()
         {
+            Collection = new CollectionContext();
             Common = new CommonContext();
             LoadTime = new LoadTimeContext();
             QuickTryOn = new QuickTryOnContext();
             TryOn = new TryOnContext();;
             UserJourney = new UserJourneyContext();
+        }
+
+        public class CollectionContext
+        {
+            public string Name { get; set; }
+            public string Price { get; set; }
+            public string ImageSource { get; set; }
         }
 
         public class CommonContext

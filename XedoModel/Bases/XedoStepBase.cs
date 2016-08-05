@@ -1,4 +1,5 @@
-﻿using Core.Contexts;
+﻿using CommonModel.Controls.CollectionsPage;
+using Core.Contexts;
 using Core.StepsSupport;
 using TechTalk.SpecFlow;
 using XedoModel.Controls.Common.Footer;
@@ -14,6 +15,10 @@ namespace XedoModel.Bases
         {
         }
 
+        public CollectionProductDetails CollectionProductDetails
+        {
+            get { return new CollectionProductDetails(GetTestSettings()); }
+        }
         public HomePage HomePage
         {
             get { return new HomePage(GetTestSettings()); }

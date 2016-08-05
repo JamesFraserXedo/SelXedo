@@ -63,6 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\HomePage\HomePageOptions.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomePageOptions.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\HomePage\LogInFromHomePage1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,9 +96,12 @@
     <Compile Include="Hooks\ScenarioHooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\BillingAddressSteps.cs" />
+    <Compile Include="Steps\CollectionsPageSteps.cs" />
+    <Compile Include="Steps\ColourMatchSteps.cs" />
     <Compile Include="Steps\ConfirmWeddingDateSteps.cs" />
     <Compile Include="Steps\LoadTimeSteps\CommonLoadTimeSteps.cs" />
     <Compile Include="Steps\NavigationSteps.cs" />
+    <Compile Include="Steps\HomePageSteps.cs" />
     <Compile Include="Steps\OutfitBuilderSteps.cs" />
     <Compile Include="Steps\PaymentOptions.cs" />
     <Compile Include="Steps\RegistrationSteps.cs" />
@@ -124,6 +132,10 @@
     <None Include="App.config" />
     <None Include="Default.srprofile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Features\HomePage\HomePageOptions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HomePageOptions.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\HomePage\LogInFromHomePage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
